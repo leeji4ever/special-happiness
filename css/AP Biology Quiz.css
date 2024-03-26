@@ -1,13 +1,20 @@
 body {
 	margin: 25px;
-	background-color: rgb(0,0,95);
+	background-color: rgb(0,0,128);
+}
+
+h1{
+	font-weight: bold;
+	color: white;
 }
 
 h2{
 	font-weight: bold;
 	color: white;
 }
-#submit{font-size: 30px; background-color:red; color:white;}
+#submit{font-size: 30px; background-color:green; color:white;}
+
+#restart{font-size: 30px; background-color:red; color:white;}
 
 label{
 	color: white;
