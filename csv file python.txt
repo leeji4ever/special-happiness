@@ -1,0 +1,40 @@
+import csv
+
+with open("IDD_06042024052136105.csv") as f:
+          reader = csv.reader(f , delimiter = '\t')
+          header = next(reader)
+          listRows = list(reader)
+          
+          measureIndex = header.index('MEASURE')
+          yearIndex = header.index('Year')
+          valueIndex = header.index('Value')
+          countryIndex = header.index('Country')
+          
+          print("Using Indices", measureIndex, yearIndex, valueIndex)
+          
+          
+          rowCount = 0
+          yearTemp = 0
+          countryTemp = listRows[rowCount][countryIndex]
+          yearTemp = int(listRows[rowCount][yearIndex])
+          
+          for row in listRows:
+              measure = row[measureIndex]
+              rowCount+=1
+              if measure == "ECTOTAL":
+                  if countryTemp == row[countryIndex]:
+                      if int(row[yearIndex]) >= yearTemp:
+                          yearTemp = int(row[yearIndex])
+                          value = row[valueIndex]
+                  else:
+                      print("For", countryTemp, end='')
+                      print(" the most recent year", yearTemp,"'s value is ", end='')
+                      print(value)
+                      print("\n")
+                      countryTemp = row[countryIndex]
+              
+           
+                
+
+
+5
