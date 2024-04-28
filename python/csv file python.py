@@ -1,7 +1,7 @@
 import csv
 import json
 
-with open("IDD_06042024052136105.csv") as f:
+with open("../IDD_06042024052136105.csv") as f:
       reader = csv.reader(f , delimiter = '\t')
       header = next(reader)
       listRows = list(reader)
@@ -38,10 +38,13 @@ with open("IDD_06042024052136105.csv") as f:
                   current_countries['ectotal'] = value
                   current_countries['currency'] = currency
                   ectotal[countryTemp] = current_countries
+                  print(countryTemp,current_countries,ectotal)
                   countryTemp = row[countryIndex]
+                  input("Pause")
+                  
 
 
-with open("scripts/ectotal.json",'w') as f:
+with open("../scripts/ectotal.json",'w') as f:
     f.write("var ectotal = ")
     json.dump(ectotal,f, indent=2)
           

@@ -17,6 +17,8 @@ function myFunction3(){
 }
 
 function myFunction(){
+	console.log($('#1B'))
+	console.log($('#1B')[0])
 	/*checClick = true;*/
 	s.style.display = 'none';
 	if(document.getElementById('1B').checked) {
