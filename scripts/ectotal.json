@@ -1,0 +1,222 @@
+var ectotal = {
+  "Australia": {
+    "year": 2020,
+    "ectotal": "61281",
+    "currency": "Euro"
+  },
+  "Austria": {
+    "year": 2021,
+    "ectotal": "27734",
+    "currency": "Euro"
+  },
+  "Belgium": {
+    "year": 2021,
+    "ectotal": "30224",
+    "currency": "Canadian Dollar"
+  },
+  "Canada": {
+    "year": 2021,
+    "ectotal": "49754",
+    "currency": "Czech Koruna"
+  },
+  "Czechia": {
+    "year": 2021,
+    "ectotal": "297784",
+    "currency": "Danish Krone"
+  },
+  "Denmark": {
+    "year": 2021,
+    "ectotal": "297784",
+    "currency": "Euro"
+  },
+  "Finland": {
+    "year": 2021,
+    "ectotal": "27510",
+    "currency": "Euro"
+  },
+  "France": {
+    "year": 2021,
+    "ectotal": "20110",
+    "currency": "Euro"
+  },
+  "Germany": {
+    "year": 2021,
+    "ectotal": "20110",
+    "currency": "Euro"
+  },
+  "Greece": {
+    "year": 2021,
+    "ectotal": "8188",
+    "currency": "Forint"
+  },
+  "Hungary": {
+    "year": 2021,
+    "ectotal": "3002481",
+    "currency": "Iceland Krona"
+  },
+  "Iceland": {
+    "year": 2021,
+    "ectotal": "3002481",
+    "currency": "Euro"
+  },
+  "Ireland": {
+    "year": 2021,
+    "ectotal": "34351",
+    "currency": "Euro"
+  },
+  "Italy": {
+    "year": 2021,
+    "ectotal": "15488",
+    "currency": "Yen"
+  },
+  "Japan": {
+    "year": 2022,
+    "ectotal": "55506",
+    "currency": "Won"
+  },
+  "Korea": {
+    "year": 2022,
+    "ectotal": "55506",
+    "currency": "Pound Sterling"
+  },
+  "Luxembourg": {
+    "year": 2021,
+    "ectotal": "55618",
+    "currency": "Mexican Peso"
+  },
+  "Mexico": {
+    "year": 2021,
+    "ectotal": "55618",
+    "currency": "Euro"
+  },
+  "Netherlands": {
+    "year": 2021,
+    "ectotal": "31500",
+    "currency": "New Zealand Dollar"
+  },
+  "New Zealand": {
+    "year": 2021,
+    "ectotal": "31500",
+    "currency": "Norwegian Krone"
+  },
+  "Norway": {
+    "year": 2021,
+    "ectotal": "31500",
+    "currency": "Zloty"
+  },
+  "Poland": {
+    "year": 2021,
+    "ectotal": "43279",
+    "currency": "Euro"
+  },
+  "Portugal": {
+    "year": 2021,
+    "ectotal": "13000",
+    "currency": "Euro"
+  },
+  "Slovak Republic": {
+    "year": 2021,
+    "ectotal": "8822",
+    "currency": "Euro"
+  },
+  "Spain": {
+    "year": 2021,
+    "ectotal": "17145",
+    "currency": "Swedish Krona"
+  },
+  "Sweden": {
+    "year": 2021,
+    "ectotal": "330350",
+    "currency": "Swiss Franc"
+  },
+  "Switzerland": {
+    "year": 2021,
+    "ectotal": "330350",
+    "currency": "Turkish Lira"
+  },
+  "T?rkiye": {
+    "year": 2021,
+    "ectotal": "330350",
+    "currency": "Pound Sterling"
+  },
+  "United Kingdom": {
+    "year": 2022,
+    "ectotal": "55506",
+    "currency": "Chilean Peso"
+  },
+  "United States": {
+    "year": 2022,
+    "ectotal": "55506",
+    "currency": "Chilean Peso"
+  },
+  "Chile": {
+    "year": 2022,
+    "ectotal": "6281036",
+    "currency": "Euro"
+  },
+  "Estonia": {
+    "year": 2022,
+    "ectotal": "55506",
+    "currency": "New Israeli Sheqel"
+  },
+  "Israel": {
+    "year": 2022,
+    "ectotal": "55506",
+    "currency": "Euro"
+  },
+  "Slovenia": {
+    "year": 2022,
+    "ectotal": "55506",
+    "currency": "Yen"
+  },
+  "Latvia": {
+    "year": 2022,
+    "ectotal": "6281036",
+    "currency": "Euro"
+  },
+  "Lithuania": {
+    "year": 2022,
+    "ectotal": "6281036",
+    "currency": "Brazilian Real"
+  },
+  "Brazil": {
+    "year": 2022,
+    "ectotal": "6281036",
+    "currency": "Yuan Renminbi"
+  },
+  "China (People's Republic of)": {
+    "year": 2022,
+    "ectotal": "6281036",
+    "currency": "Indian Rupee"
+  },
+  "India": {
+    "year": 2022,
+    "ectotal": "6281036",
+    "currency": ""
+  },
+  "Russia": {
+    "year": 2022,
+    "ectotal": "6281036",
+    "currency": "Rand"
+  },
+  "South Africa": {
+    "year": 2022,
+    "ectotal": "6281036",
+    "currency": "Costa Rican Colon"
+  },
+  "Costa Rica": {
+    "year": 2022,
+    "ectotal": "4005539",
+    "currency": "Romanian Leu"
+  },
+  "Romania": {
+    "year": 2022,
+    "ectotal": "4005539",
+    "currency": "Bulgarian Lev"
+  },
+  "Bulgaria": {
+    "year": 2022,
+    "ectotal": "4005539",
+    "currency": "Euro"
+  }
+}

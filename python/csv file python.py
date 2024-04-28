@@ -40,9 +40,10 @@ with open("IDD_06042024052136105.csv") as f:
                   ectotal[countryTemp] = current_countries
                   countryTemp = row[countryIndex]
 
-with open("ectotal.json",'w') as f:
-    jstr = json.dumps(ectotal)
-    json.dump(jstr,f)
+
+with open("scripts/ectotal.json",'w') as f:
+    f.write("var ectotal = ")
+    json.dump(ectotal,f, indent=2)
           
        
             
