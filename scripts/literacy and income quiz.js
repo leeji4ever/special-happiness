@@ -1,3 +1,5 @@
+
+
 s = document.getElementById("submit");
 s.addEventListener("click", myFunction);
 s.addEventListener("mouseover", myFunction2);
@@ -61,5 +63,4 @@ function myFunction(){
 function restart(){
 	location.reload();
 }
-
 

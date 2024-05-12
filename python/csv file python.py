@@ -15,32 +15,26 @@ with open("../IDD_06042024052136105.csv") as f:
       print("Using Indices", measureIndex, yearIndex, valueIndex)
       
       
-      rowCount = 0
-      yearTemp = 0
-      countryTemp = listRows[rowCount][countryIndex]
-      yearTemp = int(listRows[rowCount][yearIndex])
+      
 
       ectotal = {}
       
       for row in listRows:
           current_countries = {}
+          country = row[countryIndex]
           measure = row[measureIndex]
           age = row[ageIndex]
           currency = row[currencyIndex]
-          rowCount+=1
+          year = int(row[yearIndex])
+          value = row[valueIndex]
+          
           if measure == "ECTOTAL" and age == 'TOT':
-              if countryTemp == row[countryIndex]:
-                  if int(row[yearIndex]) >= yearTemp:
-                      yearTemp = int(row[yearIndex])
-                      value = row[valueIndex]
-              else:
-                  current_countries['year'] = yearTemp
-                  current_countries['ectotal'] = value
-                  current_countries['currency'] = currency
-                  ectotal[countryTemp] = current_countries
-                  print(countryTemp,current_countries,ectotal)
-                  countryTemp = row[countryIndex]
-                  input("Pause")
+              if country not in ectotal:
+                  ectotal[country] = []
+              ectotal[country].append((year,value,currency))
+      for country in ectotal:
+              ectotal[country] = max(ectotal[country], key=lambda x:x[0])
+      print(ectotal)
                   
 
 
@@ -49,7 +43,3 @@ with open("../scripts/ectotal.json",'w') as f:
     json.dump(ectotal,f, indent=2)
           
        
-            
-
-
-5
