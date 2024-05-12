@@ -2,11 +2,12 @@
 console.log(ectotal)
 
 const text = $("#target").text();
-
-var random = Math.floor(Math.random()*ectotal.length)
-
 const keyEctotal = Object.keys(ectotal)
 
-var txt = keyEctotal[random]
+var random = Math.floor(Math.random()*keyEctotal.length)
+console.log(random)
 
-$('#asdf').text(txt);
+console.log(keyEctotal)
+var txt = keyEctotal[random]
+console.log(txt)
+$('#asdf').text(txt)

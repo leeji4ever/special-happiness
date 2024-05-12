@@ -1,0 +1,66 @@
+var literacy = {
+  "Afghanistan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 37.3%",
+    "male": " 52.1%",
+    "female": " 22.6%"
+  },
+  "Albania": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98.4%",
+    "male": " 98.7%",
+    "female": " 98.2%"
+  },
+  "Algeria": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 81.4%",
+    "male": " 87.4%",
+    "female": " 75.3%"
+  },
+  "American Samoa": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Andorra": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 100%",
+    "male": " 100%",
+    "female": " 100%"
+  },
+  "Angola": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 71.1%",
+    "male": " 82.6%",
+    "female": " 62.4%"
+  },
+  "Anguilla": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Antigua and Barbuda": {
+    "definition": " age 15 and over has completed five or more years of schooling",
+    "total population": " 99%",
+    "male": " 98.4%",
+    "female": " 99.4%"
+  },
+  "Argentina": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99%",
+    "male": " 98.9%",
+    "female": " 99.1%"
+  },
+  "Armenia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.8%",
+    "male": " 99.8%",
+    "female": " 99.7%"
+  },
+  "Aruba": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97.8%",
+    "male": " 97.8%",
+    "female": " 97.8%"
+  }
+}

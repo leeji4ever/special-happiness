@@ -1,0 +1,57 @@
+var mortalityRate = {
+  "Afghanistan": {
+    "total": 0.1013,
+    "male": 0.1097,
+    "female": 0.0925
+  },
+  "Albania": {
+    "total": 0.0103,
+    "male": 0.011300000000000001,
+    "female": 0.0092
+  },
+  "Algeria": {
+    "total": 0.018699999999999998,
+    "male": 0.0198,
+    "female": 0.0175
+  },
+  "American Samoa": {
+    "total": 0.009699999999999999,
+    "male": 0.011699999999999999,
+    "female": 0.0076
+  },
+  "Andorra": {
+    "total": 0.0033,
+    "male": 0.0034,
+    "female": 0.0032
+  },
+  "Angola": {
+    "total": 0.055600000000000004,
+    "male": 0.060700000000000004,
+    "female": 0.0503
+  },
+  "Anguilla": {
+    "total": 0.003,
+    "male": 0.0039,
+    "female": 0.0021000000000000003
+  },
+  "Antigua and Barbuda": {
+    "total": 0.0136,
+    "male": 0.016399999999999998,
+    "female": 0.0107
+  },
+  "Argentina": {
+    "total": 0.009,
+    "male": 0.0099,
+    "female": 0.0079
+  },
+  "Armenia": {
+    "total": 0.0116,
+    "male": 0.013099999999999999,
+    "female": 0.01
+  },
+  "Aruba": {
+    "total": 0.0115,
+    "male": 0.0156,
+    "female": 0.0073
+  }
+}

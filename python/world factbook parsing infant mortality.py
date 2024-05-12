@@ -1,19 +1,20 @@
 import urllib3
-resp = urllib3.request("GET", "https://www.cia.gov/the-world-factbook/field/literacy")
+import json
+resp = urllib3.request("GET", "https://www.cia.gov/the-world-factbook/field/infant-mortality-rate")
 resp.data
 
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(resp.data, 'html.parser')
 
 
-import json
-literacy_blocks = soup.find_all(class_="pb30")
+
+mortality_blocks = soup.find_all(class_="pb30")
 
 
 i=0
 
 countries = {}
-for tag in literacy_blocks:
+for tag in mortality_blocks:
     #print(type(tag))
     h3 = tag.find("h3")
     if h3 is None:
@@ -26,14 +27,14 @@ for tag in literacy_blocks:
     current_country = {}
     for strong in strongs:
         key = strong.contents[0].replace(':', '')
-        value = str(strong.next_sibling)
-        print(value)
+        value = float(str(strong.next_sibling).split()[0])/1000
+        #print(value)
         year = ''
-        if "%" in value:
-            index = value.index("%")
-            if(index >=0):
-                value = value[:index+1]
-                year = value[index+1:]
+        #if "%" in value:
+         #   index = value.index("%")
+          #  if(index >=0):
+           #     value = value[:index+1]
+            #    year = value[index+1:]
                 #print(year)
         print('key:', key, 'value:', value)
         current_country[key] = value
@@ -41,7 +42,7 @@ for tag in literacy_blocks:
     i+=1
     if i>10:
         break
-
-with open("../json/literacy.json",'w') as f:
-    f.write("var literacy = ")
+    
+with open("../json/mortality rate.json",'w') as f:
+    f.write("var mortalityRate = ")
     json.dump(countries,f, indent=2)
