@@ -37,3 +37,7 @@ input[type="radio"]{
 	text-align: center;
 	transition: all 250ms ease;
 }
+
+#country{
+	display: inline-block;
+}	

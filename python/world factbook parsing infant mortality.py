@@ -39,9 +39,7 @@ for tag in mortality_blocks:
         print('key:', key, 'value:', value)
         current_country[key] = value
     countries[text] = current_country
-    i+=1
-    if i>10:
-        break
+    
     
 with open("../json/mortality rate.json",'w') as f:
     f.write("var mortalityRate = ")
