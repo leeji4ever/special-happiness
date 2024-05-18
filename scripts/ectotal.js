@@ -16,10 +16,30 @@ function highestAns(){
 	var ans = parseInt(ectotal[txt][1]) //gets the ectotal value
 	var ansCurrency = ectotal[txt][2] //gets the currency
 	console.log(ans)
-	$("label[for*='1A']").text(ans+" "+ansCurrency)
-	$("label[for*='1B']").text(0.75*ans+" "+ansCurrency) 
-	$("label[for*='1C']").text(0.5*ans+" "+ansCurrency) 
-	$("label[for*='1D']").text(0.25*ans+" "+ansCurrency) 
+	var ansArray = ['1A','1B','1C','1D']
+	function shuffle(array) {
+	  let currentIndex = array.length;
+
+	  // While there remain elements to shuffle...
+	  while (currentIndex != 0) {
+
+		// Pick a remaining element...
+		let randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex--;
+
+		// And swap it with the current element.
+		[array[currentIndex], array[randomIndex]] = [
+		  array[randomIndex], array[currentIndex]];
+	  }
+	}
+	
+	shuffle(ansArray)
+	console.log(ansArray[0])
+	
+	$("label[for*=ansArray[0]]").text(ans+" "+ansCurrency)
+	$("label[for*=ansArray[1]]").text(0.75*ans+" "+ansCurrency) 
+	$("label[for*=ansArray[2]]").text(0.5*ans+" "+ansCurrency) 
+	$("label[for*=ansArray[3]]").text(0.25*ans+" "+ansCurrency) 
 	
 	
 }
