@@ -11,13 +11,7 @@ var txt = keyEctotal[random] //assigns a random country to txt
 console.log(txt)
 $('#country').text(txt) //use jquery to show random country in html
 
-
-function highestAns(){
-	var ans = parseInt(ectotal[txt][1]) //gets the ectotal value
-	var ansCurrency = ectotal[txt][2] //gets the currency
-	console.log(ans)
-	var ansArray = ['1A','1B','1C','1D']
-	function shuffle(array) {
+function shuffle(array) {
 	  let currentIndex = array.length;
 
 	  // While there remain elements to shuffle...
@@ -32,46 +26,72 @@ function highestAns(){
 		  array[randomIndex], array[currentIndex]];
 	  }
 	}
+
+
+function highestAns(){
+	var ans = parseInt(ectotal[txt][1]) //gets the ectotal value
+	var ansCurrency = ectotal[txt][2] //gets the currency
+	console.log(ans)
+	var ansArray = ['1A','1B','1C','1D']
+	
 	
 	shuffle(ansArray)
 	console.log(ansArray[0])
 	
-	$("label[for*=ansArray[0]]").text(ans+" "+ansCurrency)
-	$("label[for*=ansArray[1]]").text(0.75*ans+" "+ansCurrency) 
-	$("label[for*=ansArray[2]]").text(0.5*ans+" "+ansCurrency) 
-	$("label[for*=ansArray[3]]").text(0.25*ans+" "+ansCurrency) 
+	$("label[for*="+ansArray[0]+"]").text(ans+" "+ansCurrency)
+	$("label[for*="+ansArray[1]+"]").text(0.75*ans+" "+ansCurrency) 
+	$("label[for*="+ansArray[2]+"]").text(0.5*ans+" "+ansCurrency) 
+	$("label[for*="+ansArray[3]+"]").text(0.25*ans+" "+ansCurrency) 
 	
-	
+	return ansArray[0]
 }
 
 function lowestAns(){
 	var ans = parseInt(ectotal[txt][1])
 	var ansCurrency = ectotal[txt][2]
+	var ansArray = ['1A','1B','1C','1D']
+	
+	
+	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*='1A']").text(2*ans+" "+ansCurrency) 
-	$("label[for*='1B']").text(1.5*ans+" "+ansCurrency) 
-	$("label[for*='1C']").text(1.25*ans+" "+ansCurrency) 
-	$("label[for*='1D']").text(ans+" "+ansCurrency)
+	$("label[for*="+ansArray[0]+"]").text(2*ans+" "+ansCurrency) 
+	$("label[for*="+ansArray[1]+"]").text(1.5*ans+" "+ansCurrency) 
+	$("label[for*="+ansArray[2]+"]").text(1.25*ans+" "+ansCurrency) 
+	$("label[for*="+ansArray[3]+"]").text(ans+" "+ansCurrency)
+	
+	return ansArray[3]
 }
 
 function secondHighestAns(){
 	var ans = parseInt(ectotal[txt][1])
 	var ansCurrency = ectotal[txt][2]
+	var ansArray = ['1A','1B','1C','1D']
+	
+	
+	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*='1A']").text(1.5*ans+" "+ansCurrency) 
-	$("label[for*='1B']").text(ans+" "+ansCurrency)
-	$("label[for*='1C']").text(0.75*ans+" "+ansCurrency) 
-	$("label[for*='1D']").text(0.5*ans+" "+ansCurrency) 
+	$("label[for*="+ansArray[0]+"]").text(1.5*ans+" "+ansCurrency) 
+	$("label[for*="+ansArray[1]+"]").text(ans+" "+ansCurrency)
+	$("label[for*="+ansArray[2]+"]").text(0.75*ans+" "+ansCurrency) 
+	$("label[for*="+ansArray[3]+"]").text(0.5*ans+" "+ansCurrency)
+		
+	return ansArray[1]
 }
 
 function secondLowestAns(){
 	var ans = parseInt(ectotal[txt][1])
 	var ansCurrency = ectotal[txt][2]
+	var ansArray = ['1A','1B','1C','1D']
+	
+	
+	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*='1A']").text(1.5*ans+" "+ansCurrency) 
-	$("label[for*='1B']").text(1.25*ans+" "+ansCurrency)
-	$("label[for*='1C']").text(ans+" "+ansCurrency)	
-	$("label[for*='1D']").text(0.75*ans+" "+ansCurrency) 
+	$("label[for*="+ansArray[0]+"]").text(1.5*ans+" "+ansCurrency) 
+	$("label[for*="+ansArray[1]+"]").text(1.25*ans+" "+ansCurrency)
+	$("label[for*="+ansArray[2]+"]").text(ans+" "+ansCurrency)	
+	$("label[for*="+ansArray[3]+"]").text(0.75*ans+" "+ansCurrency) 
+	
+	return ansArray[2]
 }
 
 function ansRandom(){

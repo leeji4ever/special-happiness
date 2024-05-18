@@ -65,20 +65,31 @@
 <script>
 var random = ansRandom();
 console.log(random)
+var correctAns;
+ansArray = [];
 
 if (random == 0){
 	console.log("asdf")
 	highestAns();
+	var correctAns = highestAns();
+	ansArray.push(correctAns);
+	console.log(ansArray)
 }
 else if(random == 1){
 	console.log("fdsa")
 	secondHighestAns();
+	var correctAns = secondHighestAns();
+	ansArray.push(correctAns);
 }
 else if(random ==2){
 	secondLowestAns();
+	var correctAns = secondLowestAns();
+	ansArray.push(correctAns);
 }
 else if(random==3){
 	lowestAns();
+	var correctAns = lowestAns();
+	ansArray.push(correctAns);
 }
 
 </script>

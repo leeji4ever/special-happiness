@@ -23,7 +23,11 @@ function submitClick(){
 	console.log($('#1B')[0])
 	/*checClick = true;*/
 	s.style.display = 'none';
-
+	
+	if(document.getElementById(ansArray[0]).checked) {
+		score++;
+	}
+	
 	if(document.getElementById('2D').checked) {
 		score++;
 	}
