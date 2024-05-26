@@ -38,6 +38,6 @@ input[type="radio"]{
 	transition: all 250ms ease;
 }
 
-#country{
+div{
 	display: inline-block;
 }	
