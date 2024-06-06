@@ -12,9 +12,11 @@ var random = Math.floor(Math.random()*keyEctotal.length)
 console.log(random)
 
 console.log(keyEctotal)
-var txt = keyEctotal[random] //assigns a random country to txt
+var txt = keyEctotal[random] //assigns a random country to ranCountry
+var ranYear = ectotal[txt][0]
 console.log(txt)
 $('#country'+i).text(txt) //use jquery to show random country in html
+$('#year'+i).text(ranYear)
 	
 	
 var random = ansRandom();

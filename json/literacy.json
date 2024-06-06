@@ -62,5 +62,1245 @@ var literacy = {
     "total population": " 97.8%",
     "male": " 97.8%",
     "female": " 97.8%"
+  },
+  "Australia": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Austria": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Azerbaijan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.8%",
+    "male": " 99.9%",
+    "female": " 99.7%"
+  },
+  "Bahamas, The": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Bahrain": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97.5%",
+    "male": " 99.9%",
+    "female": " 94.9%"
+  },
+  "Bangladesh": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 74.9%",
+    "male": " 77.8%",
+    "female": " 72%"
+  },
+  "Barbados": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.6%",
+    "male": " 99.6%",
+    "female": " 99.6%"
+  },
+  "Belarus": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.9%",
+    "male": " 99.9%",
+    "female": " 99.9%"
+  },
+  "Belgium": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Belize": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Benin": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 45.8%",
+    "male": " 56.9%",
+    "female": " 35%"
+  },
+  "Bermuda": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Bhutan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 70.9%",
+    "male": " 77.9%",
+    "female": " 62.8%"
+  },
+  "Bolivia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 92.5%",
+    "male": " 96.5%",
+    "female": " 88.6%"
+  },
+  "Bosnia and Herzegovina": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98.1%",
+    "male": " 99.4%",
+    "female": " 98.1%"
+  },
+  "Botswana": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 88.5%",
+    "male": " 88%",
+    "female": " 88.9%"
+  },
+  "Brazil": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 94.7%",
+    "male": " 94.4%",
+    "female": " 94.9%"
+  },
+  "British Virgin Islands": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Brunei": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97.6%",
+    "male": " 98.3%",
+    "female": " 96.9%"
+  },
+  "Bulgaria": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98.4%",
+    "male": " 98.7%",
+    "female": " 98.2%"
+  },
+  "Burkina Faso": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 46%",
+    "male": " 54.5%",
+    "female": " 37.8%"
+  },
+  "Burma": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 89.1%",
+    "male": " 92.4%",
+    "female": " 86.3%",
+    "note ": "most public schools were closed immediately after the coup in 2021, and attendance has remained low since schools reopened; literacy is expected to decline from 2019 to 2023"
+  },
+  "Burundi": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 74.7%",
+    "male": " 81.3%",
+    "female": " 68.4%"
+  },
+  "Cabo Verde": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 90.8%",
+    "male": " 94.2%",
+    "female": " 87.4%"
+  },
+  "Cambodia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 83.9%",
+    "male": " 88.4%",
+    "female": " 79.8%"
+  },
+  "Cameroon": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 77.1%",
+    "male": " 82.6%",
+    "female": " 71.6%"
+  },
+  "Canada": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Cayman Islands": {
+    "total population": " 98.9%",
+    "male": " 98.7%",
+    "female": " 99%"
+  },
+  "Central African Republic": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 37.5%",
+    "male": " 49.2%",
+    "female": " 26.2%"
+  },
+  "Chad": {
+    "definition": " age 15 and over can read and write French or Arabic",
+    "total population": " 26.8%",
+    "male": " 35.4%",
+    "female": " 18.2%"
+  },
+  "Chile": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97%",
+    "male": " 97.1%",
+    "female": " 97%"
+  },
+  "China": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 96.8%",
+    "male": " 98.5%",
+    "female": " 95.2%"
+  },
+  "Colombia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95.6%",
+    "male": " 95.4%",
+    "female": " 95.9%"
+  },
+  "Comoros": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 62%",
+    "male": " 67%",
+    "female": " 56.9%"
+  },
+  "Congo, Democratic Republic of the": {
+    "definition": " age 15 and over can read and write French, Lingala, Kingwana, or Tshiluba",
+    "total population": " 80%",
+    "male": " 89.5%",
+    "female": " 70.8%"
+  },
+  "Congo, Republic of the": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 80.6%",
+    "male": " 85.9%",
+    "female": " 75.4%"
+  },
+  "Cook Islands": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Costa Rica": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98%",
+    "male": " 98%",
+    "female": " 98.1%"
+  },
+  "Cote d'Ivoire": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 89.9%",
+    "male": " 93.1%",
+    "female": " 86.7%"
+  },
+  "Croatia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.4%",
+    "male": " 99.7%",
+    "female": " 99.2%"
+  },
+  "Cuba": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.7%",
+    "male": " 99.6%",
+    "female": " 99.7%"
+  },
+  "Cyprus": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.4%",
+    "male": " 99.6%",
+    "female": " 99.2%"
+  },
+  "Czechia": {
+    "definition": " NA",
+    "total population": " 99%",
+    "male": " 99%",
+    "female": " 99%"
+  },
+  "Denmark": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Djibouti": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Dominica": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Dominican Republic": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95.5%",
+    "male": " 95.4%",
+    "female": " 95.6%"
+  },
+  "Ecuador": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 93.9%",
+    "male": " 94.9%",
+    "female": " 93.1%"
+  },
+  "Egypt": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 73.1%",
+    "male": " 78.8%",
+    "female": " 67.4%"
+  },
+  "El Salvador": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 89.1%",
+    "male": " 91.3%",
+    "female": " 87.3%"
+  },
+  "Equatorial Guinea": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95.3%",
+    "male": " 97.4%",
+    "female": " 93%"
+  },
+  "Eritrea": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 76.6%",
+    "male": " 84.4%",
+    "female": " 68.9%"
+  },
+  "Estonia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.9%",
+    "male": " 99.9%",
+    "female": " 99.9%"
+  },
+  "Eswatini": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 88.4%",
+    "male": " 88.3%",
+    "female": " 88.5%"
+  },
+  "Ethiopia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 51.8%",
+    "male": " 57.2%",
+    "female": " 44.4%"
+  },
+  "European Union": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Faroe Islands": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Fiji": {
+    "total population": " 99.1%",
+    "male": " 99.1%",
+    "female": " 99.1%"
+  },
+  "Finland": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "France": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "French Polynesia": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Gabon": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 85.5%",
+    "male": " 86.2%",
+    "female": " 84.7%"
+  },
+  "Gambia, The": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 58.1%",
+    "male": " 65.2%",
+    "female": " 51.2%"
+  },
+  "Gaza Strip": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97.5%",
+    "male": " 98.8%",
+    "female": " 96.2%",
+    "note": " estimates are for Gaza Strip and the West Bank"
+  },
+  "Georgia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.6%",
+    "male": " 99.7%",
+    "female": " 99.5%"
+  },
+  "Germany": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Ghana": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 79%",
+    "male": " 83.5%",
+    "female": " 74.5%"
+  },
+  "Gibraltar": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Greece": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97.9%",
+    "male": " 98.5%",
+    "female": " 97.4%"
+  },
+  "Greenland": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 100%",
+    "male": " 100%",
+    "female": " 100%"
+  },
+  "Grenada": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98.6%",
+    "male": " 98.6%",
+    "female": " 98.6%"
+  },
+  "Guam": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Guatemala": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 83.3%",
+    "male": " 87.7%",
+    "female": " 79.3%"
+  },
+  "Guernsey": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Guinea": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 45.3%",
+    "male": " 61.2%",
+    "female": " 31.3%"
+  },
+  "Guinea-Bissau": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 52.9%",
+    "male": " 67%",
+    "female": " 39.9%"
+  },
+  "Guyana": {
+    "definition": " age 15 and over has ever attended school",
+    "total population": " 88.8%",
+    "male": " 89.3%",
+    "female": " 88.4%"
+  },
+  "Haiti": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 61.7%",
+    "male": " 65.3%",
+    "female": " 58.3%"
+  },
+  "Honduras": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 88.5%",
+    "male": " 88.2%",
+    "female": " 88.7%"
+  },
+  "Hong Kong": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Hungary": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.1%",
+    "male": " 99.1%",
+    "female": " 99.1%"
+  },
+  "Iceland": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "India": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 74.4%",
+    "male": " 82.4%",
+    "female": " 65.8%"
+  },
+  "Indonesia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 96%",
+    "male": " 97.4%",
+    "female": " 94.6%"
+  },
+  "Iran": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 88.7%",
+    "male": " 92.4%",
+    "female": " 88.7%"
+  },
+  "Iraq": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 85.6%",
+    "male": " 91.2%",
+    "female": " 79.9%"
+  },
+  "Ireland": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Isle of Man": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Israel": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97.8%",
+    "male": " 98.7%",
+    "female": " 96.8%"
+  },
+  "Italy": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.2%",
+    "male": " 99.4%",
+    "female": " 99%"
+  },
+  "Jamaica": {
+    "definition": " age 15 and over has ever attended school",
+    "total population": " 88.7%",
+    "male": " 84%",
+    "female": " 93.1%"
+  },
+  "Japan": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Jersey": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Jordan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98.4%",
+    "male": " 98.7%",
+    "female": " 98.4%"
+  },
+  "Kazakhstan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.8%",
+    "male": " 99.8%",
+    "female": " 99.7%"
+  },
+  "Kenya": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 82.6%",
+    "male": " 85.5%",
+    "female": " 79.8%"
+  },
+  "Kiribati": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Korea, North": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 100%",
+    "male": " 100%",
+    "female": " 100%"
+  },
+  "Korea, South": {
+    "total population": " 98.8%",
+    "male": " 99.2%",
+    "female": " 98.4%"
+  },
+  "Kuwait": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 96.5%",
+    "male": " 97.1%",
+    "female": " 95.4%"
+  },
+  "Kyrgyzstan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.6%",
+    "male": " 99.7%",
+    "female": " 99.5%"
+  },
+  "Laos": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 87.1%",
+    "male": " 91.4%",
+    "female": " 81.4%"
+  },
+  "Latvia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.9%",
+    "male": " 99.9%",
+    "female": " 99.9%"
+  },
+  "Lebanon": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95.1%",
+    "male": " 96.9%",
+    "female": " 93.3%"
+  },
+  "Lesotho": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 81%",
+    "male": " 72.9%",
+    "female": " 88.8%"
+  },
+  "Liberia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 48.3%",
+    "male": " 62.7%",
+    "female": " 34.1%"
+  },
+  "Libya": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 91%",
+    "male": " 96.7%",
+    "female": " 85.6%"
+  },
+  "Liechtenstein": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Lithuania": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.8%",
+    "male": " 99.8%",
+    "female": " 99.8%"
+  },
+  "Luxembourg": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Macau": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97.1%",
+    "male": " 98.5%",
+    "female": " 95.9%"
+  },
+  "Madagascar": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 77.3%",
+    "male": " 78.8%",
+    "female": " 75.8%"
+  },
+  "Malawi": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 67.3%",
+    "male": " 71.2%",
+    "female": " 63.7%"
+  },
+  "Malaysia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95%",
+    "male": " 96.2%",
+    "female": " 93.6%"
+  },
+  "Maldives": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97.9%",
+    "male": " 97.6%",
+    "female": " 98.4%"
+  },
+  "Mali": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 35.5%",
+    "male": " 46.2%",
+    "female": " 25.7%"
+  },
+  "Malta": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 94.9%",
+    "male": " 93.4%",
+    "female": " 96.4%"
+  },
+  "Marshall Islands": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98.3%",
+    "male": " 98.3%",
+    "female": " 98.2%"
+  },
+  "Mauritania": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 67%",
+    "male": " 71.8%",
+    "female": " 62.2%"
+  },
+  "Mauritius": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 92.2%",
+    "male": " 93.5%",
+    "female": " 90.5%"
+  },
+  "Mexico": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95.2%",
+    "male": " 96.1%",
+    "female": " 94.5%"
+  },
+  "Micronesia, Federated States of": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Moldova": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.6%",
+    "male": " 99.7%",
+    "female": " 99.5%"
+  },
+  "Monaco": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Mongolia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.2%",
+    "male": " 99.1%",
+    "female": " 99.2%"
+  },
+  "Montenegro": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99%",
+    "male": " 99.4%",
+    "female": " 98.5%"
+  },
+  "Montserrat": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Morocco": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 75.9%",
+    "male": " 84.8%",
+    "female": " 67.4%",
+    "note": " does not include data from the former Western Sahara"
+  },
+  "Mozambique": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 63.4%",
+    "male": " 74.1%",
+    "female": " 53.8%"
+  },
+  "Namibia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 92.3%",
+    "male": " 90.6%",
+    "female": " 92.3%"
+  },
+  "Nauru": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Nepal": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 71.2%",
+    "male": " 81%",
+    "female": " 63.3%"
+  },
+  "Netherlands": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "New Caledonia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 96.9%",
+    "male": " 97.3%",
+    "female": " 96.5%"
+  },
+  "New Zealand": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Nicaragua": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 82.6%",
+    "male": " 82.4%",
+    "female": " 82.8%"
+  },
+  "Niger": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 37.3%",
+    "male": " 45.8%",
+    "female": " 29%"
+  },
+  "Nigeria": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 62%",
+    "male": " 71.3%",
+    "female": " 52.7%"
+  },
+  "North Macedonia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98.4%",
+    "male": " 99.1%",
+    "female": " 97.6%"
+  },
+  "Northern Mariana Islands": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Norway": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Oman": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95.7%",
+    "male": " 97%",
+    "female": " 92.7%"
+  },
+  "Pakistan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 58%",
+    "male": " 69.3%",
+    "female": " 46.5%"
+  },
+  "Palau": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 96.6%",
+    "male": " 96.8%",
+    "female": " 96.3%"
+  },
+  "Panama": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95.7%",
+    "male": " 98.8%",
+    "female": " 95.4%"
+  },
+  "Papua New Guinea": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 64.2%",
+    "male": " 65.6%",
+    "female": " 62.8%"
+  },
+  "Paraguay": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 94.5%",
+    "male": " 94.9%",
+    "female": " 94.2%"
+  },
+  "Peru": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 94.5%",
+    "male": " 97%",
+    "female": " 92%"
+  },
+  "Philippines": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 96.3%",
+    "male": " 95.7%",
+    "female": " 96.9%"
+  },
+  "Poland": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.8%",
+    "male": " 99.8%",
+    "female": " 99.8%"
+  },
+  "Portugal": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95.9%",
+    "male": " 97.8%",
+    "female": " 95.9%"
+  },
+  "Puerto Rico": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 92.4%",
+    "male": " 92.4%",
+    "female": " 92.4%"
+  },
+  "Qatar": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 93.5%",
+    "male": " 92.4%",
+    "female": " 94.7%"
+  },
+  "Romania": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98.9%",
+    "male": " 99.1%",
+    "female": " 98.7%"
+  },
+  "Russia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.7%",
+    "male": " 99.7%",
+    "female": " 99.7%"
+  },
+  "Rwanda": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 75.9%",
+    "male": " 78.7%",
+    "female": " 73.3%"
+  },
+  "Saint Barthelemy": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Saint Helena, Ascension, and Tristan da Cunha": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Saint Kitts and Nevis": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Saint Lucia": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Saint Martin": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Saint Pierre and Miquelon": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Saint Vincent and the Grenadines": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Samoa": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.1%",
+    "male": " 99%",
+    "female": " 99.3%"
+  },
+  "San Marino": {
+    "total population": " 99.9%",
+    "male": " 99.9%",
+    "female": " 99.9%"
+  },
+  "Sao Tome and Principe": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 94.8%",
+    "male": " 96.5%",
+    "female": " 91.1%"
+  },
+  "Saudi Arabia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97.6%",
+    "male": " 98.6%",
+    "female": " 96%"
+  },
+  "Senegal": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 56.3%",
+    "male": " 68.4%",
+    "female": " 45.4%"
+  },
+  "Serbia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.5%",
+    "male": " 99.9%",
+    "female": " 99.1%"
+  },
+  "Seychelles": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95.9%",
+    "male": " 95.4%",
+    "female": " 96.4%"
+  },
+  "Sierra Leone": {
+    "definition": " age 15 and over can read and write English, Mende, Temne, or Arabic",
+    "total population": " 48.6%",
+    "male": " 56.3%",
+    "female": " 41.3%"
+  },
+  "Singapore": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97.5%",
+    "male": " 98.9%",
+    "female": " 96.1%"
+  },
+  "Sint Maarten": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Slovakia": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Slovenia": {
+    "definition": " NA",
+    "total population": " 99.7%",
+    "male": " 99.7%",
+    "female": " 99.7%"
+  },
+  "Solomon Islands": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Somalia": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "South Africa": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95%",
+    "male": " 95.5%",
+    "female": " 94.5%"
+  },
+  "South Sudan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 34.5%",
+    "male": " 40.3%",
+    "female": " 28.9%"
+  },
+  "Spain": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98.6%",
+    "male": " 99%",
+    "female": " 98.2%"
+  },
+  "Sri Lanka": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 92.3%",
+    "male": " 93%",
+    "female": " 91.6%"
+  },
+  "Sudan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 60.7%",
+    "male": " 65.4%",
+    "female": " 56.1%"
+  },
+  "Suriname": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95%",
+    "male": " 96.5%",
+    "female": " 93.4%"
+  },
+  "Sweden": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Switzerland": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Syria": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 86.4%",
+    "male": " 91.7%",
+    "female": " 81%"
+  },
+  "Taiwan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98.5%",
+    "male": " 99.7%",
+    "female": " 97.3%"
+  },
+  "Tajikistan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.8%",
+    "male": " 99.8%",
+    "female": " 99.7%"
+  },
+  "Tanzania": {
+    "definition": " age 15 and over can read and write Kiswahili (Swahili), English, or Arabic",
+    "total population": " 81.8%",
+    "male": " 85.5%",
+    "female": " 78.2%"
+  },
+  "Thailand": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 94.1%",
+    "male": " 95.5%",
+    "female": " 92.8%"
+  },
+  "Timor-Leste": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 68.1%",
+    "male": " 71.9%",
+    "female": " 64.2%"
+  },
+  "Togo": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 66.5%",
+    "male": " 80%",
+    "female": " 55.1%"
+  },
+  "Tonga": {
+    "definition": " can read and write Tongan and/or English",
+    "total population": " 99.4%",
+    "male": " 99.4%",
+    "female": " 99.5%"
+  },
+  "Trinidad and Tobago": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99%",
+    "male": " 99.2%",
+    "female": " 98.7%"
+  },
+  "Tunisia": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 82.7%",
+    "male": " 89.1%",
+    "female": " 82.7%"
+  },
+  "Turkey (Turkiye)": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 96.7%",
+    "male": " 99.1%",
+    "female": " 94.4%"
+  },
+  "Turkmenistan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 99.7%",
+    "male": " 99.8%",
+    "female": " 99.6%"
+  },
+  "Turks and Caicos Islands": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Tuvalu": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Uganda": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 79%",
+    "male": " 84%",
+    "female": " 74.3%"
+  },
+  "Ukraine": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 100%",
+    "male": " 100%",
+    "female": " 100%"
+  },
+  "United Arab Emirates": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98.1%",
+    "male": " 98.8%",
+    "female": " 97.2%"
+  },
+  "United Kingdom": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "United States": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Uruguay": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 98.8%",
+    "male": " 98.5%",
+    "female": " 99%"
+  },
+  "Uzbekistan": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 100%",
+    "male": " 100%",
+    "female": " 100%"
+  },
+  "Vanuatu": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 89.1%",
+    "male": " 89.8%",
+    "female": " 88.4%"
+  },
+  "Venezuela": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97.5%",
+    "male": " 97.4%",
+    "female": " 97.7%"
+  },
+  "Vietnam": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 95.8%",
+    "male": " 97%",
+    "female": " 94.6%"
+  },
+  "Virgin Islands": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "Wallis and Futuna": {
+    "total population": " NA",
+    "male": " NA",
+    "female": " NA"
+  },
+  "West Bank": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 97.5%",
+    "male": " 98.8%",
+    "female": " 96.2%",
+    "note": " estimates are for Gaza and the West Bank"
+  },
+  "World": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 86.7%",
+    "male": " 90.1%",
+    "female": " 83.3%",
+    "note": " more than three quarters of the world's 750 million illiterate adults are found in South Asia and sub-Saharan Africa; of all the illiterate adults in the world, almost two thirds are women (2016)"
+  },
+  "Yemen": {
+    "definition": " age 15 and over can read and write",
+    "total population": " 70.1%",
+    "male": " 85.1%",
+    "female": " 55%"
+  },
+  "Zambia": {
+    "definition": " age 15 and over can read and write English",
+    "total population": " 86.7%",
+    "male": " 90.6%",
+    "female": " 83.1%"
+  },
+  "Zimbabwe": {
+    "definition": " any person age 15 and above who completed at least grade 3 of primary education",
+    "total population": " 89.7%",
+    "male": " 88.3%",
+    "female": " 90.9%"
   }
 }

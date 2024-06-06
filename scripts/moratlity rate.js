@@ -1,22 +1,22 @@
-
-
-console.log(literacy)
+console.log(mortalityRate)
 
 
 //console.log(ectotal)
 
 ansArray = [];
-const keyLiteracy = Object.keys(literacy) //makes a list consisted of the keys(countries) in ectotal 
+const keyMortality = Object.keys(mortalityRate) //makes a list consisted of the keys(countries) in mortalityRate
 for (let i=1;i<=10;i++){
 
 
-var random = Math.floor(Math.random()*keyLiteracy.length)
+var random = Math.floor(Math.random()*keyMortality.length)
 console.log(random)
 
-console.log(keyLiteracy)
-var txt = keyLiteracy[random] //assigns a random country to txt
-console.log(txt)
+//console.log(keyEctotal)
+var txt = keyMortality[random] //assigns a random country to ranCountry
+var ranYear = ectotal[txt][0]
+//console.log(txt)
 $('#country'+i).text(txt) //use jquery to show random country in html
+//$('#year'+i).text(ranYear)
 	
 	
 var random = ansRandom();
@@ -74,7 +74,8 @@ function shuffle(array) {
 
 
 function highestAns(num){
-	var ans = parseInt(literacy[txt]["total population"]) //gets the literacy rate
+	var ans = parseInt(ectotal[txt][1]) //gets the ectotal value
+	//var ansCurrency = ectotal[txt][2] //gets the currency
 	console.log(ans)
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
@@ -82,55 +83,58 @@ function highestAns(num){
 	shuffle(ansArray)
 	console.log(ansArray[0])
 	
-	$("label[for*="+ansArray[0]+"]").text((ans)+" %")
-	$("label[for*="+ansArray[1]+"]").text((0.75*ans)+" %") 
-	$("label[for*="+ansArray[2]+"]").text((0.5*ans+" %")) 
-	$("label[for*="+ansArray[3]+"]").text((0.25*ans)+" %") 
+	$("label[for*="+ansArray[0]+"]").text(Math.round(ans))
+	$("label[for*="+ansArray[1]+"]").text(Math.round(0.75*ans)) 
+	$("label[for*="+ansArray[2]+"]").text(Math.round(0.5*ans)) 
+	$("label[for*="+ansArray[3]+"]").text(Math.round(0.25*ans)) 
 	
 	return ansArray[0]
 }
 
 function lowestAns(num){
-	var ans = parseInt(literacy[txt]["total population"])
+	var ans = parseInt(ectotal[txt][1])
+	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.75)+" %") 
-	$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.5)+" %") 
-	$("label[for*="+ansArray[2]+"]").text((ans+(100-ans)*0.25)+" %") 
-	$("label[for*="+ansArray[3]+"]").text((ans)+" %")
+	$("label[for*="+ansArray[0]+"]").text(Math.round(2*ans)) 
+	$("label[for*="+ansArray[1]+"]").text(Math.round(1.5*ans)) 
+	$("label[for*="+ansArray[2]+"]").text(Math.round(1.25*ans)) 
+	$("label[for*="+ansArray[3]+"]").text(Math.round(ans))
 	
 	return ansArray[3]
 }
 
 function secondHighestAns(num){
-	var ans = parseInt(literacy[txt]["total population"])
+	var ans = parseInt(ectotal[txt][1])
+	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.75)+" %") 
-	$("label[for*="+ansArray[1]+"]").text((ans)+" %")
-	$("label[for*="+ansArray[2]+"]").text((ans-(100-ans)*0.25)+" %") 
-	$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.5)+" %")
+	$("label[for*="+ansArray[0]+"]").text(Math.round(1.5*ans)) 
+	$("label[for*="+ansArray[1]+"]").text(Math.round(ans))
+	$("label[for*="+ansArray[2]+"]").text(Math.round(0.75*ans)) 
+	$("label[for*="+ansArray[3]+"]").text(Math.round(0.5*ans))
 		
 	return ansArray[1]
 }
 
 function secondLowestAns(num){
-	var ans = parseInt(literacy[txt]["total population"])
+	var ans = parseInt(ectotal[txt][1])
+	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.75)+" %") 
-	$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.5)+" %")
-	$("label[for*="+ansArray[2]+"]").text((ans)+" %")	
-	$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.25)+" %") 
+	$("label[for*="+ansArray[0]+"]").text(Math.round(1.5*ans)) 
+	$("label[for*="+ansArray[1]+"]").text(Math.round(1.25*ans))
+	$("label[for*="+ansArray[2]+"]").text(Math.round(ans))	
+	$("label[for*="+ansArray[3]+"]").text(Math.round(0.75*ans)) 
 	
 	return ansArray[2]
 }
@@ -186,7 +190,8 @@ function submitClick(){
 	}
 	if(document.getElementById(ansArray[5]).checked) {
 		score++;
-	}if(document.getElementById(ansArray[6]).checked) {
+	}
+	if(document.getElementById(ansArray[6]).checked) {
 		score++;
 	}
 	if(document.getElementById(ansArray[7]).checked) {

@@ -1,5 +1,3 @@
-
-
 var ectotal = {
   "Australia": [
     2020,
@@ -199,7 +197,7 @@ var ectotal = {
   "Russia": [
     2017,
     "382110",
-    "Russian Ruble"
+    ""
   ],
   "South Africa": [
     2017,
