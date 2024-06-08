@@ -1,0 +1,227 @@
+var ectotal = {
+  "Australia": [
+    2020,
+    "61281",
+    "Australian Dollar"
+  ],
+  "Austria": [
+    2021,
+    "27734",
+    "Euro"
+  ],
+  "Belgium": [
+    2021,
+    "30224",
+    "Euro"
+  ],
+  "Canada": [
+    2021,
+    "49754",
+    "Canadian Dollar"
+  ],
+  "Czechia": [
+    2021,
+    "297784",
+    "Czech Koruna"
+  ],
+  "Denmark": [
+    2019,
+    "332457",
+    "Danish Krone"
+  ],
+  "Finland": [
+    2021,
+    "27510",
+    "Euro"
+  ],
+  "France": [
+    2021,
+    "20110",
+    "Euro"
+  ],
+  "Germany": [
+    2020,
+    "29409",
+    "Euro"
+  ],
+  "Greece": [
+    2021,
+    "8188",
+    "Euro"
+  ],
+  "Hungary": [
+    2021,
+    "3002481",
+    "Forint"
+  ],
+  "Iceland": [
+    2017,
+    "6810238",
+    "Iceland Krona"
+  ],
+  "Ireland": [
+    2021,
+    "34351",
+    "Euro"
+  ],
+  "Italy": [
+    2021,
+    "15488",
+    "Euro"
+  ],
+  "Japan": [
+    2018,
+    "2568000",
+    "Yen"
+  ],
+  "Korea": [
+    2021,
+    "28490000",
+    "Won"
+  ],
+  "Luxembourg": [
+    2021,
+    "55618",
+    "Euro"
+  ],
+  "Mexico": [
+    2020,
+    "61955",
+    "Mexican Peso"
+  ],
+  "Netherlands": [
+    2021,
+    "31500",
+    "Euro"
+  ],
+  "New Zealand": [
+    2020,
+    "47294",
+    "New Zealand Dollar"
+  ],
+  "Norway": [
+    2009,
+    "299206",
+    "Norwegian Krone"
+  ],
+  "Poland": [
+    2021,
+    "43279",
+    "Zloty"
+  ],
+  "Portugal": [
+    2021,
+    "13000",
+    "Euro"
+  ],
+  "Slovak Republic": [
+    2021,
+    "8822",
+    "Euro"
+  ],
+  "Spain": [
+    2021,
+    "17145",
+    "Euro"
+  ],
+  "Sweden": [
+    2021,
+    "330350",
+    "Swedish Krona"
+  ],
+  "Switzerland": [
+    2020,
+    "63084",
+    "Swiss Franc"
+  ],
+  "T?rkiye": [
+    2020,
+    "22115",
+    "Turkish Lira"
+  ],
+  "United Kingdom": [
+    2021,
+    "23044",
+    "Pound Sterling"
+  ],
+  "United States": [
+    2022,
+    "55506",
+    "US Dollar"
+  ],
+  "Chile": [
+    2022,
+    "6281036",
+    "Chilean Peso"
+  ],
+  "Estonia": [
+    2021,
+    "15212",
+    "Euro"
+  ],
+  "Israel": [
+    2020,
+    "86695",
+    "New Israeli Sheqel"
+  ],
+  "Slovenia": [
+    2021,
+    "18896",
+    "Euro"
+  ],
+  "Latvia": [
+    2021,
+    "11929",
+    "Euro"
+  ],
+  "Lithuania": [
+    2021,
+    "13249",
+    "Euro"
+  ],
+  "Brazil": [
+    2016,
+    "13386",
+    "Brazilian Real"
+  ],
+  "China (People's Republic of)": [
+    2011,
+    "14800",
+    "Yuan Renminbi"
+  ],
+  "India": [
+    2011,
+    "28489",
+    "Indian Rupee"
+  ],
+  "Russia": [
+    2017,
+    "382110",
+    ""
+  ],
+  "South Africa": [
+    2017,
+    "62722",
+    "Rand"
+  ],
+  "Costa Rica": [
+    2022,
+    "4005539",
+    "Costa Rican Colon"
+  ],
+  "Romania": [
+    2021,
+    "37354",
+    "Romanian Leu"
+  ],
+  "Bulgaria": [
+    2021,
+    "13092",
+    "Bulgarian Lev"
+  ],
+  "Croatia": [
+    2021,
+    "9940",
+    "Euro"
+  ]
+}
