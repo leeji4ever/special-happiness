@@ -45,10 +45,10 @@
 
         .option-container {
         display: inline-block;
-        width: 100%; /* Set the width to fill the container */
-        box-sizing: border-box; /* Include padding and border in the width calculation */
-        padding: 2px; /* Add some padding */
-        text-align: center; /* Center the content */
+        width: 100%; 
+        box-sizing: border-box;
+        padding: 2px;
+        text-align: center;
         }
 
 
@@ -80,18 +80,53 @@
             display: inline
         }
 
-        #submit{
-            font-size: 30px; 
-            background-color:rgb(95, 189, 90); 
-            color:white;
-            display: flex;
+        #submit, #restart {
+            font-size: 20px;
+            padding: 15px 30px;
+            border: border-box;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: serif;
         }
 
-        #restart{
-            font-size: 30px; 
-            background-color:rgb(222, 80, 80); 
-            color:white;
-            display: flex;
+        #submit {
+            background-color: rgb(95, 189, 90);
+            color: white;
+        }
+
+        #restart {
+            background-color: rgb(222, 80, 80);
+            color: white;
+        }
+
+        #submit:hover {
+            background-color: #4CAF50;
+        }
+
+        #restart:hover {
+            background-color: #c33131;
+        }
+
+
+        #submit:focus, #restart:focus {
+            outline: none;
+        }
+
+        #submit:active,
+        #submit:checked {
+            background-color: #3a8648;
+            border: 2.5px solid #000000;
+        }
+
+        #restart:active,
+        #restart:checked {
+            background-color: #e44f4f;
+            border: 2.5px solid #000000;
         }
 
         label{
@@ -122,247 +157,345 @@
         
         }
 
-        body {
-            background-image: url('Income Quiz Background.jpg');
+        .navbar {
+            overflow: hidden;
+            background-color: #e3b3ff;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a,
+        .navbar .dropbtn {
+            float: right;
+            display: block;
+            color: #1f273d;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover,
+        .navbar .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .navbar .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .navbar .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .navbar .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content {
+            min-width: 160px;
+            width: 100%;
+        }
+
+        .navbar .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .content {
+            padding-top: 60px
         }
 
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>World Income Quiz</h1>
-
-    <div class="questions-container">
-        <h2>Q1. What is the average total earnings for each household in <div id="country1"></div>? </h2>
-        </div>
-        <div class="navigation">
-            <div class="options">
-                <div class="option">
-                    <input type = "radio" id = "1A" name = "Q1" value = "A">
-                    <label class="radio" for="1A"></label><br>
-                   
-                    <input type = "radio" id = "1B" name = "Q1" value = "B">
-                    <label class="radio" for="1B"></label><br>
-                   
-                    <input type = "radio" id = "1C" name = "Q1" value = "C">
-                    <label class="radio" for="1C"></label><br>
-                    
-                    <input type = "radio" id = "1D" name = "Q1" value = "D">
-                    <label class="radio" for="1D"></label><br>
+    <div class="navbar">
+        <div style="float:right; margin-right: 60px;">
+            <div class="dropdown">
+                <button class="dropbtn" style="color: rgb(31, 43, 73);">Quizzes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Income Quiz</a>
+                    <a href="#">Literacy Quiz</a>
+                    <a href="#">Infant Mortality Quiz</a>
+                    <a href="#">Clean drinking Water Quiz</a>
+                    <a href="#">Malnutrition Quiz</a>
+                    <a href="#">Mixed Quiz</a>
                 </div>
             </div>
         </div>
-    <br>
-
-    <div class="questions-container">
-        <h2>Q2. What is the average total earnings for each household in <div id="country2"></div>? </h2>
-        </div>
-        <div class="navigation">
-            <div class="options">
-                <div class="option">
-                    <input type = "radio" id = "2A" name = "Q2" value = "A">
-                    <label class="radio" for="2A"></label><br>
-                
-                    <input type = "radio" id = "2B" name = "Q2" value = "B">
-                    <label class="radio" for="2B"></label><br>
-                
-                    <input type = "radio" id = "2C" name = "Q2" value = "C">
-                    <label class="radio" for="2C"></label><br>
-                    
-                    <input type = "radio" id = "2D" name = "Q2" value = "D">
-                    <label class="radio" for="2D"></label><br>
-                </div>
-            </div>
-        </div>
-    <br>
-
-    <div class="questions-container">
-        <h2>Q3. What is the average total earnings for each household in <div id="country3"></div>? </h2>
-        </div>
-        <div class="navigation">
-            <div class="options">
-                <div class="option">
-                    <input type = "radio" id = "3A" name = "Q3" value = "A">
-                    <label class="radio" for="3A"></label><br>
-                
-                    <input type = "radio" id = "3B" name = "Q3" value = "B">
-                    <label class="radio" for="3B"></label><br>
-                
-                    <input type = "radio" id = "3C" name = "Q3" value = "C">
-                    <label class="radio" for="3C"></label><br>
-                    
-                    <input type = "radio" id = "3D" name = "Q3" value = "D">
-                    <label class="radio" for="3D"></label><br>
-                </div>
-            </div>
-        </div>
-    <br>
-
-    <div class="questions-container">
-        <h2>Q4. What is the average total earnings for each household in <div id="country4"></div>? </h2>
-        </div>
-        <div class="navigation">
-            <div class="options">
-                <div class="option">
-                    <input type = "radio" id = "4A" name = "Q4" value = "A">
-                    <label class="radio" for="4A"></label><br>
-                
-                    <input type = "radio" id = "4B" name = "Q4" value = "B">
-                    <label class="radio" for="4B"></label><br>
-                
-                    <input type = "radio" id = "4C" name = "Q4" value = "C">
-                    <label class="radio" for="4C"></label><br>
-                    
-                    <input type = "radio" id = "4D" name = "Q4" value = "D">
-                    <label class="radio" for="4D"></label><br>
-                </div>
-            </div>
-        </div>
-    <br>
-
-    <div class="questions-container">
-        <h2>Q5. What is the average total earnings for each household in <div id="country5"></div>? </h2>
-        </div>
-        <div class="navigation">
-            <div class="options">
-                <div class="option">
-                    <input type = "radio" id = "5A" name = "Q5" value = "A">
-                    <label class="radio" for="5A"></label><br>
-                
-                    <input type = "radio" id = "5B" name = "Q5" value = "B">
-                    <label class="radio" for="5B"></label><br>
-                
-                    <input type = "radio" id = "5C" name = "Q5" value = "C">
-                    <label class="radio" for="5C"></label><br>
-                    
-                    <input type = "radio" id = "5D" name = "Q5" value = "D">
-                    <label class="radio" for="5D"></label><br>
-                </div>
-            </div>
-        </div>
-    <br>
-
-    <div class="questions-container">
-        <h2>Q6. What is the average total earnings for each household in <div id="country6"></div>? </h2>
-        </div>
-        <div class="navigation">
-            <div class="options">
-                <div class="option">
-                    <input type = "radio" id = "6A" name = "Q6" value = "A">
-                    <label class="radio" for="6A"></label><br>
-                
-                    <input type = "radio" id = "6B" name = "Q6" value = "B">
-                    <label class="radio" for="6B"></label><br>
-                
-                    <input type = "radio" id = "6C" name = "Q6" value = "C">
-                    <label class="radio" for="6C"></label><br>
-                    
-                    <input type = "radio" id = "6D" name = "Q6" value = "D">
-                    <label class="radio" for="6D"></label><br>
-                </div>
-            </div>
-        </div>
-    <br>
-
-    <div class="questions-container">
-        <h2>Q7. What is the average total earnings for each household in <div id="country7"></div>? </h2>
-        </div>
-        <div class="navigation">
-            <div class="options">
-                <div class="option">
-                    <input type = "radio" id = "7A" name = "Q7" value = "A">
-                    <label class="radio" for="7A"></label><br>
-                
-                    <input type = "radio" id = "7B" name = "Q7" value = "B">
-                    <label class="radio" for="7B"></label><br>
-                
-                    <input type = "radio" id = "7C" name = "Q7" value = "C">
-                    <label class="radio" for="7C"></label><br>
-                    
-                    <input type = "radio" id = "7D" name = "Q7" value = "D">
-                    <label class="radio" for="7D"></label><br>
-                </div>
-            </div>
-        </div>
-    <br>
-
-    <div class="questions-container">
-        <h2>Q8. What is the average total earnings for each household in <div id="country8"></div>? </h2>
-        </div>
-        <div class="navigation">
-            <div class="options">
-                <div class="option">
-                    <input type = "radio" id = "8A" name = "Q8" value = "A">
-                    <label class="radio" for="8A"></label><br>
-                
-                    <input type = "radio" id = "8B" name = "Q8" value = "B">
-                    <label class="radio" for="8B"></label><br>
-                
-                    <input type = "radio" id = "8C" name = "Q8" value = "C">
-                    <label class="radio" for="8C"></label><br>
-                    
-                    <input type = "radio" id = "8D" name = "Q8" value = "D">
-                    <label class="radio" for="8D"></label><br>
-                </div>
-            </div>
-        </div>
-    <br>
-
-    <div class="questions-container">
-        <h2>Q9. What is the average total earnings for each household in <div id="country9"></div>? </h2>
-        </div>
-        <div class="navigation">
-            <div class="options">
-                <div class="option">
-                    <input type = "radio" id = "9A" name = "Q9" value = "A">
-                    <label class="radio" for="9A"></label><br>
-                
-                    <input type = "radio" id = "9B" name = "Q9" value = "B">
-                    <label class="radio" for="9B"></label><br>
-                
-                    <input type = "radio" id = "9C" name = "Q9" value = "C">
-                    <label class="radio" for="9C"></label><br>
-                    
-                    <input type = "radio" id = "9D" name = "Q9" value = "D">
-                    <label class="radio" for="9D"></label><br>
-                </div>
-            </div>
-        </div>
-    <br>
-
-    <div class="questions-container">
-        <h2>Q10. What is the average total earnings for each household in <div id="country10"></div>? </h2>
-        </div>
-        <div class="navigation">
-            <div class="options">
-                <div class="option">
-                    <input type = "radio" id = "10A" name = "Q10" value = "A">
-                    <label class="radio" for="10A"></label><br>
-                
-                    <input type = "radio" id = "10B" name = "Q10" value = "B">
-                    <label class="radio" for="10B"></label><br>
-                
-                    <input type = "radio" id = "10C" name = "Q10" value = "C">
-                    <label class="radio" for="10C"></label><br>
-                    
-                    <input type = "radio" id = "10D" name = "Q10" value = "D">
-                    <label class="radio" for="10D"></label><br>
-                </div>
-            </div>
-        </div>
-    <br>
-
-    <div class="button-container">
-        <input style="margin-right: 16px" type = "submit" value = "Submit" id = "submit">
-        <input type = "submit" value = "Restart" id = "restart">
+        <a href="#home">Home</a>
     </div>
 
-    <script src = "../scripts/jquery-3.7.1.min.js"></script>
-    <script src="../scripts/ectotal.json"></script>
-    <script src="../scripts/ectotal.js"></script>
-    <script src="../scripts/income quiz.js"></script>
-    <script>console.log(ectotal)</script>
+    <div class="container" style="margin-top: 60px;">
+        <h1 style="margin-top: 60px;">World Income Quiz</h1>
+    
+        <div class="questions-container">
+            <h2>Q1. What is the average total earnings for each household in <div id="country2"></div>? </h2>
+            </div>
+            <div class="navigation">
+                <div class="options">
+                    <div class="option">
+                        <input type = "radio" id = "1A" name = "Q1" value = "A">
+                        <label class="radio" for="1A"></label><br>
+                    
+                        <input type = "radio" id = "1B" name = "Q1" value = "B">
+                        <label class="radio" for="1B"></label><br>
+                    
+                        <input type = "radio" id = "1C" name = "Q1" value = "C">
+                        <label class="radio" for="1C"></label><br>
+                        
+                        <input type = "radio" id = "1D" name = "Q1" value = "D">
+                        <label class="radio" for="1D"></label><br>
+                    </div>
+                </div>
+            </div>
+        <br>
 
-<link rel = "stylesheet" href = "../css/Income quiz.css">
+        <div class="questions-container">
+            <h2>Q2. What is the average total earnings for each household in <div id="country2"></div>? </h2>
+            </div>
+            <div class="navigation">
+                <div class="options">
+                    <div class="option">
+                        <input type = "radio" id = "2A" name = "Q2" value = "A">
+                        <label class="radio" for="2A"></label><br>
+                    
+                        <input type = "radio" id = "2B" name = "Q2" value = "B">
+                        <label class="radio" for="2B"></label><br>
+                    
+                        <input type = "radio" id = "2C" name = "Q2" value = "C">
+                        <label class="radio" for="2C"></label><br>
+                        
+                        <input type = "radio" id = "2D" name = "Q2" value = "D">
+                        <label class="radio" for="2D"></label><br>
+                    </div>
+                </div>
+            </div>
+        <br>
+
+        <div class="questions-container">
+            <h2>Q3. What is the average total earnings for each household in <div id="country3"></div>? </h2>
+            </div>
+            <div class="navigation">
+                <div class="options">
+                    <div class="option">
+                        <input type = "radio" id = "3A" name = "Q3" value = "A">
+                        <label class="radio" for="3A"></label><br>
+                    
+                        <input type = "radio" id = "3B" name = "Q3" value = "B">
+                        <label class="radio" for="3B"></label><br>
+                    
+                        <input type = "radio" id = "3C" name = "Q3" value = "C">
+                        <label class="radio" for="3C"></label><br>
+                        
+                        <input type = "radio" id = "3D" name = "Q3" value = "D">
+                        <label class="radio" for="3D"></label><br>
+                    </div>
+                </div>
+            </div>
+        <br>
+
+        <div class="questions-container">
+            <h2>Q4. What is the average total earnings for each household in <div id="country4"></div>? </h2>
+            </div>
+            <div class="navigation">
+                <div class="options">
+                    <div class="option">
+                        <input type = "radio" id = "4A" name = "Q4" value = "A">
+                        <label class="radio" for="4A"></label><br>
+                    
+                        <input type = "radio" id = "4B" name = "Q4" value = "B">
+                        <label class="radio" for="4B"></label><br>
+                    
+                        <input type = "radio" id = "4C" name = "Q4" value = "C">
+                        <label class="radio" for="4C"></label><br>
+                        
+                        <input type = "radio" id = "4D" name = "Q4" value = "D">
+                        <label class="radio" for="4D"></label><br>
+                    </div>
+                </div>
+            </div>
+        <br>
+
+        <div class="questions-container">
+            <h2>Q5. What is the average total earnings for each household in <div id="country5"></div>? </h2>
+            </div>
+            <div class="navigation">
+                <div class="options">
+                    <div class="option">
+                        <input type = "radio" id = "5A" name = "Q5" value = "A">
+                        <label class="radio" for="5A"></label><br>
+                    
+                        <input type = "radio" id = "5B" name = "Q5" value = "B">
+                        <label class="radio" for="5B"></label><br>
+                    
+                        <input type = "radio" id = "5C" name = "Q5" value = "C">
+                        <label class="radio" for="5C"></label><br>
+                        
+                        <input type = "radio" id = "5D" name = "Q5" value = "D">
+                        <label class="radio" for="5D"></label><br>
+                    </div>
+                </div>
+            </div>
+        <br>
+
+        <div class="questions-container">
+            <h2>Q6. What is the average total earnings for each household in <div id="country6"></div>? </h2>
+            </div>
+            <div class="navigation">
+                <div class="options">
+                    <div class="option">
+                        <input type = "radio" id = "6A" name = "Q6" value = "A">
+                        <label class="radio" for="6A"></label><br>
+                    
+                        <input type = "radio" id = "6B" name = "Q6" value = "B">
+                        <label class="radio" for="6B"></label><br>
+                    
+                        <input type = "radio" id = "6C" name = "Q6" value = "C">
+                        <label class="radio" for="6C"></label><br>
+                        
+                        <input type = "radio" id = "6D" name = "Q6" value = "D">
+                        <label class="radio" for="6D"></label><br>
+                    </div>
+                </div>
+            </div>
+        <br>
+
+        <div class="questions-container">
+            <h2>Q7. What is the average total earnings for each household in <div id="country7"></div>? </h2>
+            </div>
+            <div class="navigation">
+                <div class="options">
+                    <div class="option">
+                        <input type = "radio" id = "7A" name = "Q7" value = "A">
+                        <label class="radio" for="7A"></label><br>
+                    
+                        <input type = "radio" id = "7B" name = "Q7" value = "B">
+                        <label class="radio" for="7B"></label><br>
+                    
+                        <input type = "radio" id = "7C" name = "Q7" value = "C">
+                        <label class="radio" for="7C"></label><br>
+                        
+                        <input type = "radio" id = "7D" name = "Q7" value = "D">
+                        <label class="radio" for="7D"></label><br>
+                    </div>
+                </div>
+            </div>
+        <br>
+
+        <div class="questions-container">
+            <h2>Q8. What is the average total earnings for each household in <div id="country8"></div>? </h2>
+            </div>
+            <div class="navigation">
+                <div class="options">
+                    <div class="option">
+                        <input type = "radio" id = "8A" name = "Q8" value = "A">
+                        <label class="radio" for="8A"></label><br>
+                    
+                        <input type = "radio" id = "8B" name = "Q8" value = "B">
+                        <label class="radio" for="8B"></label><br>
+                    
+                        <input type = "radio" id = "8C" name = "Q8" value = "C">
+                        <label class="radio" for="8C"></label><br>
+                        
+                        <input type = "radio" id = "8D" name = "Q8" value = "D">
+                        <label class="radio" for="8D"></label><br>
+                    </div>
+                </div>
+            </div>
+        <br>
+
+        <div class="questions-container">
+            <h2>Q9. What is the average total earnings for each household in <div id="country9"></div>? </h2>
+            </div>
+            <div class="navigation">
+                <div class="options">
+                    <div class="option">
+                        <input type = "radio" id = "9A" name = "Q9" value = "A">
+                        <label class="radio" for="9A"></label><br>
+                    
+                        <input type = "radio" id = "9B" name = "Q9" value = "B">
+                        <label class="radio" for="9B"></label><br>
+                    
+                        <input type = "radio" id = "9C" name = "Q9" value = "C">
+                        <label class="radio" for="9C"></label><br>
+                        
+                        <input type = "radio" id = "9D" name = "Q9" value = "D">
+                        <label class="radio" for="9D"></label><br>
+                    </div>
+                </div>
+            </div>
+        <br>
+
+        <div class="questions-container">
+            <h2>Q10. What is the average total earnings for each household in <div id="country10"></div>? </h2>
+            </div>
+            <div class="navigation">
+                <div class="options">
+                    <div class="option">
+                        <input type = "radio" id = "10A" name = "Q10" value = "A">
+                        <label class="radio" for="10A"></label><br>
+                    
+                        <input type = "radio" id = "10B" name = "Q10" value = "B">
+                        <label class="radio" for="10B"></label><br>
+                    
+                        <input type = "radio" id = "10C" name = "Q10" value = "C">
+                        <label class="radio" for="10C"></label><br>
+                        
+                        <input type = "radio" id = "10D" name = "Q10" value = "D">
+                        <label class="radio" for="10D"></label><br>
+                    </div>
+                </div>
+            </div>
+        <br>
+
+        <div class="button-container">
+            <input style="margin-right: 16px" type = "submit" value = "Submit" id = "submit">
+            <input type = "submit" value = "Restart" id = "restart">
+        </div>
+
+        <script src = "../scripts/jquery-3.7.1.min.js"></script>
+        <script src="../scripts/ectotal.json"></script>
+        <script src="../scripts/ectotal.js"></script>
+        <script src="../scripts/income quiz.js"></script>
+        <script>console.log(ectotal)</script>
+
+    <link rel = "stylesheet" href = "../css/Income quiz.css">
 </body>
 </html>

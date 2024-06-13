@@ -1,3 +1,80 @@
+.navbar {
+    overflow: hidden;
+    background-color: #5e8f66;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a,
+.navbar .dropbtn {
+    float: left;
+    display: block;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover,
+.navbar .dropdown:hover .dropbtn {
+    background-color: #160d0d;
+    color: rgb(19, 13, 23);
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navbar .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.navbar .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content {
+    padding-top: 60px;
+}
+
 body {
 	margin: 25px;
 	background-color: rgb(255, 254, 248);
@@ -21,7 +98,7 @@ body {
     display: flex;
 	grid-template-columns: repeat(2,1fr);
 	gap: 5px;
-	width: 400px
+	width: 400px;
 }
 
 .option {
@@ -44,10 +121,10 @@ body {
 
 .option-container {
     display: inline-block;
-    width: 100%; /* Set the width to fill the container */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
-    padding: 5px; /* Add some padding */
-    text-align: center; /* Center the content */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
 }
 
 
@@ -87,6 +164,27 @@ h2{
 	display: flex;
 }
 
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
 label{
 	color: rgb(45, 103, 72);
 	font-size: 15px;
@@ -113,4 +211,4 @@ input[type="radio"]:checked {
 
 div{
 	display: inline-block;
-}	
+}
