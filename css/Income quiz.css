@@ -137,7 +137,7 @@ input[type="radio"]{
 
 label.radio {
     display: inline-block;
-    width: 20px;
+    width: stretch;
     height: 20px;
     border: 1.5px solid #1d3056;
     border-radius: 5%;
@@ -154,7 +154,6 @@ color: white;
 }
 
 .navbar {
-    overflow: hidden;
     background-color: #e3b3ff;
     position: fixed;
     top: 0;
@@ -166,7 +165,6 @@ color: white;
 .navbar .dropbtn {
     float: right;
     display: block;
-    color: #1f273d;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -187,7 +185,6 @@ color: white;
 
 .navbar .dropdown {
     float: left;
-    overflow: hidden;
 }
 
 .navbar .dropdown .dropbtn {
