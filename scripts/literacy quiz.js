@@ -74,63 +74,91 @@ function shuffle(array) {
 
 
 function highestAns(num){
-	var ans = parseInt(literacy[txt]["total population"]) //gets the literacy rate
+	var ans = parseFloat(literacy[txt]["total population"]) //gets the literacy rate
 	console.log(ans)
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
+
 	
 	shuffle(ansArray)
 	console.log(ansArray[0])
 	
 	$("label[for*="+ansArray[0]+"]").text((ans)+" %")
-	$("label[for*="+ansArray[1]+"]").text((0.75*ans)+" %") 
+	$("label[for*="+ansArray[1]+"]").text((0.7*ans)+" %") 
 	$("label[for*="+ansArray[2]+"]").text((0.5*ans+" %")) 
-	$("label[for*="+ansArray[3]+"]").text((0.25*ans)+" %") 
+	$("label[for*="+ansArray[3]+"]").text((0.2*ans)+" %") 
 	
 	return ansArray[0]
 }
 
 function lowestAns(num){
-	var ans = parseInt(literacy[txt]["total population"])
+	var ans = parseFloat(literacy[txt]["total population"])
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.75)+" %") 
-	$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.5)+" %") 
-	$("label[for*="+ansArray[2]+"]").text((ans+(100-ans)*0.25)+" %") 
-	$("label[for*="+ansArray[3]+"]").text((ans)+" %")
+	
+	if(ans >= 90){ // if the answer is over 90, ideal to make it the largest ans
+				   //therefor this if statement makes the answers that are over 90 the higest answer
+		$("label[for*="+ansArray[3]+"]").text((ans)+" %")
+		$("label[for*="+ansArray[1]+"]").text((0.7*ans)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((0.5*ans+" %")) 
+		$("label[for*="+ansArray[0]+"]").text((0.2*ans)+" %")
+	}		
+	else{ // if it isnt over 90 same as original function
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.7)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.4)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((ans+(100-ans)*0.2)+" %") 
+		$("label[for*="+ansArray[3]+"]").text((ans)+" %")
+	}
 	
 	return ansArray[3]
 }
 
 function secondHighestAns(num){
-	var ans = parseInt(literacy[txt]["total population"])
+	var ans = parseFloat(literacy[txt]["total population"])
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.75)+" %") 
-	$("label[for*="+ansArray[1]+"]").text((ans)+" %")
-	$("label[for*="+ansArray[2]+"]").text((ans-(100-ans)*0.25)+" %") 
-	$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.5)+" %")
+	if(ans >= 90){ 
+		$("label[for*="+ansArray[1]+"]").text((ans)+" %")
+		$("label[for*="+ansArray[0]+"]").text((0.7*ans)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((0.5*ans+" %")) 
+		$("label[for*="+ansArray[3]+"]").text((0.2*ans)+" %")
+	}
+	else{
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.7)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans)+" %")
+		$("label[for*="+ansArray[2]+"]").text((ans-(100-ans)*0.2)+" %") 
+		$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.4)+" %")
+	}
 		
 	return ansArray[1]
 }
 
 function secondLowestAns(num){
-	var ans = parseInt(literacy[txt]["total population"])
+	var ans = parseFloat(literacy[txt]["total population"])
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.75)+" %") 
-	$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.5)+" %")
-	$("label[for*="+ansArray[2]+"]").text((ans)+" %")	
-	$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.25)+" %") 
+	
+	if(ans >= 90){ 
+		$("label[for*="+ansArray[2]+"]").text((ans)+" %")
+		$("label[for*="+ansArray[1]+"]").text((0.7*ans)+" %") 
+		$("label[for*="+ansArray[0]+"]").text((0.5*ans+" %")) 
+		$("label[for*="+ansArray[3]+"]").text((0.2*ans)+" %")
+	}
+	else{
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.7)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.4)+" %")
+		$("label[for*="+ansArray[2]+"]").text((ans)+" %")	
+		$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.3)+" %") 
+	}
 	
 	return ansArray[2]
 }

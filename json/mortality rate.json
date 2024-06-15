@@ -1,1143 +1,1143 @@
 var mortalityRate = {
   "Afghanistan": {
-    "total": 0.1013,
-    "male": 0.1097,
-    "female": 0.0925
+    "total": 101.3,
+    "male": 109.7,
+    "female": 92.5
   },
   "Albania": {
-    "total": 0.0103,
-    "male": 0.011300000000000001,
-    "female": 0.0092
+    "total": 10.3,
+    "male": 11.3,
+    "female": 9.2
   },
   "Algeria": {
-    "total": 0.018699999999999998,
-    "male": 0.0198,
-    "female": 0.0175
+    "total": 18.7,
+    "male": 19.8,
+    "female": 17.5
   },
   "American Samoa": {
-    "total": 0.009699999999999999,
-    "male": 0.011699999999999999,
-    "female": 0.0076
+    "total": 9.7,
+    "male": 11.7,
+    "female": 7.6
   },
   "Andorra": {
-    "total": 0.0033,
-    "male": 0.0034,
-    "female": 0.0032
+    "total": 3.3,
+    "male": 3.4,
+    "female": 3.2
   },
   "Angola": {
-    "total": 0.055600000000000004,
-    "male": 0.060700000000000004,
-    "female": 0.0503
+    "total": 55.6,
+    "male": 60.7,
+    "female": 50.3
   },
   "Anguilla": {
-    "total": 0.003,
-    "male": 0.0039,
-    "female": 0.0021000000000000003
+    "total": 3.0,
+    "male": 3.9,
+    "female": 2.1
   },
   "Antigua and Barbuda": {
-    "total": 0.0136,
-    "male": 0.016399999999999998,
-    "female": 0.0107
+    "total": 13.6,
+    "male": 16.4,
+    "female": 10.7
   },
   "Argentina": {
-    "total": 0.009,
-    "male": 0.0099,
-    "female": 0.0079
+    "total": 9.0,
+    "male": 9.9,
+    "female": 7.9
   },
   "Armenia": {
-    "total": 0.0116,
-    "male": 0.013099999999999999,
-    "female": 0.01
+    "total": 11.6,
+    "male": 13.1,
+    "female": 10.0
   },
   "Aruba": {
-    "total": 0.0115,
-    "male": 0.0156,
-    "female": 0.0073
+    "total": 11.5,
+    "male": 15.6,
+    "female": 7.3
   },
   "Australia": {
-    "total": 0.0029,
-    "male": 0.0032,
-    "female": 0.0027
+    "total": 2.9,
+    "male": 3.2,
+    "female": 2.7
   },
   "Austria": {
-    "total": 0.0032,
-    "male": 0.0036,
-    "female": 0.0027
+    "total": 3.2,
+    "male": 3.6,
+    "female": 2.7
   },
   "Azerbaijan": {
-    "total": 0.0109,
-    "male": 0.0126,
-    "female": 0.009
+    "total": 10.9,
+    "male": 12.6,
+    "female": 9.0
   },
   "Bahamas, The": {
-    "total": 0.0094,
-    "male": 0.0105,
-    "female": 0.008199999999999999
+    "total": 9.4,
+    "male": 10.5,
+    "female": 8.2
   },
   "Bahrain": {
-    "total": 0.009699999999999999,
-    "male": 0.011300000000000001,
-    "female": 0.008
+    "total": 9.7,
+    "male": 11.3,
+    "female": 8.0
   },
   "Bangladesh": {
-    "total": 0.0288,
-    "male": 0.0313,
-    "female": 0.0263
+    "total": 28.8,
+    "male": 31.3,
+    "female": 26.3
   },
   "Barbados": {
-    "total": 0.0096,
-    "male": 0.0111,
-    "female": 0.0081
+    "total": 9.6,
+    "male": 11.1,
+    "female": 8.1
   },
   "Belarus": {
-    "total": 0.0021000000000000003,
-    "male": 0.0025,
-    "female": 0.0017
+    "total": 2.1,
+    "male": 2.5,
+    "female": 1.7
   },
   "Belgium": {
-    "total": 0.0031,
-    "male": 0.0035,
-    "female": 0.0027
+    "total": 3.1,
+    "male": 3.5,
+    "female": 2.7
   },
   "Belize": {
-    "total": 0.011300000000000001,
-    "male": 0.0124,
-    "female": 0.0101
+    "total": 11.3,
+    "male": 12.4,
+    "female": 10.1
   },
   "Benin": {
-    "total": 0.052899999999999996,
-    "male": 0.0578,
-    "female": 0.047799999999999995
+    "total": 52.9,
+    "male": 57.8,
+    "female": 47.8
   },
   "Bermuda": {
-    "total": 0.0021000000000000003,
-    "male": 0.0025,
-    "female": 0.0018
+    "total": 2.1,
+    "male": 2.5,
+    "female": 1.8
   },
   "Bhutan": {
-    "total": 0.024300000000000002,
-    "male": 0.0246,
-    "female": 0.023899999999999998
+    "total": 24.3,
+    "male": 24.6,
+    "female": 23.9
   },
   "Bolivia": {
-    "total": 0.0223,
-    "male": 0.0245,
-    "female": 0.02
+    "total": 22.3,
+    "male": 24.5,
+    "female": 20.0
   },
   "Bosnia and Herzegovina": {
-    "total": 0.005,
-    "male": 0.0050999999999999995,
-    "female": 0.004900000000000001
+    "total": 5.0,
+    "male": 5.1,
+    "female": 4.9
   },
   "Botswana": {
-    "total": 0.0237,
-    "male": 0.0259,
-    "female": 0.0214
+    "total": 23.7,
+    "male": 25.9,
+    "female": 21.4
   },
   "Brazil": {
-    "total": 0.0129,
-    "male": 0.0146,
-    "female": 0.0111
+    "total": 12.9,
+    "male": 14.6,
+    "female": 11.1
   },
   "British Virgin Islands": {
-    "total": 0.0134,
-    "male": 0.016,
-    "female": 0.0107
+    "total": 13.4,
+    "male": 16.0,
+    "female": 10.7
   },
   "Brunei": {
-    "total": 0.01,
-    "male": 0.012199999999999999,
-    "female": 0.0077
+    "total": 10.0,
+    "male": 12.2,
+    "female": 7.7
   },
   "Bulgaria": {
-    "total": 0.0077,
-    "male": 0.0087,
-    "female": 0.0066
+    "total": 7.7,
+    "male": 8.7,
+    "female": 6.6
   },
   "Burkina Faso": {
-    "total": 0.047,
-    "male": 0.0511,
-    "female": 0.0427
+    "total": 47.0,
+    "male": 51.1,
+    "female": 42.7
   },
   "Burma": {
-    "total": 0.032100000000000004,
-    "male": 0.0354,
-    "female": 0.0285
+    "total": 32.1,
+    "male": 35.4,
+    "female": 28.5
   },
   "Burundi": {
-    "total": 0.0357,
-    "male": 0.039700000000000006,
-    "female": 0.0315
+    "total": 35.7,
+    "male": 39.7,
+    "female": 31.5
   },
   "Cabo Verde": {
-    "total": 0.0224,
-    "male": 0.0263,
-    "female": 0.0184
+    "total": 22.4,
+    "male": 26.3,
+    "female": 18.4
   },
   "Cambodia": {
-    "total": 0.027899999999999998,
-    "male": 0.0313,
-    "female": 0.024399999999999998
+    "total": 27.9,
+    "male": 31.3,
+    "female": 24.4
   },
   "Cameroon": {
-    "total": 0.0461,
-    "male": 0.0508,
-    "female": 0.041299999999999996
+    "total": 46.1,
+    "male": 50.8,
+    "female": 41.3
   },
   "Canada": {
-    "total": 0.0043,
-    "male": 0.0045,
-    "female": 0.004
+    "total": 4.3,
+    "male": 4.5,
+    "female": 4.0
   },
   "Cayman Islands": {
-    "total": 0.0073,
-    "male": 0.0088,
-    "female": 0.0057
+    "total": 7.3,
+    "male": 8.8,
+    "female": 5.7
   },
   "Central African Republic": {
-    "total": 0.0805,
-    "male": 0.0864,
-    "female": 0.0745
+    "total": 80.5,
+    "male": 86.4,
+    "female": 74.5
   },
   "Chad": {
-    "total": 0.0625,
-    "male": 0.0681,
-    "female": 0.0567
+    "total": 62.5,
+    "male": 68.1,
+    "female": 56.7
   },
   "Chile": {
-    "total": 0.0063,
-    "male": 0.006900000000000001,
-    "female": 0.0057
+    "total": 6.3,
+    "male": 6.9,
+    "female": 5.7
   },
   "China": {
-    "total": 0.0062,
-    "male": 0.0067,
-    "female": 0.0057
+    "total": 6.2,
+    "male": 6.7,
+    "female": 5.7
   },
   "Colombia": {
-    "total": 0.011699999999999999,
-    "male": 0.013099999999999999,
-    "female": 0.010199999999999999
+    "total": 11.7,
+    "male": 13.1,
+    "female": 10.2
   },
   "Comoros": {
-    "total": 0.0549,
-    "male": 0.0649,
-    "female": 0.044700000000000004
+    "total": 54.9,
+    "male": 64.9,
+    "female": 44.7
   },
   "Congo, Democratic Republic of the": {
-    "total": 0.0574,
-    "male": 0.0629,
-    "female": 0.0519
+    "total": 57.4,
+    "male": 62.9,
+    "female": 51.9
   },
   "Congo, Republic of the": {
-    "total": 0.030600000000000002,
-    "male": 0.0335,
-    "female": 0.0277
+    "total": 30.6,
+    "male": 33.5,
+    "female": 27.7
   },
   "Cook Islands": {
-    "total": 0.015099999999999999,
-    "male": 0.019,
-    "female": 0.0111
+    "total": 15.1,
+    "male": 19.0,
+    "female": 11.1
   },
   "Costa Rica": {
-    "total": 0.0067,
-    "male": 0.007,
-    "female": 0.0063
+    "total": 6.7,
+    "male": 7.0,
+    "female": 6.3
   },
   "Cote d'Ivoire": {
-    "total": 0.0525,
-    "male": 0.0595,
-    "female": 0.045200000000000004
+    "total": 52.5,
+    "male": 59.5,
+    "female": 45.2
   },
   "Croatia": {
-    "total": 0.008400000000000001,
-    "male": 0.008199999999999999,
-    "female": 0.0087
+    "total": 8.4,
+    "male": 8.2,
+    "female": 8.7
   },
   "Cuba": {
-    "total": 0.004,
-    "male": 0.0045,
-    "female": 0.0035
+    "total": 4.0,
+    "male": 4.5,
+    "female": 3.5
   },
   "Curacao": {
-    "total": 0.0075,
-    "male": 0.0083,
-    "female": 0.0067
+    "total": 7.5,
+    "male": 8.3,
+    "female": 6.7
   },
   "Cyprus": {
-    "total": 0.0081,
-    "male": 0.009699999999999999,
-    "female": 0.0064
+    "total": 8.1,
+    "male": 9.7,
+    "female": 6.4
   },
   "Czechia": {
-    "total": 0.0026,
-    "male": 0.0027,
-    "female": 0.0024
+    "total": 2.6,
+    "male": 2.7,
+    "female": 2.4
   },
   "Denmark": {
-    "total": 0.003,
-    "male": 0.0034,
-    "female": 0.0025
+    "total": 3.0,
+    "male": 3.4,
+    "female": 2.5
   },
   "Djibouti": {
-    "total": 0.045200000000000004,
-    "male": 0.0521,
-    "female": 0.038
+    "total": 45.2,
+    "male": 52.1,
+    "female": 38.0
   },
   "Dominica": {
-    "total": 0.0107,
-    "male": 0.0145,
-    "female": 0.0068
+    "total": 10.7,
+    "male": 14.5,
+    "female": 6.8
   },
   "Dominican Republic": {
-    "total": 0.0217,
-    "male": 0.024300000000000002,
-    "female": 0.019
+    "total": 21.7,
+    "male": 24.3,
+    "female": 19.0
   },
   "Ecuador": {
-    "total": 0.0112,
-    "male": 0.012199999999999999,
-    "female": 0.010199999999999999
+    "total": 11.2,
+    "male": 12.2,
+    "female": 10.2
   },
   "Egypt": {
-    "total": 0.016800000000000002,
-    "male": 0.0178,
-    "female": 0.0159
+    "total": 16.8,
+    "male": 17.8,
+    "female": 15.9
   },
   "El Salvador": {
-    "total": 0.011699999999999999,
-    "male": 0.013300000000000001,
-    "female": 0.01
+    "total": 11.7,
+    "male": 13.3,
+    "female": 10.0
   },
   "Equatorial Guinea": {
-    "total": 0.07740000000000001,
-    "male": 0.0833,
-    "female": 0.0713
+    "total": 77.4,
+    "male": 83.3,
+    "female": 71.3
   },
   "Eritrea": {
-    "total": 0.039799999999999995,
-    "male": 0.0466,
-    "female": 0.032799999999999996
+    "total": 39.8,
+    "male": 46.6,
+    "female": 32.8
   },
   "Estonia": {
-    "total": 0.0033,
-    "male": 0.0032,
-    "female": 0.0034
+    "total": 3.3,
+    "male": 3.2,
+    "female": 3.4
   },
   "Eswatini": {
-    "total": 0.0367,
-    "male": 0.0407,
-    "female": 0.0325
+    "total": 36.7,
+    "male": 40.7,
+    "female": 32.5
   },
   "Ethiopia": {
-    "total": 0.032600000000000004,
-    "male": 0.037399999999999996,
-    "female": 0.027600000000000003
+    "total": 32.6,
+    "male": 37.4,
+    "female": 27.6
   },
   "European Union": {
-    "total": 0.0034
+    "total": 3.4
   },
   "Faroe Islands": {
-    "total": 0.0057,
-    "male": 0.0063,
-    "female": 0.0050999999999999995
+    "total": 5.7,
+    "male": 6.3,
+    "female": 5.1
   },
   "Fiji": {
-    "total": 0.009699999999999999,
-    "male": 0.0111,
-    "female": 0.0081
+    "total": 9.7,
+    "male": 11.1,
+    "female": 8.1
   },
   "Finland": {
-    "total": 0.0021000000000000003,
-    "male": 0.0023,
-    "female": 0.0019
+    "total": 2.1,
+    "male": 2.3,
+    "female": 1.9
   },
   "France": {
-    "total": 0.0031,
-    "male": 0.0034,
-    "female": 0.0028
+    "total": 3.1,
+    "male": 3.4,
+    "female": 2.8
   },
   "French Polynesia": {
-    "total": 0.0043,
-    "male": 0.0052,
-    "female": 0.0034
+    "total": 4.3,
+    "male": 5.2,
+    "female": 3.4
   },
   "Gabon": {
-    "total": 0.0269,
-    "male": 0.0297,
-    "female": 0.024
+    "total": 26.9,
+    "male": 29.7,
+    "female": 24.0
   },
   "Gambia, The": {
-    "total": 0.0357,
-    "male": 0.0391,
-    "female": 0.0322
+    "total": 35.7,
+    "male": 39.1,
+    "female": 32.2
   },
   "Gaza Strip": {
-    "total": 0.015099999999999999,
-    "male": 0.016300000000000002,
-    "female": 0.013800000000000002
+    "total": 15.1,
+    "male": 16.3,
+    "female": 13.8
   },
   "Georgia": {
-    "total": 0.0217,
-    "male": 0.023600000000000003,
-    "female": 0.0197
+    "total": 21.7,
+    "male": 23.6,
+    "female": 19.7
   },
   "Germany": {
-    "total": 0.0031,
-    "male": 0.0035,
-    "female": 0.0027
+    "total": 3.1,
+    "male": 3.5,
+    "female": 2.7
   },
   "Ghana": {
-    "total": 0.0312,
-    "male": 0.0345,
-    "female": 0.027800000000000002
+    "total": 31.2,
+    "male": 34.5,
+    "female": 27.8
   },
   "Gibraltar": {
-    "total": 0.006,
-    "male": 0.0068,
-    "female": 0.0052
+    "total": 6.0,
+    "male": 6.8,
+    "female": 5.2
   },
   "Greece": {
-    "total": 0.0034,
-    "male": 0.0038,
-    "female": 0.003
+    "total": 3.4,
+    "male": 3.8,
+    "female": 3.0
   },
   "Greenland": {
-    "total": 0.0085,
-    "male": 0.0099,
-    "female": 0.006900000000000001
+    "total": 8.5,
+    "male": 9.9,
+    "female": 6.9
   },
   "Grenada": {
-    "total": 0.009,
-    "male": 0.0086,
-    "female": 0.0095
+    "total": 9.0,
+    "male": 8.6,
+    "female": 9.5
   },
   "Guam": {
-    "total": 0.0109,
-    "male": 0.011,
-    "female": 0.0109
+    "total": 10.9,
+    "male": 11.0,
+    "female": 10.9
   },
   "Guatemala": {
-    "total": 0.025,
-    "male": 0.0281,
-    "female": 0.0217
+    "total": 25.0,
+    "male": 28.1,
+    "female": 21.7
   },
   "Guernsey": {
-    "total": 0.0033,
-    "male": 0.0037,
-    "female": 0.0027
+    "total": 3.3,
+    "male": 3.7,
+    "female": 2.7
   },
   "Guinea": {
-    "total": 0.047,
-    "male": 0.0516,
-    "female": 0.0423
+    "total": 47.0,
+    "male": 51.6,
+    "female": 42.3
   },
   "Guinea-Bissau": {
-    "total": 0.0464,
-    "male": 0.052,
-    "female": 0.040600000000000004
+    "total": 46.4,
+    "male": 52.0,
+    "female": 40.6
   },
   "Guyana": {
-    "total": 0.0211,
-    "male": 0.023899999999999998,
-    "female": 0.0183
+    "total": 21.1,
+    "male": 23.9,
+    "female": 18.3
   },
   "Haiti": {
-    "total": 0.0368,
-    "male": 0.0402,
-    "female": 0.0335
+    "total": 36.8,
+    "male": 40.2,
+    "female": 33.5
   },
   "Honduras": {
-    "total": 0.0154,
-    "male": 0.0175,
-    "female": 0.0132
+    "total": 15.4,
+    "male": 17.5,
+    "female": 13.2
   },
   "Hong Kong": {
-    "total": 0.0025,
-    "male": 0.0028,
-    "female": 0.0022
+    "total": 2.5,
+    "male": 2.8,
+    "female": 2.2
   },
   "Hungary": {
-    "total": 0.0047,
-    "male": 0.005,
-    "female": 0.0043
+    "total": 4.7,
+    "male": 5.0,
+    "female": 4.3
   },
   "Iceland": {
-    "total": 0.0016,
-    "male": 0.0018,
-    "female": 0.0014
+    "total": 1.6,
+    "male": 1.8,
+    "female": 1.4
   },
   "India": {
-    "total": 0.0304,
-    "male": 0.03,
-    "female": 0.0308
+    "total": 30.4,
+    "male": 30.0,
+    "female": 30.8
   },
   "Indonesia": {
-    "total": 0.0189,
-    "male": 0.0213,
-    "female": 0.016399999999999998
+    "total": 18.9,
+    "male": 21.3,
+    "female": 16.4
   },
   "Iran": {
-    "total": 0.0143,
-    "male": 0.0154,
-    "female": 0.0132
+    "total": 14.3,
+    "male": 15.4,
+    "female": 13.2
   },
   "Iraq": {
-    "total": 0.018699999999999998,
-    "male": 0.020399999999999998,
-    "female": 0.017
+    "total": 18.7,
+    "male": 20.4,
+    "female": 17.0
   },
   "Ireland": {
-    "total": 0.0033,
-    "male": 0.0032,
-    "female": 0.0033
+    "total": 3.3,
+    "male": 3.2,
+    "female": 3.3
   },
   "Isle of Man": {
-    "total": 0.0040999999999999995,
-    "male": 0.0044,
-    "female": 0.0037
+    "total": 4.1,
+    "male": 4.4,
+    "female": 3.7
   },
   "Israel": {
-    "total": 0.0028,
-    "male": 0.0033,
-    "female": 0.0023
+    "total": 2.8,
+    "male": 3.3,
+    "female": 2.3
   },
   "Italy": {
-    "total": 0.0031,
-    "male": 0.0032,
-    "female": 0.0029
+    "total": 3.1,
+    "male": 3.2,
+    "female": 2.9
   },
   "Jamaica": {
-    "total": 0.0107,
-    "male": 0.0119,
-    "female": 0.0094
+    "total": 10.7,
+    "male": 11.9,
+    "female": 9.4
   },
   "Japan": {
-    "total": 0.0019,
-    "male": 0.002,
-    "female": 0.0017
+    "total": 1.9,
+    "male": 2.0,
+    "female": 1.7
   },
   "Jersey": {
-    "total": 0.0037,
-    "male": 0.004200000000000001,
-    "female": 0.0033
+    "total": 3.7,
+    "male": 4.2,
+    "female": 3.3
   },
   "Jordan": {
-    "total": 0.0132,
-    "male": 0.0143,
-    "female": 0.0121
+    "total": 13.2,
+    "male": 14.3,
+    "female": 12.1
   },
   "Kazakhstan": {
-    "total": 0.008,
-    "male": 0.0089,
-    "female": 0.007
+    "total": 8.0,
+    "male": 8.9,
+    "female": 7.0
   },
   "Kenya": {
-    "total": 0.0261,
-    "male": 0.029,
-    "female": 0.023100000000000002
+    "total": 26.1,
+    "male": 29.0,
+    "female": 23.1
   },
   "Kiribati": {
-    "total": 0.0315,
-    "male": 0.0335,
-    "female": 0.0294
+    "total": 31.5,
+    "male": 33.5,
+    "female": 29.4
   },
   "Korea, North": {
-    "total": 0.0154,
-    "male": 0.0169,
-    "female": 0.013800000000000002
+    "total": 15.4,
+    "male": 16.9,
+    "female": 13.8
   },
   "Korea, South": {
-    "total": 0.0028,
-    "male": 0.003,
-    "female": 0.0026
+    "total": 2.8,
+    "male": 3.0,
+    "female": 2.6
   },
   "Kosovo": {
-    "total": 0.0229,
-    "male": 0.0242,
-    "female": 0.0215
+    "total": 22.9,
+    "male": 24.2,
+    "female": 21.5
   },
   "Kuwait": {
-    "total": 0.0072,
-    "male": 0.0074,
-    "female": 0.006900000000000001
+    "total": 7.2,
+    "male": 7.4,
+    "female": 6.9
   },
   "Kyrgyzstan": {
-    "total": 0.0245,
-    "male": 0.0286,
-    "female": 0.0202
+    "total": 24.5,
+    "male": 28.6,
+    "female": 20.2
   },
   "Laos": {
-    "total": 0.0354,
-    "male": 0.0391,
-    "female": 0.0316
+    "total": 35.4,
+    "male": 39.1,
+    "female": 31.6
   },
   "Latvia": {
-    "total": 0.0047,
-    "male": 0.0050999999999999995,
-    "female": 0.0043
+    "total": 4.7,
+    "male": 5.1,
+    "female": 4.3
   },
   "Lebanon": {
-    "total": 0.0067,
-    "male": 0.0073,
-    "female": 0.0062
+    "total": 6.7,
+    "male": 7.3,
+    "female": 6.2
   },
   "Lesotho": {
-    "total": 0.045700000000000005,
-    "male": 0.051,
-    "female": 0.0402
+    "total": 45.7,
+    "male": 51.0,
+    "female": 40.2
   },
   "Liberia": {
-    "total": 0.0557,
-    "male": 0.061,
-    "female": 0.0502
+    "total": 55.7,
+    "male": 61.0,
+    "female": 50.2
   },
   "Libya": {
-    "total": 0.0107,
-    "male": 0.0121,
-    "female": 0.009300000000000001
+    "total": 10.7,
+    "male": 12.1,
+    "female": 9.3
   },
   "Liechtenstein": {
-    "total": 0.0039,
-    "male": 0.0043,
-    "female": 0.0035
+    "total": 3.9,
+    "male": 4.3,
+    "female": 3.5
   },
   "Lithuania": {
-    "total": 0.0036,
-    "male": 0.004,
-    "female": 0.0031
+    "total": 3.6,
+    "male": 4.0,
+    "female": 3.1
   },
   "Luxembourg": {
-    "total": 0.0032,
-    "male": 0.0036,
-    "female": 0.0028
+    "total": 3.2,
+    "male": 3.6,
+    "female": 2.8
   },
   "Macau": {
-    "total": 0.0044,
-    "male": 0.0045,
-    "female": 0.0043
+    "total": 4.4,
+    "male": 4.5,
+    "female": 4.3
   },
   "Madagascar": {
-    "total": 0.0375,
-    "male": 0.0409,
-    "female": 0.034
+    "total": 37.5,
+    "male": 40.9,
+    "female": 34.0
   },
   "Malawi": {
-    "total": 0.0319,
-    "male": 0.0364,
-    "female": 0.027399999999999997
+    "total": 31.9,
+    "male": 36.4,
+    "female": 27.4
   },
   "Malaysia": {
-    "total": 0.0064,
-    "male": 0.0068,
-    "female": 0.006
+    "total": 6.4,
+    "male": 6.8,
+    "female": 6.0
   },
   "Maldives": {
-    "total": 0.024399999999999998,
-    "male": 0.0273,
-    "female": 0.0213
+    "total": 24.4,
+    "male": 27.3,
+    "female": 21.3
   },
   "Mali": {
-    "total": 0.0574,
-    "male": 0.0626,
-    "female": 0.052
+    "total": 57.4,
+    "male": 62.6,
+    "female": 52.0
   },
   "Malta": {
-    "total": 0.0044,
-    "male": 0.0043,
-    "female": 0.0045
+    "total": 4.4,
+    "male": 4.3,
+    "female": 4.5
   },
   "Marshall Islands": {
-    "total": 0.0206,
-    "male": 0.024,
-    "female": 0.0171
+    "total": 20.6,
+    "male": 24.0,
+    "female": 17.1
   },
   "Mauritania": {
-    "total": 0.0489,
-    "male": 0.054799999999999995,
-    "female": 0.0429
+    "total": 48.9,
+    "male": 54.8,
+    "female": 42.9
   },
   "Mauritius": {
-    "total": 0.0116,
-    "male": 0.013099999999999999,
-    "female": 0.01
+    "total": 11.6,
+    "male": 13.1,
+    "female": 10.0
   },
   "Mexico": {
-    "total": 0.0121,
-    "male": 0.0134,
-    "female": 0.0109
+    "total": 12.1,
+    "male": 13.4,
+    "female": 10.9
   },
   "Micronesia, Federated States of": {
-    "total": 0.0209,
-    "male": 0.0238,
-    "female": 0.0178
+    "total": 20.9,
+    "male": 23.8,
+    "female": 17.8
   },
   "Moldova": {
-    "total": 0.013800000000000002,
-    "male": 0.016,
-    "female": 0.0115
+    "total": 13.8,
+    "male": 16.0,
+    "female": 11.5
   },
   "Monaco": {
-    "total": 0.0017,
-    "male": 0.002,
-    "female": 0.0014
+    "total": 1.7,
+    "male": 2.0,
+    "female": 1.4
   },
   "Mongolia": {
-    "total": 0.019399999999999997,
-    "male": 0.0224,
-    "female": 0.0162
+    "total": 19.4,
+    "male": 22.4,
+    "female": 16.2
   },
   "Montenegro": {
-    "total": 0.0032,
-    "male": 0.0027,
-    "female": 0.0037
+    "total": 3.2,
+    "male": 2.7,
+    "female": 3.7
   },
   "Montserrat": {
-    "total": 0.009699999999999999,
-    "male": 0.008,
-    "female": 0.0116
+    "total": 9.7,
+    "male": 8.0,
+    "female": 11.6
   },
   "Morocco": {
-    "total": 0.0183,
-    "male": 0.020399999999999998,
-    "female": 0.016
+    "total": 18.3,
+    "male": 20.4,
+    "female": 16.0
   },
   "Mozambique": {
-    "total": 0.0582,
-    "male": 0.0601,
-    "female": 0.0562
+    "total": 58.2,
+    "male": 60.1,
+    "female": 56.2
   },
   "Namibia": {
-    "total": 0.027899999999999998,
-    "male": 0.031,
-    "female": 0.0247
+    "total": 27.9,
+    "male": 31.0,
+    "female": 24.7
   },
   "Nauru": {
-    "total": 0.0076,
-    "male": 0.009800000000000001,
-    "female": 0.0053
+    "total": 7.6,
+    "male": 9.8,
+    "female": 5.3
   },
   "Nepal": {
-    "total": 0.024,
-    "male": 0.0252,
-    "female": 0.022699999999999998
+    "total": 24.0,
+    "male": 25.2,
+    "female": 22.7
   },
   "Netherlands": {
-    "total": 0.0036,
-    "male": 0.0039,
-    "female": 0.0033
+    "total": 3.6,
+    "male": 3.9,
+    "female": 3.3
   },
   "New Caledonia": {
-    "total": 0.0048,
-    "male": 0.0058,
-    "female": 0.0039
+    "total": 4.8,
+    "male": 5.8,
+    "female": 3.9
   },
   "New Zealand": {
-    "total": 0.0033,
-    "male": 0.0035,
-    "female": 0.0031
+    "total": 3.3,
+    "male": 3.5,
+    "female": 3.1
   },
   "Nicaragua": {
-    "total": 0.0144,
-    "male": 0.0159,
-    "female": 0.0128
+    "total": 14.4,
+    "male": 15.9,
+    "female": 12.8
   },
   "Niger": {
-    "total": 0.0643,
-    "male": 0.0692,
-    "female": 0.0592
+    "total": 64.3,
+    "male": 69.2,
+    "female": 59.2
   },
   "Nigeria": {
-    "total": 0.053700000000000005,
-    "male": 0.0589,
-    "female": 0.0482
+    "total": 53.7,
+    "male": 58.9,
+    "female": 48.2
   },
   "North Macedonia": {
-    "total": 0.007,
-    "male": 0.0079,
-    "female": 0.006
+    "total": 7.0,
+    "male": 7.9,
+    "female": 6.0
   },
   "Northern Mariana Islands": {
-    "total": 0.0119,
-    "male": 0.0144,
-    "female": 0.009
+    "total": 11.9,
+    "male": 14.4,
+    "female": 9.0
   },
   "Norway": {
-    "total": 0.0018,
-    "male": 0.0021000000000000003,
-    "female": 0.0015
+    "total": 1.8,
+    "male": 2.1,
+    "female": 1.5
   },
   "Oman": {
-    "total": 0.013900000000000001,
-    "male": 0.015099999999999999,
-    "female": 0.0126
+    "total": 13.9,
+    "male": 15.1,
+    "female": 12.6
   },
   "Pakistan": {
-    "total": 0.0515,
-    "male": 0.056,
-    "female": 0.046799999999999994
+    "total": 51.5,
+    "male": 56.0,
+    "female": 46.8
   },
   "Palau": {
-    "total": 0.0108,
-    "male": 0.0127,
-    "female": 0.0088
+    "total": 10.8,
+    "male": 12.7,
+    "female": 8.8
   },
   "Panama": {
-    "total": 0.014199999999999999,
-    "male": 0.0154,
-    "female": 0.0129
+    "total": 14.2,
+    "male": 15.4,
+    "female": 12.9
   },
   "Papua New Guinea": {
-    "total": 0.032,
-    "male": 0.0353,
-    "female": 0.0286
+    "total": 32.0,
+    "male": 35.3,
+    "female": 28.6
   },
   "Paraguay": {
-    "total": 0.022,
-    "male": 0.0261,
-    "female": 0.0177
+    "total": 22.0,
+    "male": 26.1,
+    "female": 17.7
   },
   "Peru": {
-    "total": 0.0108,
-    "male": 0.0119,
-    "female": 0.009699999999999999
+    "total": 10.8,
+    "male": 11.9,
+    "female": 9.7
   },
   "Philippines": {
-    "total": 0.022,
-    "male": 0.024399999999999998,
-    "female": 0.019600000000000003
+    "total": 22.0,
+    "male": 24.4,
+    "female": 19.6
   },
   "Poland": {
-    "total": 0.004900000000000001,
-    "male": 0.0053,
-    "female": 0.0044
+    "total": 4.9,
+    "male": 5.3,
+    "female": 4.4
   },
   "Portugal": {
-    "total": 0.0024,
-    "male": 0.0028,
-    "female": 0.0021000000000000003
+    "total": 2.4,
+    "male": 2.8,
+    "female": 2.1
   },
   "Puerto Rico": {
-    "total": 0.0058,
-    "male": 0.0064,
-    "female": 0.0052
+    "total": 5.8,
+    "male": 6.4,
+    "female": 5.2
   },
   "Qatar": {
-    "total": 0.0064,
-    "male": 0.007,
-    "female": 0.0058
+    "total": 6.4,
+    "male": 7.0,
+    "female": 5.8
   },
   "Romania": {
-    "total": 0.0055,
-    "male": 0.0058,
-    "female": 0.0052
+    "total": 5.5,
+    "male": 5.8,
+    "female": 5.2
   },
   "Russia": {
-    "total": 0.0065,
-    "male": 0.0072,
-    "female": 0.0058
+    "total": 6.5,
+    "male": 7.2,
+    "female": 5.8
   },
   "Rwanda": {
-    "total": 0.0249,
-    "male": 0.0273,
-    "female": 0.0225
+    "total": 24.9,
+    "male": 27.3,
+    "female": 22.5
   },
   "Saint Barthelemy": {
-    "total": 0.0065,
-    "male": 0.0076,
-    "female": 0.0053
+    "total": 6.5,
+    "male": 7.6,
+    "female": 5.3
   },
   "Saint Helena, Ascension, and Tristan da Cunha": {
-    "total": 0.0181,
-    "male": 0.0217,
-    "female": 0.014199999999999999
+    "total": 18.1,
+    "male": 21.7,
+    "female": 14.2
   },
   "Saint Kitts and Nevis": {
-    "total": 0.008,
-    "male": 0.0055,
-    "female": 0.0106
+    "total": 8.0,
+    "male": 5.5,
+    "female": 10.6
   },
   "Saint Lucia": {
-    "total": 0.0115,
-    "male": 0.0108,
-    "female": 0.012199999999999999
+    "total": 11.5,
+    "male": 10.8,
+    "female": 12.2
   },
   "Saint Martin": {
-    "total": 0.0065,
-    "male": 0.0076,
-    "female": 0.0053
+    "total": 6.5,
+    "male": 7.6,
+    "female": 5.3
   },
   "Saint Pierre and Miquelon": {
-    "total": 0.0078,
-    "male": 0.0096,
-    "female": 0.0058
+    "total": 7.8,
+    "male": 9.6,
+    "female": 5.8
   },
   "Saint Vincent and the Grenadines": {
-    "total": 0.0123,
-    "male": 0.013900000000000001,
-    "female": 0.0107
+    "total": 12.3,
+    "male": 13.9,
+    "female": 10.7
   },
   "Samoa": {
-    "total": 0.0173,
-    "male": 0.0209,
-    "female": 0.0136
+    "total": 17.3,
+    "male": 20.9,
+    "female": 13.6
   },
   "San Marino": {
-    "total": 0.0062,
-    "male": 0.0074,
-    "female": 0.005
+    "total": 6.2,
+    "male": 7.4,
+    "female": 5.0
   },
   "Sao Tome and Principe": {
-    "total": 0.0426,
-    "male": 0.0461,
-    "female": 0.039
+    "total": 42.6,
+    "male": 46.1,
+    "female": 39.0
   },
   "Saudi Arabia": {
-    "total": 0.011699999999999999,
-    "male": 0.0128,
-    "female": 0.0105
+    "total": 11.7,
+    "male": 12.8,
+    "female": 10.5
   },
   "Senegal": {
-    "total": 0.031100000000000003,
-    "male": 0.0344,
-    "female": 0.027600000000000003
+    "total": 31.1,
+    "male": 34.4,
+    "female": 27.6
   },
   "Serbia": {
-    "total": 0.0045,
-    "male": 0.0050999999999999995,
-    "female": 0.0039
+    "total": 4.5,
+    "male": 5.1,
+    "female": 3.9
   },
   "Seychelles": {
-    "total": 0.010199999999999999,
-    "male": 0.0128,
-    "female": 0.0074
+    "total": 10.2,
+    "male": 12.8,
+    "female": 7.4
   },
   "Sierra Leone": {
-    "total": 0.0712,
-    "male": 0.076,
-    "female": 0.06620000000000001
+    "total": 71.2,
+    "male": 76.0,
+    "female": 66.2
   },
   "Singapore": {
-    "total": 0.0015,
-    "male": 0.0017,
-    "female": 0.0014
+    "total": 1.5,
+    "male": 1.7,
+    "female": 1.4
   },
   "Sint Maarten": {
-    "total": 0.0076,
-    "male": 0.008400000000000001,
-    "female": 0.0068
+    "total": 7.6,
+    "male": 8.4,
+    "female": 6.8
   },
   "Slovakia": {
-    "total": 0.0050999999999999995,
-    "male": 0.0057,
-    "female": 0.0045
+    "total": 5.1,
+    "male": 5.7,
+    "female": 4.5
   },
   "Slovenia": {
-    "total": 0.0015,
-    "male": 0.0016,
-    "female": 0.0014
+    "total": 1.5,
+    "male": 1.6,
+    "female": 1.4
   },
   "Solomon Islands": {
-    "total": 0.019100000000000002,
-    "male": 0.022699999999999998,
-    "female": 0.0152
+    "total": 19.1,
+    "male": 22.7,
+    "female": 15.2
   },
   "Somalia": {
-    "total": 0.0836,
-    "male": 0.0932,
-    "female": 0.0737
+    "total": 83.6,
+    "male": 93.2,
+    "female": 73.7
   },
   "South Africa": {
-    "total": 0.0219,
-    "male": 0.023899999999999998,
-    "female": 0.02
+    "total": 21.9,
+    "male": 23.9,
+    "female": 20.0
   },
   "South Sudan": {
-    "total": 0.0601,
-    "male": 0.0658,
-    "female": 0.0541
+    "total": 60.1,
+    "male": 65.8,
+    "female": 54.1
   },
   "Spain": {
-    "total": 0.0024,
-    "male": 0.0027,
-    "female": 0.0021000000000000003
+    "total": 2.4,
+    "male": 2.7,
+    "female": 2.1
   },
   "Sri Lanka": {
-    "total": 0.0068,
-    "male": 0.0075,
-    "female": 0.0060999999999999995
+    "total": 6.8,
+    "male": 7.5,
+    "female": 6.1
   },
   "Sudan": {
-    "total": 0.040600000000000004,
-    "male": 0.046,
-    "female": 0.0348
+    "total": 40.6,
+    "male": 46.0,
+    "female": 34.8
   },
   "Suriname": {
-    "total": 0.0296,
-    "male": 0.0376,
-    "female": 0.021
+    "total": 29.6,
+    "male": 37.6,
+    "female": 21.0
   },
   "Sweden": {
-    "total": 0.0023,
-    "male": 0.0025,
-    "female": 0.002
+    "total": 2.3,
+    "male": 2.5,
+    "female": 2.0
   },
   "Switzerland": {
-    "total": 0.003,
-    "male": 0.0034,
-    "female": 0.0025
+    "total": 3.0,
+    "male": 3.4,
+    "female": 2.5
   },
   "Syria": {
-    "total": 0.015099999999999999,
-    "male": 0.0166,
-    "female": 0.0135
+    "total": 15.1,
+    "male": 16.6,
+    "female": 13.5
   },
   "Taiwan": {
-    "total": 0.0038,
-    "male": 0.004200000000000001,
-    "female": 0.0035
+    "total": 3.8,
+    "male": 4.2,
+    "female": 3.5
   },
   "Tajikistan": {
-    "total": 0.0217,
-    "male": 0.024300000000000002,
-    "female": 0.0189
+    "total": 21.7,
+    "male": 24.3,
+    "female": 18.9
   },
   "Tanzania": {
-    "total": 0.0296,
-    "male": 0.032299999999999995,
-    "female": 0.0269
+    "total": 29.6,
+    "male": 32.3,
+    "female": 26.9
   },
   "Thailand": {
-    "total": 0.0063,
-    "male": 0.006900000000000001,
-    "female": 0.0056
+    "total": 6.3,
+    "male": 6.9,
+    "female": 5.6
   },
   "Timor-Leste": {
-    "total": 0.0322,
-    "male": 0.0353,
-    "female": 0.0289
+    "total": 32.2,
+    "male": 35.3,
+    "female": 28.9
   },
   "Togo": {
-    "total": 0.0384,
-    "male": 0.043,
-    "female": 0.0337
+    "total": 38.4,
+    "male": 43.0,
+    "female": 33.7
   },
   "Tonga": {
-    "total": 0.011800000000000001,
-    "male": 0.0128,
-    "female": 0.0108
+    "total": 11.8,
+    "male": 12.8,
+    "female": 10.8
   },
   "Trinidad and Tobago": {
-    "total": 0.015099999999999999,
-    "male": 0.0171,
-    "female": 0.013
+    "total": 15.1,
+    "male": 17.1,
+    "female": 13.0
   },
   "Tunisia": {
-    "total": 0.011300000000000001,
-    "male": 0.0127,
-    "female": 0.009800000000000001
+    "total": 11.3,
+    "male": 12.7,
+    "female": 9.8
   },
   "Turkey (Turkiye)": {
-    "total": 0.0184,
-    "male": 0.019899999999999998,
-    "female": 0.0167
+    "total": 18.4,
+    "male": 19.9,
+    "female": 16.7
   },
   "Turkmenistan": {
-    "total": 0.0359,
-    "male": 0.0436,
-    "female": 0.0277
+    "total": 35.9,
+    "male": 43.6,
+    "female": 27.7
   },
   "Turks and Caicos Islands": {
-    "total": 0.0111,
-    "male": 0.013900000000000001,
-    "female": 0.0081
+    "total": 11.1,
+    "male": 13.9,
+    "female": 8.1
   },
   "Tuvalu": {
-    "total": 0.027800000000000002,
-    "male": 0.0313,
-    "female": 0.024
+    "total": 27.8,
+    "male": 31.3,
+    "female": 24.0
   },
   "Uganda": {
-    "total": 0.0285,
-    "male": 0.0318,
-    "female": 0.0251
+    "total": 28.5,
+    "male": 31.8,
+    "female": 25.1
   },
   "Ukraine": {
-    "total": 0.0087,
-    "male": 0.009699999999999999,
-    "female": 0.0076
+    "total": 8.7,
+    "male": 9.7,
+    "female": 7.6
   },
   "United Arab Emirates": {
-    "total": 0.005,
-    "male": 0.0055,
-    "female": 0.0044
+    "total": 5.0,
+    "male": 5.5,
+    "female": 4.4
   },
   "United Kingdom": {
-    "total": 0.0038,
-    "male": 0.004200000000000001,
-    "female": 0.0033
+    "total": 3.8,
+    "male": 4.2,
+    "female": 3.3
   },
   "United States": {
-    "total": 0.0050999999999999995,
-    "male": 0.0054,
-    "female": 0.0047
+    "total": 5.1,
+    "male": 5.4,
+    "female": 4.7
   },
   "Uruguay": {
-    "total": 0.008,
-    "male": 0.0091,
-    "female": 0.0068
+    "total": 8.0,
+    "male": 9.1,
+    "female": 6.8
   },
   "Uzbekistan": {
-    "total": 0.0182,
-    "male": 0.0211,
-    "female": 0.015099999999999999
+    "total": 18.2,
+    "male": 21.1,
+    "female": 15.1
   },
   "Vanuatu": {
-    "total": 0.013699999999999999,
-    "male": 0.015,
-    "female": 0.0123
+    "total": 13.7,
+    "male": 15.0,
+    "female": 12.3
   },
   "Venezuela": {
-    "total": 0.013900000000000001,
-    "male": 0.0154,
-    "female": 0.012199999999999999
+    "total": 13.9,
+    "male": 15.4,
+    "female": 12.2
   },
   "Vietnam": {
-    "total": 0.0141,
-    "male": 0.0144,
-    "female": 0.013699999999999999
+    "total": 14.1,
+    "male": 14.4,
+    "female": 13.7
   },
   "Virgin Islands": {
-    "total": 0.0073,
-    "male": 0.0083,
-    "female": 0.0063
+    "total": 7.3,
+    "male": 8.3,
+    "female": 6.3
   },
   "Wallis and Futuna": {
-    "total": 0.0039,
-    "male": 0.0038,
-    "female": 0.0039
+    "total": 3.9,
+    "male": 3.8,
+    "female": 3.9
   },
   "West Bank": {
-    "total": 0.015099999999999999,
-    "male": 0.0175,
-    "female": 0.0126
+    "total": 15.1,
+    "male": 17.5,
+    "female": 12.6
   },
   "World": {
-    "total": 0.028300000000000002
+    "total": 28.3
   },
   "Yemen": {
-    "total": 0.0446,
-    "male": 0.0499,
-    "female": 0.039
+    "total": 44.6,
+    "male": 49.9,
+    "female": 39.0
   },
   "Zambia": {
-    "total": 0.0356,
-    "male": 0.0389,
-    "female": 0.032100000000000004
+    "total": 35.6,
+    "male": 38.9,
+    "female": 32.1
   },
   "Zimbabwe": {
-    "total": 0.0334,
-    "male": 0.037,
-    "female": 0.0296
+    "total": 33.4,
+    "male": 37.0,
+    "female": 29.6
   }
 }

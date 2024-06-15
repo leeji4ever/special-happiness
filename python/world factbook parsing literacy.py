@@ -27,17 +27,16 @@ for tag in literacy_blocks:
     for strong in strongs:
         key = strong.contents[0].replace(':', '')
         value = str(strong.next_sibling)
-        print(value)
+        #print(value)
         year = ''
         if "%" in value:
             index = value.index("%")
-            if(index >=0):
-                value = value[:index+1]
-                year = value[index+1:]
+            value = value[:index+1]
+            year = value[index+1:]
                 #print(year)
-        print('key:', key, 'value:', value)
-        current_country[key] = value
-    countries[text] = current_country
+            print('key:', key, 'value:', value)
+            current_country[key] = value
+            countries[text] = current_country
     
 with open("../json/literacy.json",'w') as f:
     f.write("var literacy = ")

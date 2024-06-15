@@ -14,6 +14,8 @@ console.log(random)
 console.log(keyEctotal)
 var txt = keyEctotal[random] //assigns a random country to ranCountry
 var ranYear = ectotal[txt][0]
+var dollarCon = ectotal[txt][3]
+
 console.log(txt)
 $('#country'+i).text(txt) //use jquery to show random country in html
 $('#year'+i).text(ranYear)
@@ -83,10 +85,10 @@ function highestAns(num){
 	shuffle(ansArray)
 	console.log(ansArray[0])
 	
-	$("label[for*="+ansArray[0]+"]").text(Math.round(ans)+" "+ansCurrency)
-	$("label[for*="+ansArray[1]+"]").text(Math.round(0.75*ans)+" "+ansCurrency) 
-	$("label[for*="+ansArray[2]+"]").text(Math.round(0.5*ans)+" "+ansCurrency) 
-	$("label[for*="+ansArray[3]+"]").text(Math.round(0.25*ans)+" "+ansCurrency) 
+	$("label[for*="+ansArray[0]+"]").text(Math.round(ans)+" "+ansCurrency+"  ( "+dollarCon+" USD )")
+	$("label[for*="+ansArray[1]+"]").text(Math.round(0.8*ans)+" "+ansCurrency+"  ( "+Math.round(0.8*dollarCon)+" USD )") 
+	$("label[for*="+ansArray[2]+"]").text(Math.round(0.47*ans)+" "+ansCurrency+"  ( "+Math.round(0.45*dollarCon)+" USD )") 
+	$("label[for*="+ansArray[3]+"]").text(Math.round(0.3*ans)+" "+ansCurrency+"  ( "+Math.round(0.3*dollarCon)+" USD )") 
 	
 	return ansArray[0]
 }
@@ -99,10 +101,10 @@ function lowestAns(num){
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text(Math.round(2*ans)+" "+ansCurrency) 
-	$("label[for*="+ansArray[1]+"]").text(Math.round(1.5*ans)+" "+ansCurrency) 
-	$("label[for*="+ansArray[2]+"]").text(Math.round(1.25*ans)+" "+ansCurrency) 
-	$("label[for*="+ansArray[3]+"]").text(Math.round(ans)+" "+ansCurrency)
+	$("label[for*="+ansArray[0]+"]").text(Math.round(2.1*ans)+" "+ansCurrency+"  ( "+2*dollarCon+" USD )") 
+	$("label[for*="+ansArray[1]+"]").text(Math.round(1.6*ans)+" "+ansCurrency+"  ( "+Math.round(1.6*dollarCon)+" USD )") 
+	$("label[for*="+ansArray[2]+"]").text(Math.round(1.23*ans)+" "+ansCurrency+"  ( "+Math.round(1.23*dollarCon)+" USD )") 
+	$("label[for*="+ansArray[3]+"]").text(Math.round(ans)+" "+ansCurrency+"  ( "+Math.round(dollarCon)+" USD )")
 	
 	return ansArray[3]
 }
@@ -115,10 +117,10 @@ function secondHighestAns(num){
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text(Math.round(1.5*ans)+" "+ansCurrency) 
-	$("label[for*="+ansArray[1]+"]").text(Math.round(ans)+" "+ansCurrency)
-	$("label[for*="+ansArray[2]+"]").text(Math.round(0.75*ans)+" "+ansCurrency) 
-	$("label[for*="+ansArray[3]+"]").text(Math.round(0.5*ans)+" "+ansCurrency)
+	$("label[for*="+ansArray[0]+"]").text(Math.round(1.6*ans)+" "+ansCurrency+"  ( "+Math.round(1.6*dollarCon)+" USD )") 
+	$("label[for*="+ansArray[1]+"]").text(Math.round(ans)+" "+ansCurrency+"  ( "+Math.round(dollarCon)+" USD )")
+	$("label[for*="+ansArray[2]+"]").text(Math.round(0.73*ans)+" "+ansCurrency+"  ( "+Math.round(0.73*dollarCon)+" USD )") 
+	$("label[for*="+ansArray[3]+"]").text(Math.round(0.45*ans)+" "+ansCurrency+"  ( "+Math.round(0.45*dollarCon)+" USD )")
 		
 	return ansArray[1]
 }
@@ -131,10 +133,10 @@ function secondLowestAns(num){
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text(Math.round(1.5*ans)+" "+ansCurrency) 
-	$("label[for*="+ansArray[1]+"]").text(Math.round(1.25*ans)+" "+ansCurrency)
-	$("label[for*="+ansArray[2]+"]").text(Math.round(ans)+" "+ansCurrency)	
-	$("label[for*="+ansArray[3]+"]").text(Math.round(0.75*ans)+" "+ansCurrency) 
+	$("label[for*="+ansArray[0]+"]").text(Math.round(1.55*ans)+" "+ansCurrency+"  ( "+Math.round(1.55*dollarCon)+" USD )") 
+	$("label[for*="+ansArray[1]+"]").text(Math.round(1.22*ans)+" "+ansCurrency+"  ( "+Math.round(1.22*dollarCon)+" USD )")
+	$("label[for*="+ansArray[2]+"]").text(Math.round(ans)+" "+ansCurrency+"  ( "+Math.round(dollarCon)+" USD )")	
+	$("label[for*="+ansArray[3]+"]").text(Math.round(0.74*ans)+" "+ansCurrency+"  ( "+Math.round(0.75*dollarCon)+" USD )") 
 	
 	return ansArray[2]
 }
