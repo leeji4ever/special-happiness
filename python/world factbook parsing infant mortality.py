@@ -27,7 +27,7 @@ for tag in mortality_blocks:
     current_country = {}
     for strong in strongs:
         key = strong.contents[0].replace(':', '')
-        value = float(str(strong.next_sibling).split()[0])/1000
+        value = float(str(strong.next_sibling).split()[0])
         #print(value)
         year = ''
         #if "%" in value:
