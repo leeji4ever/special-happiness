@@ -62,7 +62,7 @@ text-align: center;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     color: rgb(25, 91, 33);
     font-family: 'sans-serif';
@@ -70,6 +70,7 @@ h1{
 }
 
 h2{
+	font-size: 35px;
     font-weight: bold;
     color: rgb(40, 129, 83);
     text-align: center;
