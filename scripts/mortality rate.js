@@ -83,10 +83,10 @@ function highestAns(num){
 	shuffle(ansArray)
 	console.log(ansArray[0])
 	
-	$("label[for*="+ansArray[0]+"]").text((ans)+ " deaths/1,000 live births")
-	$("label[for*="+ansArray[1]+"]").text((0.8*ans)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[2]+"]").text((0.5*ans)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[3]+"]").text((0.3*ans)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " deaths/1,000 live births")
+	$("label[for*="+ansArray[1]+"]").text((0.8*ans).toFixed(2)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ " deaths/1,000 live births") 
 	
 	return ansArray[0]
 }
@@ -99,10 +99,10 @@ function lowestAns(num){
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((2.1*ans)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[1]+"]").text((1.5*ans)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[2]+"]").text((1.3*ans)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[3]+"]").text((ans)+ " deaths/1,000 live births")
+	$("label[for*="+ansArray[0]+"]").text((2.1*ans).toFixed(2)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[1]+"]").text((1.5*ans).toFixed(2)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[2]+"]").text((1.3*ans).toFixed(2)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ " deaths/1,000 live births")
 	
 	return ansArray[3]
 }
@@ -115,10 +115,10 @@ function secondHighestAns(num){
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((1.6*ans)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[1]+"]").text((ans)+ " deaths/1,000 live births")
-	$("label[for*="+ansArray[2]+"]").text((0.8*ans)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[3]+"]").text((0.3*ans)+ " deaths/1,000 live births")
+	$("label[for*="+ansArray[0]+"]").text((1.6*ans).toFixed(2)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ " deaths/1,000 live births")
+	$("label[for*="+ansArray[2]+"]").text((0.8*ans).toFixed(2)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ " deaths/1,000 live births")
 		
 	return ansArray[1]
 }
@@ -131,10 +131,10 @@ function secondLowestAns(num){
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((1.7*ans)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[1]+"]").text((1.3*ans)+ " deaths/1,000 live births")
-	$("label[for*="+ansArray[2]+"]").text((ans)+ " deaths/1,000 live births")	
-	$("label[for*="+ansArray[3]+"]").text((0.6*ans)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[0]+"]").text((1.7*ans).toFixed(2)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[1]+"]").text((1.3*ans).toFixed(2)+ " deaths/1,000 live births")
+	$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ " deaths/1,000 live births")	
+	$("label[for*="+ansArray[3]+"]").text((0.6*ans).toFixed(2)+ " deaths/1,000 live births") 
 	
 	return ansArray[2]
 }

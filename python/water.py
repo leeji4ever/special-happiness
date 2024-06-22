@@ -1,15 +1,17 @@
 import csv
 import random
+import json
 
-with open("proportion-using-safely-managed-drinking-water.csv") as f:
+with open("../proportion-using-safely-managed-drinking-water.csv") as f:
     reader = csv.reader(f)
     header = next(reader)
     print(header)
     percents = {} # % access to safe drinking water by country & year
     for row in reader:
-        countryyear = (row[0], row[2])
+        country =  row[0]
+        year = row[2]
         percentage = float(row[3])
-        percents[countryyear] = percentage
+        percents[country] = percentage, year
     print(len(percents))
 
 def jiggle(value, amount=30):
@@ -32,7 +34,7 @@ def generate_choices(value):
 
 num_questions = 10
 score = 0
-
+'''
 for x in range(num_questions):
     length = len(percents)
     r = random.randint(0,length-1)
@@ -61,3 +63,7 @@ for x in range(num_questions):
         print("Incorrect.")
 
 print(f"\nYour final score is {score} out of {num_questions}.")
+'''
+with open("../json/water.json",'w') as f:
+    f.write("var water = ")
+    json.dump(percents,f, indent=2)

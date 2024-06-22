@@ -1,22 +1,20 @@
-console.log(ectotal)
+console.log(water)
 
 
 //console.log(ectotal)
 
 ansArray = [];
-const keyEctotal = Object.keys(ectotal) //makes a list consisted of the keys(countries) in ectotal 
+const keyWater = Object.keys(water) //makes a list consisted of the keys(countries) in mortalityRate
 for (let i=1;i<=10;i++){
 
 
-var random = Math.floor(Math.random()*keyEctotal.length)
+var random = Math.floor(Math.random()*keyWater.length)
 console.log(random)
 
-console.log(keyEctotal)
-var txt = keyEctotal[random] //assigns a random country to ranCountry
-var ranYear = ectotal[txt][0]
-var dollarCon = ectotal[txt][3]
-
-console.log(txt)
+//console.log(keyEctotal)
+var txt = keyWater[random] //assigns a random country to ranCountry
+var ranYear = water[txt][1]
+//console.log(txt)
 $('#country'+i).text(txt) //use jquery to show random country in html
 $('#year'+i).text(ranYear)
 	
@@ -76,8 +74,8 @@ function shuffle(array) {
 
 
 function highestAns(num){
-	var ans = parseInt(ectotal[txt][1]) //gets the ectotal value
-	var ansCurrency = ectotal[txt][2] //gets the currency
+	var ans = parseFloat(water[txt][0]) //gets the percentage value
+	//var ansCurrency = ectotal[txt][2] //gets the currency
 	console.log(ans)
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
@@ -85,58 +83,58 @@ function highestAns(num){
 	shuffle(ansArray)
 	console.log(ansArray[0])
 	
-	$("label[for*="+ansArray[0]+"]").text(Math.round(ans)+" "+ansCurrency+"  ( "+Math.round(dollarCon)+" USD )")
-	$("label[for*="+ansArray[1]+"]").text(Math.round(0.8*ans)+" "+ansCurrency+"  ( "+Math.round(0.8*dollarCon)+" USD )") 
-	$("label[for*="+ansArray[2]+"]").text(Math.round(0.47*ans)+" "+ansCurrency+"  ( "+Math.round(0.45*dollarCon)+" USD )") 
-	$("label[for*="+ansArray[3]+"]").text(Math.round(0.3*ans)+" "+ansCurrency+"  ( "+Math.round(0.3*dollarCon)+" USD )") 
+	$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ "%")
+	$("label[for*="+ansArray[1]+"]").text((0.8*ans).toFixed(2)+ "%") 
+	$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+ "%") 
+	$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ "%") 
 	
 	return ansArray[0]
 }
 
 function lowestAns(num){
-	var ans = parseInt(ectotal[txt][1])
-	var ansCurrency = ectotal[txt][2]
+	var ans = parseFloat(water[txt][0])
+	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text(Math.round(2.1*ans)+" "+ansCurrency+"  ( "+Math.round(2*dollarCon)+" USD )") 
-	$("label[for*="+ansArray[1]+"]").text(Math.round(1.6*ans)+" "+ansCurrency+"  ( "+Math.round(1.6*dollarCon)+" USD )") 
-	$("label[for*="+ansArray[2]+"]").text(Math.round(1.23*ans)+" "+ansCurrency+"  ( "+Math.round(1.23*dollarCon)+" USD )") 
-	$("label[for*="+ansArray[3]+"]").text(Math.round(ans)+" "+ansCurrency+"  ( "+Math.round(dollarCon)+" USD )")
+	$("label[for*="+ansArray[0]+"]").text((2.1*ans).toFixed(2)+ "%") 
+	$("label[for*="+ansArray[1]+"]").text((1.5*ans).toFixed(2)+ "%") 
+	$("label[for*="+ansArray[2]+"]").text((1.3*ans).toFixed(2)+ "%") 
+	$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ "%")
 	
 	return ansArray[3]
 }
 
 function secondHighestAns(num){
-	var ans = parseInt(ectotal[txt][1])
-	var ansCurrency = ectotal[txt][2]
+	var ans = parseFloat(water[txt][0])
+	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text(Math.round(1.6*ans)+" "+ansCurrency+"  ( "+Math.round(1.6*dollarCon)+" USD )") 
-	$("label[for*="+ansArray[1]+"]").text(Math.round(ans)+" "+ansCurrency+"  ( "+Math.round(dollarCon)+" USD )")
-	$("label[for*="+ansArray[2]+"]").text(Math.round(0.73*ans)+" "+ansCurrency+"  ( "+Math.round(0.73*dollarCon)+" USD )") 
-	$("label[for*="+ansArray[3]+"]").text(Math.round(0.45*ans)+" "+ansCurrency+"  ( "+Math.round(0.45*dollarCon)+" USD )")
+	$("label[for*="+ansArray[0]+"]").text((1.6*ans).toFixed(2)+ "0") 
+	$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ "0")
+	$("label[for*="+ansArray[2]+"]").text((0.8*ans).toFixed(2)+ "0") 
+	$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ "0")
 		
 	return ansArray[1]
 }
 
 function secondLowestAns(num){
-	var ans = parseInt(ectotal[txt][1])
-	var ansCurrency = ectotal[txt][2]
+	var ans = parseFloat(water[txt][0])
+	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text(Math.round(1.55*ans)+" "+ansCurrency+"  ( "+Math.round(1.55*dollarCon)+" USD )") 
-	$("label[for*="+ansArray[1]+"]").text(Math.round(1.22*ans)+" "+ansCurrency+"  ( "+Math.round(1.22*dollarCon)+" USD )")
-	$("label[for*="+ansArray[2]+"]").text(Math.round(ans)+" "+ansCurrency+"  ( "+Math.round(dollarCon)+" USD )")	
-	$("label[for*="+ansArray[3]+"]").text(Math.round(0.74*ans)+" "+ansCurrency+"  ( "+Math.round(0.75*dollarCon)+" USD )") 
+	$("label[for*="+ansArray[0]+"]").text((1.7*ans).toFixed(2)+ "%") 
+	$("label[for*="+ansArray[1]+"]").text((1.3*ans).toFixed(2)+ "%")
+	$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ "%")	
+	$("label[for*="+ansArray[3]+"]").text((0.6*ans).toFixed(2)+ "%") 
 	
 	return ansArray[2]
 }

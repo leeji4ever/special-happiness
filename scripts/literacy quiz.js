@@ -83,10 +83,10 @@ function highestAns(num){
 	shuffle(ansArray)
 	console.log(ansArray[0])
 	
-	$("label[for*="+ansArray[0]+"]").text((ans)+" %")
-	$("label[for*="+ansArray[1]+"]").text((0.7*ans)+" %") 
-	$("label[for*="+ansArray[2]+"]").text((0.5*ans+" %")) 
-	$("label[for*="+ansArray[3]+"]").text((0.2*ans)+" %") 
+	$("label[for*="+ansArray[0]+"]").text(ans.toFixed(2)+" %")
+	$("label[for*="+ansArray[1]+"]").text((0.7*ans).toFixed(2)+" %") 
+	$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+" %") 
+	$("label[for*="+ansArray[3]+"]").text((0.2*ans).toFixed(2)+" %") 
 	
 	return ansArray[0]
 }
@@ -101,16 +101,16 @@ function lowestAns(num){
 	
 	if(ans >= 90){ // if the answer is over 90, ideal to make it the largest ans
 				   //therefor this if statement makes the answers that are over 90 the higest answer
-		$("label[for*="+ansArray[3]+"]").text((ans)+" %")
-		$("label[for*="+ansArray[1]+"]").text((0.7*ans)+" %") 
-		$("label[for*="+ansArray[2]+"]").text((0.5*ans+" %")) 
-		$("label[for*="+ansArray[0]+"]").text((0.2*ans)+" %")
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" %")
+		$("label[for*="+ansArray[1]+"]").text((0.7*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[0]+"]").text((0.2*ans).toFixed(2)+" %")
 	}		
 	else{ // if it isnt over 90 same as original function
-		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.7)+" %") 
-		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.4)+" %") 
-		$("label[for*="+ansArray[2]+"]").text((ans+(100-ans)*0.2)+" %") 
-		$("label[for*="+ansArray[3]+"]").text((ans)+" %")
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.7).toFixed(2)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.4).toFixed(2)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((ans+(100-ans)*0.2).toFixed(2)+" %") 
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" %")
 	}
 	
 	return ansArray[3]
@@ -124,16 +124,16 @@ function secondHighestAns(num){
 	shuffle(ansArray)
 	console.log(ans)
 	if(ans >= 90){ 
-		$("label[for*="+ansArray[1]+"]").text((ans)+" %")
-		$("label[for*="+ansArray[0]+"]").text((0.7*ans)+" %") 
-		$("label[for*="+ansArray[2]+"]").text((0.5*ans+" %")) 
-		$("label[for*="+ansArray[3]+"]").text((0.2*ans)+" %")
+		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+" %")
+		$("label[for*="+ansArray[0]+"]").text((0.7*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[3]+"]").text((0.2*ans).toFixed(2)+" %")
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.7)+" %") 
-		$("label[for*="+ansArray[1]+"]").text((ans)+" %")
-		$("label[for*="+ansArray[2]+"]").text((ans-(100-ans)*0.2)+" %") 
-		$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.4)+" %")
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.7).toFixed(2)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+" %")
+		$("label[for*="+ansArray[2]+"]").text((ans-(100-ans)*0.2).toFixed(2)+" %") 
+		$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.4).toFixed(2)+" %")
 	}
 		
 	return ansArray[1]
@@ -148,16 +148,16 @@ function secondLowestAns(num){
 	console.log(ans)
 	
 	if(ans >= 90){ 
-		$("label[for*="+ansArray[2]+"]").text((ans)+" %")
-		$("label[for*="+ansArray[1]+"]").text((0.7*ans)+" %") 
-		$("label[for*="+ansArray[0]+"]").text((0.5*ans+" %")) 
-		$("label[for*="+ansArray[3]+"]").text((0.2*ans)+" %")
+		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+" %")
+		$("label[for*="+ansArray[1]+"]").text((0.7*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[0]+"]").text((0.5*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[3]+"]").text((0.2*ans).toFixed(2)+" %")
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.7)+" %") 
-		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.4)+" %")
-		$("label[for*="+ansArray[2]+"]").text((ans)+" %")	
-		$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.3)+" %") 
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.7).toFixed(2)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.4).toFixed(2)+" %")
+		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+" %")	
+		$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.3).toFixed(2)+" %") 
 	}
 	
 	return ansArray[2]
