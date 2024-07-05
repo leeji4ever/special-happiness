@@ -10,16 +10,16 @@ import os, json, numpy as np
     #t = "".join(t) #Uses the empty string between subsequent elements of t to combine them into one string.
     #print(t)
     #i = t.index("=")
-    #literacy = json.loads(t[i+1:].strip())
-    #print(literacy)
-    #print(type(literacy))
+    #data = json.loads(t[i+1:].strip())
+    #print(data)
+    #print(type(data))
 
 def calquintiles(data):
     literacy_rates = []
     
     for country in data:
-        if 'Total literacy rate (%)' in data[country]:
-            rate = data[country]['Total literacy rate (%)']
+        if 'total population' in data[country]:
+            rate = data[country]['total population']
             literacy_rate = float(rate.strip('%'))
             literacy_rates.append(literacy_rate)
 
@@ -34,7 +34,7 @@ def calquintiles(data):
     }
 
     for country in data:
-        rate = float(data[country]['Total literacy rate (%)'].strip('%'))
+        rate = float(data[country]['total population'].strip('%'))
         if rate <= percentiles[1]:
             quintiles['Q1'].append(country)
         elif rate <= percentiles[2]:
@@ -53,7 +53,11 @@ if __name__ == "__main__":
     filename = os.path.join(dirname, "../json/literacy.json")
 
     with open(filename) as f:
-        data = json.load(f)
+        t = f.readlines()
+        t = "".join(t)
+        print(t)
+        i = t.index("=")
+        data = json.loads(t[i+1:].strip())
     
     percentiles, quintiles = calquintiles(data)
 
