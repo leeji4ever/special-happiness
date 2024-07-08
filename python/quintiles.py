@@ -55,7 +55,7 @@ if __name__ == "__main__":
     with open(filename) as f:
         t = f.readlines()
         t = "".join(t)
-        print(t)
+        #print(t)
         i = t.index("=")
         data = json.loads(t[i+1:].strip())
     
@@ -64,3 +64,4 @@ if __name__ == "__main__":
     print("Percentiles:", percentiles)
     for q in quintiles:
         print(f"Quintile {q}: {len(quintiles[q])} countries")
+        print(quintiles[q])
