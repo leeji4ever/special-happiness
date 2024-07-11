@@ -1,4 +1,4 @@
-import json, os, random, numpy as np
+import json, os, random
 from quintiles import calquintiles #imports the function from the file, so it can be used
 
 def generate_quiz(data, quintile):
@@ -6,12 +6,12 @@ def generate_quiz(data, quintile):
     quiz = []
     country = random.choice(list(data.keys()))
     values = data[country]
-    literacy_rate = values.get('total population')
-    if not literacy_rate:
+    mortality_rate = values.get('total')
+    if not mortality_rate:
         return None
-    literacy_rate_strip = literacy_rate.strip('%')
+    mortality_rate_strip = mortality_rate.strip('%')
     try:
-        literacy_rate = float(literacy_rate_strip)
+        mortality_rate = float(mortality_rate)
     except ValueError:
         return None
     correct_quintile = None
@@ -30,23 +30,23 @@ def generate_quiz(data, quintile):
         return None
     other_quintile = random.choice(other_quintiles)
     other_country = random.choice(quintile[other_quintile])
-    other_literacy_rate = data[other_country].get('total population', '').strip()
+    other_mortality_rate = data[other_country].get('total', '').strip()
     #Trying to access the value associated to key using the normal [] syntax
     #raises an error if that key does not exist in that dictionary.
     #Using the .get() method instead returns None instead of raising an error;
     #supplying a second argument to .get() changes the default return value to that instead.
-    if not other_literacy_rate:
+    if not other_mortality_rate:
         return None
     try:
-        other_literacy_rate_strip = other_literacy_rate.strip('%')
-        other_literacy_rate = float(other_literacy_rate_strip)
+        other_mortality_rate_strip = other_mortality_rate.strip('%')
+        other_mortality_rate = float(other_mortality_rate_strip)
     except ValueError:
         return None
-    if literacy_rate > other_literacy_rate:
+    if mortality_rate > other_mortality_rate:
         higher_country, lower_country = country, other_country
     else:
         higher_country, lower_country = other_country, country
-    question = "Which country has a higher literacy rate?"
+    question = "Which country has a higher mortality rate?"
     choice_A = random.choice(['A', 'B'])
     choices = {
         'A': higher_country if choice_A == 'A' else lower_country,
@@ -73,7 +73,7 @@ def generate_quiz(data, quintile):
         #correct_choice = random.choice(['A','B'])
         #choices = {
             #'B' if correct_choice == 'A' else 'A': f"{wrong_answer}",
-            #correct_choice: f"{literacy_rate}"
+            #correct_choice: f"{mortality_rate}"
         #}
         #quiz.append({
             #'question': question,
@@ -84,7 +84,7 @@ def generate_quiz(data, quintile):
 
 if __name__ == "__main__":
     dirname = os.path.dirname(__file__)
-    filename = os.path.join(dirname, "../json/literacy.json")
+    filename = os.path.join(dirname, "../json/mortality rate.json")
 
     if not os.path.exists(filename):
         print(f"File '{filename}' not found.")

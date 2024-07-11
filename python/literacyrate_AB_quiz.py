@@ -1,4 +1,4 @@
-import json, os, random, numpy as np
+import json, os, random
 from quintiles import calquintiles #imports the function from the file, so it can be used
 
 def generate_quiz(data, quintile):
