@@ -1,15 +1,14 @@
 import json, os, random
-from quintiles import calquintiles #imports the function from the file, so it can be used
+from quintiles2 import calquintiles #imports the function from the file, so it can be used
 
 def generate_quiz(data, quintile):
     """quintile is a dictionary whose keys are the strings 'Q1' thru 'Q5' and whose values are lists of countries."""
     quiz = []
     country = random.choice(list(data.keys()))
     values = data[country]
-    malnutrition_rate = values.get({country})
+    malnutrition_rate = values[0]
     if not malnutrition_rate:
         return None
-    malnutrition_rate_strip = malnutrition_rate.strip('%')
     try:
         malnutrition_rate = float(malnutrition_rate)
     except ValueError:
@@ -30,7 +29,7 @@ def generate_quiz(data, quintile):
         return None
     other_quintile = random.choice(other_quintiles)
     other_country = random.choice(quintile[other_quintile])
-    other_malnutrition_rate = data[other_country].get({country}, '').strip()
+    other_malnutrition_rate = data[other_country][0]
     #Trying to access the value associated to key using the normal [] syntax
     #raises an error if that key does not exist in that dictionary.
     #Using the .get() method instead returns None instead of raising an error;
@@ -38,7 +37,7 @@ def generate_quiz(data, quintile):
     if not other_malnutrition_rate:
         return None
     try:
-        other_malnutrition_rate_strip = other_malnutrition_rate.strip('%')
+        other_malnutrition_rate_strip = other_malnutrition_rate
         other_malnutrition_rate = float(other_malnutrition_rate_strip)
     except ValueError:
         return None
@@ -99,8 +98,10 @@ if __name__ == "__main__":
     except json.JSONDecodeError as e:
         print(f"Error loading JSON: {e}")
         exit()
-
-    percentiles, quintiles = calquintiles(data)
+    print(type(data))
+    print(len(data))
+    print(data)
+    percentiles, quintiles = calquintiles(data,key=0)
     score = 0
     numquestions = 10
 

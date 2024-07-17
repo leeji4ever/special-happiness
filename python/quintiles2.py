@@ -58,7 +58,12 @@ if __name__ == "__main__":
                "2":"malnutrition.json",
                "3":"mortality rate.json",
                "4":"water.json"}
+    output_filename = {"1":"literacyrate_AB_quiz.js",
+                       "2":"malnutrition_AB_quiz.js",
+                       "3":"mortalityrate_AB_quiz.js",
+                       "4":"water_AB_quiz.js"}
     filename = os.path.join(dirname, "../json/"+filenames[option])
+    output_filename = os.path.join(dirname, "../json/" + output_filename[option])
 
     with open(filename) as f:
         t = f.readlines()
@@ -78,3 +83,8 @@ if __name__ == "__main__":
     for q in quintiles:
         print(f"Quintile {q}: {len(quintiles[q])} countries")
         print(quintiles[q])
+
+    with open(output_filename, 'w') as json_file:
+        json.dump(quintiles, json_file, indent=2)
+
+    print(f"{output_filename} saved.")
