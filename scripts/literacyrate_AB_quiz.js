@@ -1,4 +1,3 @@
-const literacy = require('../json/literacy.json');
 console.log(literacy);
 
 ansArray = [];
