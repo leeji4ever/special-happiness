@@ -1,9 +1,9 @@
-const literacy = require('./literacy.json');
+const literacy = require('../json/literacy.json');
 console.log(literacy);
 
 ansArray = [];
 const keyLiteracy = Object.keys(literacy) //makes a list consisted of the keys(countries) in ectotal 
-for (let i=1;i<=10;i++)
+for (let i=1;i<=10;i++){
 
 var random = Math.floor(Math.random()*keyLiteracy.length)
 var random2 = Math.floor(Math.random()*(keyLiteracy.length-1))
@@ -18,6 +18,7 @@ console.log(txt)
 console.log(txt2)
 $('#'+i+'A').text(txt) //use jquery to show random country in html
 $('#'+i+'B').text(txt2) //use jquery to show random country in html
+}
 
 function getRandomCountry(data) {
     const keys = Object.keys(data);
