@@ -15,9 +15,8 @@ var txt = keyLiteracy[random]
 var txt2 = keyLiteracy[random2]
 console.log(txt)
 console.log(txt2)
-$('#'+i+'A').text(txt) //use jquery to show random country in html
-$('#'+i+'B').text(txt2) //use jquery to show random country in html
-}
+$("label[for*="+i+"A]").text(txt)
+$("label[for*="+i+"B]").text(txt2)}
 
 function getRandomCountry(data) {
     const keys = Object.keys(data);
