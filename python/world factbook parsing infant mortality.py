@@ -2,7 +2,6 @@ import urllib3
 import json
 resp = urllib3.request("GET", "https://www.cia.gov/the-world-factbook/field/infant-mortality-rate")
 resp.data
-
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(resp.data, 'html.parser')
 
@@ -10,7 +9,7 @@ soup = BeautifulSoup(resp.data, 'html.parser')
 
 mortality_blocks = soup.find_all(class_="pb30")
 
-
+print(mortality_blocks)
 i=0
 
 countries = {}

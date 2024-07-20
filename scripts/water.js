@@ -83,12 +83,17 @@ function highestAns(num){
 	shuffle(ansArray)
 	console.log(ansArray[0])
 	
-	$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ "%")
-	$("label[for*="+ansArray[1]+"]").text((0.8*ans).toFixed(2)+ "%") 
-	$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+ "%") 
-	$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ "%") 
+	if(ans ==100){
+		return ansHundred(num)
+	}
+	else{
+		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ "%")
+		$("label[for*="+ansArray[1]+"]").text((0.8*ans).toFixed(2)+ "%") 
+		$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+ "%") 
+		$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ "%") 
+		return ansArray[0]
+	}
 	
-	return ansArray[0]
 }
 
 function lowestAns(num){
@@ -99,12 +104,19 @@ function lowestAns(num){
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((2.1*ans).toFixed(2)+ "%") 
-	$("label[for*="+ansArray[1]+"]").text((1.5*ans).toFixed(2)+ "%") 
-	$("label[for*="+ansArray[2]+"]").text((1.3*ans).toFixed(2)+ "%") 
-	$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ "%")
 	
-	return ansArray[3]
+	if(ans ==100){
+		return ansHundred(num)
+	}
+	
+	else{
+		$("label[for*="+ansArray[0]+"]").text((2.1*ans).toFixed(2)+ "%") 
+		$("label[for*="+ansArray[1]+"]").text((1.5*ans).toFixed(2)+ "%") 
+		$("label[for*="+ansArray[2]+"]").text((1.3*ans).toFixed(2)+ "%") 
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ "%")
+		return ansArray[3]
+	}
+	
 }
 
 function secondHighestAns(num){
@@ -112,15 +124,21 @@ function secondHighestAns(num){
 	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
-	
+		
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((1.6*ans).toFixed(2)+ "0") 
-	$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ "0")
-	$("label[for*="+ansArray[2]+"]").text((0.8*ans).toFixed(2)+ "0") 
-	$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ "0")
+	
+	if(ans ==100){
+		return ansHundred(num)
+	}
+	else{
+	$("label[for*="+ansArray[0]+"]").text((1.6*ans).toFixed(2)+ "%") 
+	$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ "%")
+	$("label[for*="+ansArray[2]+"]").text((0.8*ans).toFixed(2)+ "%") 
+	$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ "%")
 		
 	return ansArray[1]
+	}
 }
 
 function secondLowestAns(num){
@@ -131,13 +149,35 @@ function secondLowestAns(num){
 	
 	shuffle(ansArray)
 	console.log(ans)
+	
+	if(ans ==100){
+		return ansHundred(num)
+	}
+	else{
 	$("label[for*="+ansArray[0]+"]").text((1.7*ans).toFixed(2)+ "%") 
 	$("label[for*="+ansArray[1]+"]").text((1.3*ans).toFixed(2)+ "%")
 	$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ "%")	
 	$("label[for*="+ansArray[3]+"]").text((0.6*ans).toFixed(2)+ "%") 
 	
 	return ansArray[2]
+	}
 }
+
+
+function ansHundred(num){
+	float random1 = Math.random()*(0.99-0.51)+0.51
+	float random2 = Math.random()*(0.5-0.1)+0.1
+	var ans = parseFloat(water[txt][0])
+	var ansArray = [num+'A',num+'B',num+'C',num+'D']
+	
+	
+	shuffle(ansArray)
+	console.log(ans)
+	$("label[for*="+ansArray[0]+"]").text(((random1-random2)*ans).toFixed(2)+ "%") 
+	$("label[for*="+ansArray[1]+"]").text(((random1-random2)*ans).toFixed(2)+ "%")
+	$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ "%")	
+	$("label[for*="+ansArray[3]+"]").text(((random1-random2)*ans).toFixed(2)+ "%") 
+	return ansArray[2]
 
 function ansRandom(){
 	var random = Math.floor(Math.random()*4)

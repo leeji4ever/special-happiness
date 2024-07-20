@@ -77,6 +77,11 @@ h2{
     display: inline
 }
 
+h3{
+	color:rgb(40, 129, 83);
+	text-align: center;
+}
+
 #submit, #restart {
     font-size: 20px;
     padding: 15px 30px;
@@ -89,6 +94,7 @@ h2{
     font-weight: bold;
     letter-spacing: 1px;
     font-family: serif;
+	text-align: center;
 }
 
 #submit {
@@ -146,6 +152,7 @@ label.radio {
     text-align: center;
     line-height: 20px;
     cursor: pointer;
+	
 }
 
 input[type="radio"]:checked + label.radio {
@@ -235,12 +242,9 @@ color: white;
     padding-top: 60px
 }
 =======
-div{
-	display: inline-block;
-}	
 
 h5{
-	color: white;
+	color: black;
 	text-align: center;
 	vertical-align: middle;
 	padding: 0.1%;
