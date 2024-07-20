@@ -165,8 +165,7 @@ function secondLowestAns(num){
 
 
 function ansHundred(num){
-	float random1 = Math.random()*(0.99-0.51)+0.51
-	float random2 = Math.random()*(0.5-0.1)+0.1
+	var random1 = Math.random()*(0.92-0.1)+0.1
 	var ans = parseFloat(water[txt][0])
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
@@ -178,6 +177,7 @@ function ansHundred(num){
 	$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ "%")	
 	$("label[for*="+ansArray[3]+"]").text(((random1-random2)*ans).toFixed(2)+ "%") 
 	return ansArray[2]
+}
 
 function ansRandom(){
 	var random = Math.floor(Math.random()*4)
