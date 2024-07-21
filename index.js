@@ -3,11 +3,6 @@ const express = require('express');
 const app = express(); 
 const path = require('path'); 
 const router = express.Router(); 
-
-app.set('view engine', 'ejs');
-app.get('/', (req, res) => {
-    res.render('navbar');
-});
 // Setup essential routes 
 router.get('/', function(req, res) { 
     res.sendFile(path.join(__dirname + '/html/income quiz.html')); 
