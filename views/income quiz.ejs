@@ -3,31 +3,13 @@
     <title>Practice Quiz</title>
 </head>
 <body>
-    <div class="navbar">
-        <div style="float:right; margin-right: 210px;">
-            <div class="dropdown">
-                <button class="dropbtn" style="color: rgb(31, 43, 73);">Quizzes
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="income quiz.html">Income Quiz</a>
-                    <a href="literacy quiz.html">Literacy Quiz</a>
-                    <a href="mortality rate quiz.html">Infant Mortality Quiz</a>
-                    <a href="Water.html">Clean Drinking Water Quiz</a>
-                    <a href="malnutrition quiz.html">Malnutrition Quiz</a>
-                    <a href="#">Mixed Quiz</a>
-                </div>
-            </div>
-        </div>
-        <a href="#home">Home</a>
-    </div>
+    <%- include ('navbar.ejs') %>
 
     <div class="container" style="margin-top: 60px;">
-        <h1>World Malnutrition Quiz</h1>
-		<h3 style="margin-bottom: 60px;">Malnutrition Rate: the annual number of deaths from protein energy mulnutrition per 100,000  people</h3>
+        <h1 style="margin-top: 60px;">World Income Quiz</h1>
     
         <div class="questions-container">
-            <h2>Q1. What is the malnutrition rate for <span id="country1"></span>? </h2>
+            <h2>Q1. What is the average total earnings for each household in <span id="country1"></span>? </h2>
             </div>
             <div class="navigation">
                 <div class="options">
@@ -49,7 +31,7 @@
         <br>
 
         <div class="questions-container">
-            <h2>Q2. What is the malnutrition rate for <span id="country2"></span>? </h2>
+            <h2>Q2. What is the average total earnings for each household in <span id="country2"></span>? </h2>
             </div>
             <div class="navigation">
                 <div class="options">
@@ -71,7 +53,7 @@
         <br>
 
         <div class="questions-container">
-            <h2>Q3. What is the malnutrition rate for <span id="country3"></span>? </h2>
+            <h2>Q3. What is the average total earnings for each household in <span id="country3"></span>? </h2>
             </div>
             <div class="navigation">
                 <div class="options">
@@ -93,7 +75,7 @@
         <br>
 
         <div class="questions-container">
-            <h2>Q4. What is the malnutrition rate for <span id="country4"></span>? </h2>
+            <h2>Q4. What is the average total earnings for each household in <span id="country4"></span>? </h2>
             </div>
             <div class="navigation">
                 <div class="options">
@@ -115,7 +97,7 @@
         <br>
 
         <div class="questions-container">
-            <h2>Q5. What is the malnutrition rate for <span id="country5"></span>? </h2>
+            <h2>Q5. What is the average total earnings for each household in <span id="country5"></span>? </h2>
             </div>
             <div class="navigation">
                 <div class="options">
@@ -137,7 +119,7 @@
         <br>
 
         <div class="questions-container">
-            <h2>Q6. What is the malnutrition rate for <span id="country6"></span>? </h2>
+            <h2>Q6. What is the average total earnings for each household in <span id="country6"></span>? </h2>
             </div>
             <div class="navigation">
                 <div class="options">
@@ -159,7 +141,7 @@
         <br>
 
         <div class="questions-container">
-            <h2>Q7. What is the malnutrition rate for <span id="country7"></span>? </h2>
+            <h2>Q7. What is the average total earnings for each household in <span id="country7"></span>? </h2>
             </div>
             <div class="navigation">
                 <div class="options">
@@ -181,7 +163,7 @@
         <br>
 
         <div class="questions-container">
-            <h2>Q8. What is the malnutrition rate for <span id="country8"></span>? </h2>
+            <h2>Q8. What is the average total earnings for each household in <span id="country8"></span>? </h2>
             </div>
             <div class="navigation">
                 <div class="options">
@@ -203,7 +185,7 @@
         <br>
 
         <div class="questions-container">
-            <h2>Q9. What is the malnutrition rate for <span id="country9"></span>? </h2>
+            <h2>Q9. What is the average total earnings for each household in <span id="country9"></span>? </h2>
             </div>
             <div class="navigation">
                 <div class="options">
@@ -225,7 +207,7 @@
         <br>
 
         <div class="questions-container">
-            <h2>Q10. What is the malnutrition rate for <span id="country10"></span>? </h2>
+            <h2>Q10. What is the average total earnings for each household in <span id="country10"></span>? </h2>
             </div>
             <div class="navigation">
                 <div class="options">
@@ -257,8 +239,10 @@
 	
 
         <script src = "../scripts/jquery-3.7.1.min.js"></script>
-        <script src="../json/malnutrition.json"></script>
-        <script src="../scripts/malnutrition.js"></script>
+        <script src="../scripts/ectotal.json"></script>
+        <script src="../scripts/ectotal.js"></script>
+        <script src="../scripts/income quiz.js"></script>
+        <script>console.log(ectotal)</script>
 
     <link rel = "stylesheet" href = "../css/Income quiz.css">
 </body>
