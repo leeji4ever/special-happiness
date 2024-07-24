@@ -1,5 +1,5 @@
-
-
+ansArray = [];
+var txt;
 
 
 console.log(literacy)
@@ -8,7 +8,7 @@ console.log(literacy)
 //console.log(ectotal)
 
 $(document).ready(function(){ 
-	ansArray = [];
+	
 	const keyLiteracy = Object.keys(literacy) //makes a list consisted of the keys(countries) in ectotal 
 	for (let i=1;i<=10;i++){
 
