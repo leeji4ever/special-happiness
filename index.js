@@ -2,7 +2,9 @@
 const express = require('express'); 
 const app = express(); 
 const path = require('path'); 
-const router = express.Router(); 
+//const router = express.Router(); 
+
+
 // Setup essential routes 
 router.get('/', function(req, res) { 
     res.sendFile(path.join(__dirname + '/html/income quiz.html')); 
@@ -18,3 +20,17 @@ router.get('/sitemap', function(req, res) {
 app.use('/', router); 
 app.listen(process.env.port || 3000); 
 console.log('Running at Port 3000');
+
+
+
+// Setting EJS as the view engine
+app.set('view engine', 'ejs');
+
+app.get('/', (req, res) => {
+    res.render('literacy quiz');
+});
+
+//Server is listening on port 5000
+app.listen(5000, () => {
+    console.log(`App listening at port 5000`);
+  })
