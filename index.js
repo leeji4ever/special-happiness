@@ -30,6 +30,8 @@ app.get('/', (req, res) => {
     res.render('literacy quiz');
 });
 
+app.use('/css',express.static(__dirname +'/css'));
+
 //Server is listening on port 5000
 app.listen(5000, () => {
     console.log(`App listening at port 5000`);
