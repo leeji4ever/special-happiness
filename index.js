@@ -30,9 +30,8 @@ app.get('/', (req, res) => {
     res.render('literacy quiz');
 });
 
-app.get('*.html', (req, res) => {
-    fname = req.params[0];
-    res.render(fname);
+app.get('/html/:name', (req, res) => {
+    res.render(req.params.name);
 });
 
 app.use('/css',express.static(__dirname +'/css'));
