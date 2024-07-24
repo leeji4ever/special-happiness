@@ -31,7 +31,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('*.html', (req, res) => {
-    res.render('*');
+    fname = req.params[0];
+    res.render(fname);
 });
 
 app.use('/css',express.static(__dirname +'/css'));
