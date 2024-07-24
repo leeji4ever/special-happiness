@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Practice Quiz</title>
+</head>
+<body>
+	<%- include ('navbar.ejs') %>
+	
+	<div class = "container" style = "margin-top: 50px;">
+		<h1 style="margin-top: 60px;"> World Literacy Quiz</h1>
+		<h3 style="margin-bottom: 60px;">Literacy Rate: the percentage of people who is over the age of 15 that can read and write</h3>
+
+		<%- include ('question template.ejs') %>
+
+<h5>Source: The World Factbook by the CIA</h5>
+
+<br>
+		<div class = "button-container">
+			<input style="margin-right: 16px" type = "submit" value = "Submit" id = "submit">
+			<input type = "submit" value = "Restart" id = "restart">
+		</div>
+
+		<script src = "../scripts/jquery-3.7.1.min.js"></script>
+		<script src="../json/literacy.json"></script>
+		<script src="../scripts/literacy quiz.js"></script>
+
+
+
+
+
+	<link rel = "stylesheet" href = "../css/Income quiz.css">
+	
+</body>
+</html>
