@@ -17,7 +17,7 @@ $(document).ready(function(){
 	console.log(random)
 
 	console.log(keyLiteracy)
-	var txt = keyLiteracy[random] //assigns a random country to txt
+	txt = keyLiteracy[random] //assigns a random country to txt
 	console.log(txt)
 	$('#country'+i).text(txt) //use jquery to show random country in html
 		
