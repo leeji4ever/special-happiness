@@ -7,56 +7,67 @@ console.log(literacy)
 
 //console.log(ectotal)
 
-ansArray = [];
-const keyLiteracy = Object.keys(literacy) //makes a list consisted of the keys(countries) in ectotal 
-for (let i=1;i<=10;i++){
+$(document).ready(function(){ 
+	ansArray = [];
+	const keyLiteracy = Object.keys(literacy) //makes a list consisted of the keys(countries) in ectotal 
+	for (let i=1;i<=10;i++){
 
 
-var random = Math.floor(Math.random()*keyLiteracy.length)
-console.log(random)
+	var random = Math.floor(Math.random()*keyLiteracy.length)
+	console.log(random)
 
-console.log(keyLiteracy)
-var txt = keyLiteracy[random] //assigns a random country to txt
-console.log(txt)
-$('#country'+i).text(txt) //use jquery to show random country in html
-	
-	
-var random = ansRandom();
-console.log(random)
-var correctAns;
-
-
-
-if (random == 0){
-	console.log("asdf")
-	
-	var correctAns = highestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-else if(random == 1){
-	console.log("fdsa")
-	
-	var correctAns = secondHighestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-else if(random ==2){
-	
-	var correctAns = secondLowestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-else if(random==3){
-	
-	var correctAns = lowestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-}
+	console.log(keyLiteracy)
+	var txt = keyLiteracy[random] //assigns a random country to txt
+	console.log(txt)
+	$('#country'+i).text(txt) //use jquery to show random country in html
+		
+		
+	var random = ansRandom();
+	console.log(random)
+	var correctAns;
 
 
 
+	if (random == 0){
+		console.log("asdf")
+		
+		var correctAns = highestAns(i);
+		ansArray.push(correctAns);
+		console.log(ansArray)
+	}
+	else if(random == 1){
+		console.log("fdsa")
+		
+		var correctAns = secondHighestAns(i);
+		ansArray.push(correctAns);
+		console.log(ansArray)
+	}
+	else if(random ==2){
+		
+		var correctAns = secondLowestAns(i);
+		ansArray.push(correctAns);
+		console.log(ansArray)
+	}
+	else if(random==3){
+		
+		var correctAns = lowestAns(i);
+		ansArray.push(correctAns);
+		console.log(ansArray)
+	}
+	}
+
+
+	s = document.getElementById("submit");
+	s.addEventListener("click", submitClick);
+	s.addEventListener("mouseover", submitHover);
+	s.addEventListener("mouseout", submitDefault);
+
+	c = document.getElementById("restart");
+	c.addEventListener("click", restart);
+});
+
+var score = 0;
+var checClick = false;
 
 function shuffle(array) {
 	  let currentIndex = array.length;
@@ -171,18 +182,6 @@ function ansRandom(){
 }
 
 
-
-
-s = document.getElementById("submit");
-s.addEventListener("click", submitClick);
-s.addEventListener("mouseover", submitHover);
-s.addEventListener("mouseout", submitDefault);
-
-c = document.getElementById("restart");
-c.addEventListener("click", restart);
-
-var score = 0;
-var checClick = false;
 function submitHover(){
 	this.value = "Submit!"
 }
