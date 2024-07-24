@@ -31,6 +31,8 @@ app.get('/', (req, res) => {
 });
 
 app.use('/css',express.static(__dirname +'/css'));
+app.use('/scripts',express.static(__dirname +'/scripts'));
+app.use('/json',express.static(__dirname +'/json'));
 
 //Server is listening on port 5000
 app.listen(5000, () => {
