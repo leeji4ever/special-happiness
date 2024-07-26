@@ -1,6 +1,13 @@
+let questionPrompt = ["What is the average total earnings for each household in ",
+					  "What is the liteacy rate of ",
+					  "What is the mortality rate of ",
+					  "What percent of the people had access to clean drinking water in ",
+					  "What is the malnutrition rate for "]
+
+
 <% for(var i=1; i<=10; i++) { %>
 	<div class="questions-container">
-		<h2>Q<%= i %>.What is the literacy rate of <span id="country<%= i %>"></span>?</h2>
+		<h2>Q<%= i %>.questionPrompt[data] <span id="country<%= i %>"></span>?</h2>
 	</div>
 		<div class="navigation">
 			<div class="options">
