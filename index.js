@@ -27,7 +27,7 @@ console.log('Running at Port 3000');
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('literacy quiz');
+    res.render('literacy quiz 2');
 });
 
 app.get('/html/:name', (req, res) => {
