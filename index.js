@@ -1,12 +1,13 @@
 // Import essential libraries 
+const cookieParser = require('cookie-parser');
+app.use(cookieParser());
 const express = require('express'); 
 const app = express(); 
 const path = require('path'); 
 const session = require('express-session')
 
 // need cookieParser middleware before we can do anything with cookies
-const cookieParser = require('cookie-parser');
-app.use(cookieParser());
+
 
 app.use(function (req, res, next) {
   // check if client sent cookie
