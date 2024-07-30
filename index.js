@@ -3,6 +3,26 @@ const express = require('express');
 const app = express(); 
 const path = require('path'); 
 const session = require('express-session')
+
+// need cookieParser middleware before we can do anything with cookies
+const cookieParser = require('cookie-parser');
+app.use(cookieParser());
+
+app.use(function (req, res, next) {
+  // check if client sent cookie
+  var cookie = req.cookies.cookieName;
+  if (cookie === undefined) {
+    // no: set a new cookie
+    var randomNumber=Math.random().toString();
+    randomNumber=randomNumber.substring(2,randomNumber.length);
+    res.cookie('cookieName',randomNumber, { maxAge: 900000, httpOnly: true });
+    console.log('New cookie created successfully', cookie);
+  } else {
+    // yes, cookie was already present 
+    //console.log('cookie exists', cookie);
+  } 
+  next(); // <-- important!
+});
 //const router = express.Router(); 
 
 /*
@@ -23,13 +43,12 @@ app.listen(process.env.port || 3000);
 console.log('Running at Port 3000');
 */
 
-
+app.use(express.static(__dirname + '/public'));
 // Setting EJS as the view engine
 app.set('view engine', 'ejs');
 app.set('trust proxy', true);
 app.get('/', (req, res) => {
     res.render('literacy quiz');
-	console.log(req.ip);
 });
 
 app.get('/views/:name', (req, res) => {
