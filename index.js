@@ -32,13 +32,15 @@ app.get('/', (req, res) => {
 	console.log(req.ip);
 });
 
-app.get('/html/:name', (req, res) => {
+app.get('/views/:name', (req, res) => {
     res.render(req.params.name);
 });
+
 
 app.use('/css',express.static(__dirname +'/css'));
 app.use('/scripts',express.static(__dirname +'/scripts'));
 app.use('/json',express.static(__dirname +'/json'));
+app.use('/views',express.static(__dirname +'/views'));
 
 
 
