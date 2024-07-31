@@ -50,11 +50,11 @@ app.set('view engine', 'ejs');
 app.set('trust proxy', true);
 app.get('/', (req, res) => {
     res.render('literacy quiz');
+	console.log(req.ip);
 });
 
 app.get('/views/:name', (req, res) => {
     res.render(req.params.name);
-	res.render(req.ip);
 });
 
 app.use('/images',express.static(__dirname +'/images'));
