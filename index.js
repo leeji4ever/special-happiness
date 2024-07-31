@@ -16,11 +16,11 @@ app.use(function (req, res, next) {
     // no: set a new cookie
     var randomNumber=Math.random().toString();
     randomNumber=randomNumber.substring(2,randomNumber.length);
-    res.cookie('cookieName',randomNumber, { httpOnly: true, domain:'special-happiness.onrender.com' });
-    console.log('New cookie created successfully', cookie);
+    res.cookie('cookieName',randomNumber, { maxAge: 2147483647, httpOnly: true, domain:'special-happiness.onrender.com' });
+    console.log('New cookie created successfully');
   } else {
     // yes, cookie was already present 
-    //console.log('cookie exists', cookie);
+    console.log('cookie exists', cookie);
   } 
   next(); // <-- important!
 });
