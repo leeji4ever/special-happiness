@@ -54,6 +54,7 @@ app.get('/', (req, res) => {
 
 app.get('/views/:name', (req, res) => {
     res.render(req.params.name);
+	res.render(req.ip);
 });
 
 app.use('/images',express.static(__dirname +'/images'));
