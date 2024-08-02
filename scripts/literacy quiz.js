@@ -182,56 +182,6 @@ function ansRandom(){
 }
 
 
-function submitHover(){
-	this.value = "Submit!"
-}
-
-function submitDefault(){
-	this.value = "Submit"
-}
-
-function submitClick(){
-	console.log($('#1B'))
-	console.log($('#1B')[0])
-	/*checClick = true;*/
-	s.style.display = 'none';
-	
-	if(document.getElementById(ansArray[0]).checked) {
-		score++;
-	}
-	
-	if(document.getElementById(ansArray[1]).checked) {
-		score++;
-	}
-	
-	if(document.getElementById(ansArray[2]).checked) {
-		score++;
-	}
-	if(document.getElementById(ansArray[3]).checked) {
-		score++;
-	}
-	if(document.getElementById(ansArray[4]).checked) {
-		score++;
-	}
-	if(document.getElementById(ansArray[5]).checked) {
-		score++;
-	}if(document.getElementById(ansArray[6]).checked) {
-		score++;
-	}
-	if(document.getElementById(ansArray[7]).checked) {
-		score++;
-	}
-	if(document.getElementById(ansArray[8]).checked) {
-		score++;
-	}
-	if(document.getElementById(ansArray[9]).checked) {
-		score++;
-	}
-	
-	alert("Quiz submitted! "+ score+"/10 was correct")
-	alert("Restart the test.")
-}
-
 function restart(){
 	location.reload();
 }

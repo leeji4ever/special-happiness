@@ -2,7 +2,7 @@
 <head>
     <title>Practice Quiz</title>
 </head>
-<body>
+<body onload="checkCookie()">
     <%- include ('navbar.ejs') %>
 
     <div class="container" style="margin-top: 60px;">
@@ -19,13 +19,14 @@
             <input type = "submit" value = "Restart" id = "restart">
         </div>
 	
-
+<link rel = "stylesheet" href = "../css/Income quiz.css">
         <script src = "../scripts/jquery-3.7.1.min.js"></script>
         <script src="../scripts/ectotal.json"></script>
         <script src="../scripts/ectotal.js"></script>
         <script src="../scripts/income quiz.js"></script>
-        <script>console.log(ectotal)</script>
+		<script src="../scripts/submit.js"></script>
+		<script src="../scripts/cookie.js"></script>
 
-    <link rel = "stylesheet" href = "../css/Income quiz.css">
+    
 </body>
 </html>

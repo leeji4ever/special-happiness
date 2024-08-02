@@ -2,13 +2,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Literacy Rate Quiz</title>
+        <title>Mortailty Rate Quiz</title>
     </head>
     <body onload="checkCookie()">
         <%- include ('navbar.ejs') %>
     
         <div class="container" style="margin-top: 60px;">
-            <h1 style="margin-top: 60px;">Literacy Rate Quiz</h1>
+            <h1 style="margin-top: 60px;">Mortailty Rate Quiz</h1>
 
             <%- include ('ab question template.ejs') %>
             <br>
@@ -18,10 +18,10 @@
                 <input type = "submit" value = "Restart" id = "restart">
             </div>
     
-            <script src = "../scripts/jquery-3.7.1.min.js"></script>
-            <script src="../json/literacy.json"></script> <!-- Contains countries with total population -->
-            <script src="../json/literacyrate_AB_quiz.js"></script> <!-- Contains countries separated by quintile -->
-        <script src="../scripts/literacyrate_AB_quiz.js"></script> <!-- Gets two countries from non-adjacent quintiles -->
+           <script src = "../scripts/jquery-3.7.1.min.js"></script>
+            <script src="../json/mortality rate.json"></script> <!-- Contains countries with total population -->
+            <script src="../json/mortalityrate.js"></script> <!-- Contains countries separated by quintile -->
+        <script src="../scripts/mortalityrate_AB_quiz.js"></script> <!-- Gets two countries from non-adjacent quintiles -->
 		<script src="../scripts/submit.js"></script>
 		<script src="../scripts/cookie.js"></script>
 

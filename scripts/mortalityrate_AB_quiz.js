@@ -1,8 +1,8 @@
-console.log(literacy); //country data
+console.log(mortalityRate); //country data
 console.log(quintiles); //quintiles for the countries
 
 let ansArray = [];
-const keyLiteracy = Object.keys(literacy) //makes a list consisted of the keys(countries) in ectotal 
+const keyLiteracy = Object.keys(mortalityRate) //makes a list consisted of the keys(countries) in ectotal 
 for (let i=1;i<=10;i++){
 
 //generates random country pairs
@@ -73,11 +73,6 @@ function getRandomCountry(data) {
     return keys[Math.floor(Math.random()*keys.length)];
 }
 
-//parses the literacy rate from a string to a float
-function parseRate(rate) {
-    return parseFloat(rate.replace('%', '').trim());
-}
-
 //gets the quintile of a country
 function getCountryQuintile(country, quintiles) {
     return quintiles[country];
@@ -101,3 +96,4 @@ function checkAnswer(selected, data) {
     const rateA = parseRate(data[countryA]['total population']);
     const rateB = parseRate(data[countryB]['total population']);
 }
+

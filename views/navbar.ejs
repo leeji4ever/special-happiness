@@ -1,30 +1,39 @@
 <body>
   <div class="navbar">
         <div style="float:right; margin-right: 210px;">
+		<div class="dropdown">
+			<div class="dropdown">
+                <button onclick="location.href='/views/about.ejs'" class="dropbtn" style="color: rgb(31, 43, 73);">About
+                    <i class="fa fa-caret-down"></i>
+                </button>
+					
+
+            </div>
+		</div>	
+			
             <div class="dropdown">
-                <button class="dropbtn" style="color: rgb(31, 43, 73);">Menu
+                <button class="dropbtn" style="color: rgb(31, 43, 73);">Harder Quizzes
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-					<a href="/views/about.ejs">About</a>
                     <a href="/views/income quiz.ejs">Income Quiz</a>
                     <a href="/views/literacy quiz.ejs">Literacy Quiz</a>
                     <a href="/views/mortality rate quiz.ejs">Infant Mortality Quiz</a>
                     <a href="/views/Water.ejs">Clean Drinking Water Quiz</a>
                     <a href="/views/malnutrition quiz.ejs">Malnutrition Quiz</a>
-					<a href="literacyrate ab quiz">Simple Literacy Quiz</a>
                     <a href="#">Mixed Quiz</a>
                 </div>
             </div>
 			
 			<div class="dropdown">
-                <button class="dropbtn" style="color: rgb(31, 43, 73);">Menu
+                <button class="dropbtn" style="color: rgb(31, 43, 73);">Easier Quizzes
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-					<a href="/views/about.ejs">About</a>
-					<a href="literacyrate ab quiz">Simple Literacy Quiz</a>
-                    <a href="#">Mixed Quiz</a>
+					<a href="/views/literacyrate ab quiz">Simple Literacy Quiz</a>
+					<a href="/views/mortalityrate_AB_quiz.ejs">Infant Mortality Quiz</a>
+                    <a href="/views/water_AB_quiz.ejs">Clean Drinking Water Quiz</a>
+                    <a href="/views/malnutrition_AB_quiz.ejs">Malnutrition Quiz</a>
                 </div>
             </div>
 			
