@@ -11,6 +11,7 @@ body {
     flex-wrap: wrap;
     max-width: 2000px;
     margin: 0 auto;
+    background-image: url("images/cloud.jpg");
 }
 
 .question,
@@ -148,7 +149,6 @@ input[type="radio"]{
     display: none;
 }
 
-<<<<<<< HEAD
 label.radio {
     display: inline-block;
     width: stretch;
@@ -252,8 +252,6 @@ color: white;
     padding-top: 60px
 }
 
-=======
-
 h5{
 	color: black;
 	text-align: center;
@@ -264,5 +262,3 @@ h5{
 	height: 20px;
 	margin: 20px auto;
 }
->>>>>>> upstream/master
-dddgd
