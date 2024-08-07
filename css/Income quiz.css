@@ -11,7 +11,10 @@ body {
     flex-wrap: wrap;
     max-width: 2000px;
     margin: 0 auto;
-    background-image: url("images/cloud.jpg");
+    background-color: #e3ceb878;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 .question,
@@ -30,15 +33,16 @@ body {
     justify-content: center;
 }
 
-
 .option {
     display: inline-block;
-    width: calc(80% - 10px);
+    width: auto;
     box-sizing: border-box;
     padding: 5px;
+    background: beige;
+    border: 1px sold #ddd;
+    border-radius: 8px;
     text-align: center;
 }
-
 
 .option label {
     margin: 5px;
@@ -49,37 +53,53 @@ body {
 display: inline-block;
 width: 100%; 
 box-sizing: border-box;
-padding: 2px;
+padding: 8px;
 text-align: center;
 }
 
+.questions-container {
+    border: 2px solid rgba(186, 112, 28, 0.181);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(234, 212, 193);
+    text-align: center;
+}
+
+.question-block {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 10px;
+}
 
 .navigation label {
     display: block;
     padding: 1em;
     color: rgb(0, 0, 0);
-    background: rgb(152, 216, 168);
+    background: rgb(234, 212, 193);
     cursor: pointer;
     margin: 5px;
 }
 
 .navigation label:hover {
-    background: rgb(155, 213, 247);
+    background: rgb(230, 226, 160);
 }
 
 h1{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
-    color: rgb(25, 91, 33);
+    color: rgb(105, 78, 61);
     font-family: 'sans-serif';
     text-align: center;
 	justify-content: center;
 }
 
 h2{
-	font-size: 35px;
+	font-size: 30px;
     font-weight: bold;
-    color: rgb(40, 129, 83);
+    color: rgb(154, 109, 57);
     text-align: center;
     display: inline
 }
@@ -88,6 +108,34 @@ h3{
 	color:rgb(40, 129, 83);
 	text-align: center;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .grid2x2 {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .grid2x2 > div {
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    flex-direction: column;
+  }
+  .grid2x2 > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .box { margin: 20px; }
+  .box1 { background-color: rgb(234, 212, 193); }
+  .box2 { background-color: rgb(234, 212, 193); }
+  .box3 { background-color: rgb(234, 212, 193); }
+  .box4 { background-color: rgb(234, 212, 193); }
 
 #submit, #restart {
     font-size: 20px;
@@ -162,14 +210,14 @@ label.radio {
 }
 
 input[type="radio"]:checked + label.radio {
-background-color: #2c7f5e;
+background-color: #8da98b;
 border: 2.5px solid #033708;
 color: white;
 
 }
 
 .navbar {
-    background-color: #e3b3ff;
+    background-color: #e3ceb8;
     position: fixed;
     top: 0;
     width: 100%;
