@@ -34,7 +34,10 @@ body {
 }
 
 .option {
-    display: inline-block;
+    display: flex;
+    min-height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
     width: auto;
     box-sizing: border-box;
     padding: 5px;
@@ -43,6 +46,13 @@ body {
     border-radius: 8px;
     text-align: center;
 }
+
+.option > div {
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    flex-direction: column;
+  }
 
 .option label {
     margin: 5px;
@@ -108,34 +118,6 @@ h3{
 	color:rgb(40, 129, 83);
 	text-align: center;
 }
-
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  .grid2x2 {
-    min-height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .grid2x2 > div {
-    display: flex; 
-    flex-basis: calc(50% - 40px);  
-    justify-content: center;
-    flex-direction: column;
-  }
-  .grid2x2 > div > div {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-  
-  .box { margin: 20px; }
-  .box1 { background-color: rgb(234, 212, 193); }
-  .box2 { background-color: rgb(234, 212, 193); }
-  .box3 { background-color: rgb(234, 212, 193); }
-  .box4 { background-color: rgb(234, 212, 193); }
 
 #submit, #restart {
     font-size: 20px;
