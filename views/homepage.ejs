@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+</head>
+<body>
+    <%- include ('navbar.ejs') %>
+
+    <section id="hero">
+        <h2>Welcome to ~~</h2>
+        <button onclick="location.href='/views/about.ejs'">Learn more</button>
+    </section>
+
+    <section id="quizzes">
+        <h2>Quizzes</h2>
+        <div class="quiz-container">
+            <div class="quiz-column" id="harder">
+                <h3>Harder Quizzes</h3>
+                <div class="quizBox">
+                    <button onclick="location.href='/views/income quiz.ejs'" class="quizBox-item">Income Quiz</button>
+                    <button onclick="location.href='/views/literacy quiz.ejs'" class="quizBox-item">Literacy Quiz</button>
+                    <button onclick="location.href='/views/mortality rate quiz.ejs'" class="quizBox-item">Mortality Rate Quiz</button>
+                    <button onclick="location.href='/views/Water.ejs'" class="quizBox-item">Clean Water Quiz</button>
+                    <button onclick="location.href='/views/malnutrition quiz.ejs'" class="quizBox-item">Malnutrition Rate Quiz</button>
+                </div>
+            </div>
+            <div class="quiz-column" id="easier">
+                <h3>Easier Quizzes</h3>
+                <div class="quizBox">
+                    <button onclick="location.href='/views/income quiz.ejs'" class="quizBox-item">Income Quiz</button>
+                    <button onclick="location.href='/views/literacyrate ab quiz.ejs'" class="quizBox-item">Literacy Quiz</button>
+                    <button onclick="location.href='/views/mortalityrate_AB_quiz.ejs'" class="quizBox-item">Mortality Rate Quiz</button>
+                    <button onclick="location.href='/views/water_AB_quiz.ejs'" class="quizBox-item">Clean Water Quiz</button>
+                    <button onclick="location.href='/views/malnutrition_AB_quiz.ejs'" class="quizBox-item">Malnutrition Rate Quiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Homepage</p>
+    </footer>
+</body>
+</html>
