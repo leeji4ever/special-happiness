@@ -1,14 +1,19 @@
+var  bool = false;
+var rateObject = literacy;
 ansArray = [];
 var txt;
-const keyLiteracy = Object.keys(literacy) //makes a list consisted of the keys(countries) in ectotal 
+const keyArray = Object.keys(rateObject) //makes a list consisted of the keys(countries) in ectotal 
 for (let i=1;i<=10;i++){
 
 
-	var random = Math.floor(Math.random()*keyLiteracy.length)
+	var random = Math.floor(Math.random()*keyArray.length)
 
-	txt = keyLiteracy[random] //assigns a random country to txt
+	txt = keyArray[random] //assigns a random country to txt
 	console.log(txt)
 	$('#country'+i).text(txt) //use jquery to show random country in html
+	if(bool){
+		$('#year'+i).text(ranYear)
+	}
 		
 		
 	var random = ansRandom();
@@ -41,8 +46,6 @@ for (let i=1;i<=10;i++){
 	}
 }
 
-var score = 0;
-var checClick = false;
 
 function shuffle(array) {
 	  let currentIndex = array.length;
@@ -62,7 +65,7 @@ function shuffle(array) {
 
 
 function highestAns(num){
-	var ans = parseFloat(literacy[txt]["total population"]) //gets the literacy rate
+	var ans = parseFloat(rateObject[txt]["total population"]) //gets the literacy rate
 	console.log(ans)
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	

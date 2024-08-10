@@ -1,17 +1,20 @@
+var  bool = true;
+var rateObject = malnutrition;
 ansArray = [];
-const keyMalnutrition = Object.keys(malnutrition) //makes a list consisted of the keys(countries) in mortalityRate
+const keyArray = Object.keys(malnutrition) //makes a list consisted of the keys(countries) in mortalityRate
 for (let i=1;i<=10;i++){
 
 
-var random = Math.floor(Math.random()*keyMalnutrition.length)
+var random = Math.floor(Math.random()*keyArray.length)
 
 
-var txt = keyMalnutrition[random] //assigns a random country to ranCountry
+var txt = keyArray[random] //assigns a random country to ranCountry
 var ranYear = malnutrition[txt][1]
 console.log(txt)
 $('#country'+i).text(txt) //use jquery to show random country in html
-$('#year'+i).text(ranYear)
-	
+if(bool){
+	$('#year'+i).text(ranYear)
+}
 	
 var random = ansRandom();
 var correctAns;

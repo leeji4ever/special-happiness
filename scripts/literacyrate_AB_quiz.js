@@ -60,38 +60,3 @@ $("label[for*="+i+"A]").text(txt)
 $("label[for*="+i+"B]").text(othercountry)
 
 ansArray.push(i+correctAnswer)}
-
-//gets a random country from the data
-function getRandomCountry(data) {
-    const keys = Object.keys(data);
-    return keys[Math.floor(Math.random()*keys.length)];
-}
-
-//parses the literacy rate from a string to a float
-function parseRate(rate) {
-    return parseFloat(rate.replace('%', '').trim());
-}
-
-//gets the quintile of a country
-function getCountryQuintile(country, quintiles) {
-    return quintiles[country];
-}
-
-//displays a quiz with two randomly selected countries
-function displayQuiz(data) {
-    const countryA = getRandomCountry(data);
-    let countryB = getRandomCountry(data);
-    while (countryA === countryB) {
-        countryB = getRandomCountry(data);
-    }
-    document.getElementById('countryA').textContent = countryA;
-    document.getElementById('countryB').textContent = countryB;
-}
-
-//checks the user's answers
-function checkAnswer(selected, data) {
-    const countryA = document.getElementById('countryA').textContent;
-    const countryB = document.getElementById('countryB').textContent;
-    const rateA = parseRate(data[countryA]['total population']);
-    const rateB = parseRate(data[countryB]['total population']);
-}
