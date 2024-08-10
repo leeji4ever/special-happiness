@@ -13,19 +13,22 @@
 
             <%- include ('ab question template.ejs') %>
             <br>
-
+<h5>Source: Our World in Data<br>The data is from 2022</h5>
             <div class="button-container">
                 <input style="margin-right: 16px" type = "submit" value = "Submit" id = "submit">
                 <input type = "submit" value = "Restart" id = "restart">
             </div>
-    
-            <script src = "../scripts/jquery-3.7.1.min.js"></script>
-            <script src="../json/water.json"></script> <!-- Contains countries with total population -->
-            <script src="../json/water_AB_quiz.js"></script> <!-- Contains countries separated by quintile -->
-        <script src="../scripts/water_AB_quiz.js"></script> <!-- Gets two countries from non-adjacent quintiles -->
+			
+		<script src = "../scripts/jquery-3.7.1.min.js"></script>
+		<script src="../json/water.json"></script> <!-- Contains countries with total population -->
+		<script src="../json/water ab quintiles.js"></script> <!-- Contains countries separated by quintile -->
+		<script>
+			var rateObject = water; <!--Sends rateObject value to AB_quiz.js-->
+		</script>
+        <script src="../scripts/AB_quiz.js"></script> <!-- Gets two countries from non-adjacent quintiles -->
 		<script src="../scripts/submit.js"></script>
 		<script src="../scripts/cookie.js"></script>
 
-        <link rel = "stylesheet" href = "../css/Income quiz.css">
+        <link rel = "stylesheet" href = "../css/quiz.css">
     </body>
 </html>

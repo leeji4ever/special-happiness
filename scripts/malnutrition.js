@@ -1,54 +1,6 @@
-var  bool = true;
-var rateObject = malnutrition;
-ansArray = [];
-const keyArray = Object.keys(malnutrition) //makes a list consisted of the keys(countries) in mortalityRate
-for (let i=1;i<=10;i++){
-
-
-var random = Math.floor(Math.random()*keyArray.length)
-
-
-var txt = keyArray[random] //assigns a random country to ranCountry
-var ranYear = malnutrition[txt][1]
-console.log(txt)
-$('#country'+i).text(txt) //use jquery to show random country in html
-if(bool){
-	$('#year'+i).text(ranYear)
-}
-	
-var random = ansRandom();
-var correctAns;
-
-
-
-if (random == 0){
-
-	var correctAns = highestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-else if(random == 1){
-
-	var correctAns = secondHighestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-else if(random ==2){
-	
-	var correctAns = secondLowestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-else if(random==3){
-	
-	var correctAns = lowestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-}
-
-
-
+var  bool = true;//to check if quiz requires getting the year
+				  //see quiz.js
+var rateObject = malnutrition; //sends rateObject value to quiz.js
 
 function shuffle(array) {
 	  let currentIndex = array.length;
@@ -69,7 +21,6 @@ function shuffle(array) {
 
 function highestAns(num){
 	var ans = parseFloat(malnutrition[txt][0]) //gets the malnutrition rate
-	//var ansCurrency = ectotal[txt][2] //gets the currency
 	console.log(ans)
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
@@ -93,7 +44,6 @@ function highestAns(num){
 
 function lowestAns(num){
 	var ans = parseFloat(malnutrition[txt][0])
-	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
@@ -117,7 +67,6 @@ function lowestAns(num){
 
 function secondHighestAns(num){
 	var ans = parseFloat(malnutrition[txt][0])
-	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
@@ -140,7 +89,6 @@ function secondHighestAns(num){
 
 function secondLowestAns(num){
 	var ans = parseFloat(malnutrition[txt][0])
-	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	

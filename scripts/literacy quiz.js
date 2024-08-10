@@ -1,51 +1,6 @@
-var  bool = false;
-var rateObject = literacy;
-ansArray = [];
-var txt;
-const keyArray = Object.keys(rateObject) //makes a list consisted of the keys(countries) in ectotal 
-for (let i=1;i<=10;i++){
-
-
-	var random = Math.floor(Math.random()*keyArray.length)
-
-	txt = keyArray[random] //assigns a random country to txt
-	console.log(txt)
-	$('#country'+i).text(txt) //use jquery to show random country in html
-	if(bool){
-		$('#year'+i).text(ranYear)
-	}
-		
-		
-	var random = ansRandom();
-
-	var correctAns;
-
-
-
-	if (random == 0){
-		var correctAns = highestAns(i);
-		ansArray.push(correctAns);
-		console.log(ansArray)
-	}
-	else if(random == 1){
-		var correctAns = secondHighestAns(i);
-		ansArray.push(correctAns);
-		console.log(ansArray)
-	}
-	else if(random ==2){
-		
-		var correctAns = secondLowestAns(i);
-		ansArray.push(correctAns);
-		console.log(ansArray)
-	}
-	else if(random==3){
-		
-		var correctAns = lowestAns(i);
-		ansArray.push(correctAns);
-		console.log(ansArray)
-	}
-}
-
+var  bool = false;//to check if quiz requires getting the year
+				  //see quiz.js
+var rateObject = literacy;//sends rateObject value to quiz.js
 
 function shuffle(array) {
 	  let currentIndex = array.length;
@@ -156,9 +111,4 @@ function secondLowestAns(num){
 function ansRandom(){
 	var random = Math.floor(Math.random()*4)
 	return random
-}
-
-
-function restart(){
-	location.reload();
 }
