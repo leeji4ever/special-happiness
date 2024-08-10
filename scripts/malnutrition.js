@@ -1,40 +1,31 @@
-//console.log(mortalityRate)
-
-
-//console.log(ectotal)
-
 ansArray = [];
 const keyMalnutrition = Object.keys(malnutrition) //makes a list consisted of the keys(countries) in mortalityRate
 for (let i=1;i<=10;i++){
 
 
 var random = Math.floor(Math.random()*keyMalnutrition.length)
-console.log(random)
 
-//console.log(keyEctotal)
+
 var txt = keyMalnutrition[random] //assigns a random country to ranCountry
 var ranYear = malnutrition[txt][1]
-//console.log(txt)
+console.log(txt)
 $('#country'+i).text(txt) //use jquery to show random country in html
 $('#year'+i).text(ranYear)
 	
 	
 var random = ansRandom();
-console.log(random)
 var correctAns;
 
 
 
 if (random == 0){
-	console.log("asdf")
-	
+
 	var correctAns = highestAns(i);
 	ansArray.push(correctAns);
 	console.log(ansArray)
 }
 else if(random == 1){
-	console.log("fdsa")
-	
+
 	var correctAns = secondHighestAns(i);
 	ansArray.push(correctAns);
 	console.log(ansArray)
@@ -81,7 +72,6 @@ function highestAns(num){
 	
 	
 	shuffle(ansArray)
-	console.log(ansArray[0])
 	
 	if(ans<1){
 		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " %")

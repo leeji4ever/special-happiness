@@ -1,15 +1,10 @@
-console.log(water); //country data
-console.log(quintiles); //quintiles for the countries
-
 let ansArray = [];
 const keyLiteracy = Object.keys(water) //makes a list consisted of the keys(countries) in ectotal 
 for (let i=1;i<=10;i++){
 
 //generates random country pairs
 var random = Math.floor(Math.random()*keyLiteracy.length) //for the first option
-console.log(random)
 
-console.log(keyLiteracy)
 var txt = keyLiteracy[random] //this is a country name
 console.log(txt)
 

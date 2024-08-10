@@ -85,7 +85,7 @@ with open("../IDD_06042024052136105.csv") as f:
           if measure == "ECTOTAL" and age == 'TOT':
               if country not in ectotal:
                   ectotal[country] = []
-              ectotal[country].append((year,value,currency, dollarAmount[country]))
+              ectotal[country].append((value,year,currency, dollarAmount[country]))
                   
       for country in ectotal:
               ectotal[country] = max(ectotal[country], key=lambda x:x[0]) #getting the lastest year

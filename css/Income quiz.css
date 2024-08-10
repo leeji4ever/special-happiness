@@ -1,9 +1,10 @@
 body {
-
+	font-family: "Poppins", sans-serif;
     margin: 0px;
 }
 
 .container {
+	margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +71,7 @@ h1{
     font-size: 40px;
     font-weight: bold;
     color: rgb(25, 91, 33);
-    font-family: 'sans-serif';
+    
     text-align: center;
 	justify-content: center;
 }

@@ -24,32 +24,14 @@ app.use(function (req, res, next) {
   } 
   next(); // <-- important!
 });
-//const router = express.Router(); 
 
-/*
-// Setup essential routes 
-router.get('/', function(req, res) { 
-    res.sendFile(path.join(__dirname + '/html/income quiz.html')); 
-    //__dirname : It will resolve to your project folder. 
-}); 
-router.get('/about', function(req, res) { 
-    res.sendFile(path.join(__dirname + '/README.md')); 
-}); 
-router.get('/sitemap', function(req, res) { 
-    res.sendFile(path.join(__dirname + '/html/literacy quiz.html')); 
-}); 
-//add the router 
-app.use('/', router); 
-app.listen(process.env.port || 3000); 
-console.log('Running at Port 3000');
-*/
 
 app.use(express.static(__dirname + '/public'));
 // Setting EJS as the view engine
 app.set('view engine', 'ejs');
 app.set('trust proxy', true);
 app.get('/', (req, res) => {
-    res.render('literacy quiz');
+    res.render('homepage');
 	console.log(req.ip);
 });
 

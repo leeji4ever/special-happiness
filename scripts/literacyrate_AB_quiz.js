@@ -1,6 +1,3 @@
-console.log(literacy); //country data
-console.log(quintiles); //quintiles for the countries
-
 let ansArray = [];
 const keyLiteracy = Object.keys(literacy) //makes a list consisted of the keys(countries) in ectotal 
 for (let i=1;i<=10;i++){
@@ -9,14 +6,11 @@ for (let i=1;i<=10;i++){
 var random = Math.floor(Math.random()*keyLiteracy.length) //for the first option
 //var random2 = Math.floor(Math.random()*(keyLiteracy.length-1))
 //if (random2>=random) {random2++;}
-console.log(random)
-//console.log(random2)
 
-console.log(keyLiteracy)
 var txt = keyLiteracy[random] //this is a country name
 //var txt2 = keyLiteracy[random2]
 console.log(txt)
-//console.log(txt2)
+
 
 let allowedquintiles = ["Q1","Q2","Q3","Q4","Q5"]
 let correctAnswer = ""

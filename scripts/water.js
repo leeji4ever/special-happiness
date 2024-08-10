@@ -1,40 +1,28 @@
-console.log(water)
-
-
-//console.log(ectotal)
-
 ansArray = [];
 const keyWater = Object.keys(water) //makes a list consisted of the keys(countries) in mortalityRate
 for (let i=1;i<=10;i++){
 
 
 var random = Math.floor(Math.random()*keyWater.length)
-console.log(random)
 
-//console.log(keyEctotal)
 var txt = keyWater[random] //assigns a random country to ranCountry
 var ranYear = water[txt][1]
-//console.log(txt)
+console.log(txt)
 $('#country'+i).text(txt) //use jquery to show random country in html
 $('#year'+i).text(ranYear)
 	
 	
 var random = ansRandom();
-console.log(random)
 var correctAns;
 
 
 
 if (random == 0){
-	console.log("asdf")
-	
 	var correctAns = highestAns(i);
 	ansArray.push(correctAns);
 	console.log(ansArray)
 }
 else if(random == 1){
-	console.log("fdsa")
-	
 	var correctAns = secondHighestAns(i);
 	ansArray.push(correctAns);
 	console.log(ansArray)
@@ -81,7 +69,6 @@ function highestAns(num){
 	
 	
 	shuffle(ansArray)
-	console.log(ansArray[0])
 	
 	if(ans ==100){
 		return ansHundred(num)
@@ -165,7 +152,8 @@ function secondLowestAns(num){
 
 
 function ansHundred(num){
-	var random1 = Math.random()*(0.92-0.1)+0.1
+	var random1 = Math.random()*(0.92-0.52)+0.1
+	var random2 = Math.random()*(0.5-0.1)+0.1
 	var ans = parseFloat(water[txt][0])
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	

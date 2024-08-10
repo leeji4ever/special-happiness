@@ -1,19 +1,13 @@
-console.log(ectotal)
-
-
-//console.log(ectotal)
-
 ansArray = [];
 const keyEctotal = Object.keys(ectotal) //makes a list consisted of the keys(countries) in ectotal 
 for (let i=1;i<=10;i++){
 
 
 var random = Math.floor(Math.random()*keyEctotal.length)
-console.log(random)
 
-console.log(keyEctotal)
+
 var txt = keyEctotal[random] //assigns a random country to ranCountry
-var ranYear = ectotal[txt][0]
+var ranYear = ectotal[txt][1]
 var dollarCon = ectotal[txt][3]
 
 console.log(txt)
@@ -22,20 +16,17 @@ $('#year'+i).text(ranYear)
 	
 	
 var random = ansRandom();
-console.log(random)
 var correctAns;
 
 
 
 if (random == 0){
-	console.log("asdf")
 	
 	var correctAns = highestAns(i);
 	ansArray.push(correctAns);
 	console.log(ansArray)
 }
 else if(random == 1){
-	console.log("fdsa")
 	
 	var correctAns = secondHighestAns(i);
 	ansArray.push(correctAns);
@@ -76,14 +67,14 @@ function shuffle(array) {
 
 
 function highestAns(num){
-	var ans = parseInt(ectotal[txt][1]) //gets the ectotal value
+	var ans = parseInt(ectotal[txt][0]) //gets the ectotal value
 	var ansCurrency = ectotal[txt][2] //gets the currency
 	console.log(ans)
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
-	console.log(ansArray[0])
+	
 	
 	$("label[for*="+ansArray[0]+"]").text(Math.round(ans)+" "+ansCurrency+"  ( "+Math.round(dollarCon)+" USD )")
 	$("label[for*="+ansArray[1]+"]").text(Math.round(0.8*ans)+" "+ansCurrency+"  ( "+Math.round(0.8*dollarCon)+" USD )") 
@@ -94,7 +85,7 @@ function highestAns(num){
 }
 
 function lowestAns(num){
-	var ans = parseInt(ectotal[txt][1])
+	var ans = parseInt(ectotal[txt][0])
 	var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
@@ -110,7 +101,7 @@ function lowestAns(num){
 }
 
 function secondHighestAns(num){
-	var ans = parseInt(ectotal[txt][1])
+	var ans = parseInt(ectotal[txt][0])
 	var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
@@ -126,7 +117,7 @@ function secondHighestAns(num){
 }
 
 function secondLowestAns(num){
-	var ans = parseInt(ectotal[txt][1])
+	var ans = parseInt(ectotal[txt][0])
 	var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
