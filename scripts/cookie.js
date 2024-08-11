@@ -3,6 +3,17 @@ function setCookie(cname, cvalue, exdays) {
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
   let expires = "expires="+d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  
+  fetch("/add", {
+  method: "POST",
+  body: JSON.stringify({
+    user: cvalue,
+	expires: d.toUTCString()
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+});
 }
 
 function getCookie(cname) {

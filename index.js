@@ -5,8 +5,41 @@ const express = require('express');
 const app = express(); 
 const path = require('path'); 
 const session = require('express-session')
+const bodyParser = require('body-parser');
+const fs = require('fs');
 app.use(cookieParser());
 // need cookieParser middleware before we can do anything with cookies
+
+
+// Use the body-parser library to parse
+// incoming JSON and URL-encoded data
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+const data = [];
+
+// Create a new endpoint for the POST method that
+// accepts data to be added to the data array
+app.post('/add', (req, res) => {
+    const record = req.body;
+    const obj = {
+        user: record.user,
+        expires: record.expires
+    }
+    data.push(obj);
+
+    // Write the data array to a file called data.json
+    fs.writeFile('./data.json', JSON.stringify(data), 
+    (err) => {
+        if (err) {
+            console.error(err);
+            return res.status(500)
+                .send('Error saving data');
+        }
+        res.status(200)
+            .send(`<h2>Data saved successfully :)</h2>`);
+    });
+});
 
 
 app.use(function (req, res, next) {
