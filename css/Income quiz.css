@@ -16,6 +16,8 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .question,
@@ -28,7 +30,7 @@ body {
 .options {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 100%;
     justify-content: center;
@@ -42,7 +44,6 @@ body {
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
-    background: beige;
     border: 1px sold #ddd;
     border-radius: 8px;
     text-align: center;
@@ -89,13 +90,19 @@ text-align: center;
     display: flex;
     padding: 1em;
     color: rgb(0, 0, 0);
-    background: rgb(234, 212, 193);
+    font-family: "Serif";
+    font-size: 17px;
+    /*background: rgb(222, 224, 196);
+    background: rgb(232, 240, 220);
+    background: rgb(183, 204, 176);
+    background:rgb(223, 236, 189);*/
+    background: rgba(252, 255, 219, 0.94);
     cursor: pointer;
     margin: 5px;
 }
 
 .navigation label:hover {
-    background: rgb(230, 226, 160);
+    background: rgba(252, 255, 219, 0.8);
 }
 
 h1{
@@ -120,18 +127,13 @@ h1{
     }
 }
 
-
 h2{
-	font-size: 25px;
+	font-size: 23px;
     font-weight: bold;
-    color: rgb(183, 204, 176);
+    /*color: rgb(183, 204, 176); */
+    color: white;
     text-align: center;
     font-family: "Archivo Black";
-}
-
-h3{
-	color:rgb(40, 129, 83);
-	text-align: center;
 }
 
 #submit, #restart {
@@ -187,7 +189,8 @@ h3{
 }
 
 label{
-    color: rgb(45, 103, 72);
+    /*color: rgb(45, 103, 72);*/
+    color: rgba(120, 168, 124, 0.916);
     font-size: 15px;
     text-align: center;
 }
@@ -197,21 +200,22 @@ input[type="radio"]{
 }
 
 label.radio {
-    display: block;
+    display: inline-block;
     width: auto;
-    height: 20px;
-    border: 1.5px solid #1d3056;
-    border-radius: 5%;
+    height: 25px;
+    border-radius: 15px;
     text-align: center;
-    line-height: 20px;
+    line-height: 25px;
     cursor: pointer;
+    margin: 5px;
 }
 
 input[type="radio"]:checked + label.radio {
-background-color: #8da98b;
-border: 2.5px solid #033708;
-color: white;
-
+/*background-color: #8da98b;
+background-color: #86b183;
+background-color: rgb(154, 178, 133);*/
+background-color: #80ac87;
+color: black;
 }
 
 .navbar {
@@ -239,7 +243,7 @@ color: white;
 
 .navbar a:hover,
 .navbar .dropdown:hover .dropbtn {
-    background-color: #474747;
+    background-color: #000000;
     color: rgb(255, 255, 255);
 }
 
@@ -301,12 +305,13 @@ color: white;
 }
 
 h5{
-	color: black;
+	color: rgb(183, 204, 176);
 	text-align: center;
 	vertical-align: middle;
 	padding: 0.1%;
-	border: 0.5px solid white;
-	width: 250px;
+	border: 0.5px solid rgb(183, 204, 176);
+	width: 300px;
 	height: 20px;
 	margin: 20px auto;
+    font-family: "Archivo Black";
 }

@@ -16,6 +16,8 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .question,
@@ -42,7 +44,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
-    background: beige;
+    /*background: beige;*/
     border: 1px sold #ddd;
     border-radius: 8px;
     text-align: center;
@@ -89,13 +91,13 @@ text-align: center;
     display: flex;
     padding: 1em;
     color: rgb(0, 0, 0);
-    background: rgb(234, 212, 193);
+    background: rgb(213, 228, 234);
     cursor: pointer;
     margin: 5px;
 }
 
 .navigation label:hover {
-    background: rgb(230, 226, 160);
+    background: rgba(202, 219, 225, 0.885);
 }
 
 h1{
@@ -124,19 +126,13 @@ h1{
     }
 }
 
-
 h2{
-	font-size: 25px;
+	font-size: 23px;
     font-weight: bold;
-    color: rgb(223, 248, 255);
+    color: white;
     text-align: center;
     font-family: "Archivo Black";
     margin-top: 50px;
-}
-
-h3{
-	color:rgb(40, 129, 83);
-	text-align: center;
 }
 
 #submit, #restart {
@@ -202,20 +198,19 @@ input[type="radio"]{
 }
 
 label.radio {
-    display: block;
+    display: inline-block;
     width: auto;
-    height: 20px;
-    border: 1.5px solid #1d3056;
-    border-radius: 5%;
+    height: 25px;
+    border-radius: 15px;
     text-align: center;
-    line-height: 20px;
+    line-height: 25px;
     cursor: pointer;
+    margin: 5px;
 }
 
 input[type="radio"]:checked + label.radio {
-background-color: #8da98b;
-border: 2.5px solid #033708;
-color: white;
+background-color: #81add4;
+color: black;
 
 }
 
@@ -306,12 +301,13 @@ color: white;
 }
 
 h5{
-	color: black;
+	color: rgb(223, 248, 255);
 	text-align: center;
 	vertical-align: middle;
 	padding: 0.1%;
-	border: 0.5px solid white;
-	width: 250px;
+	border: 0.5px solid rgb(223, 248, 255);
+	width: 300px;
 	height: 20px;
 	margin: 20px auto;
+    font-family: "Archivo Black";
 }
