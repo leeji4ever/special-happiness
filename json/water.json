@@ -3,10 +3,7 @@ var water = {
     30.034098,
     "2022"
   ],
-  "Africa (WHO)": [
-    33.264328,
-    "2022"
-  ],
+ 
   "Albania": [
     70.73607,
     "2022"
@@ -19,10 +16,7 @@ var water = {
     89.854546,
     "2021"
   ],
-  "Americas (WHO)": [
-    81.45162,
-    "2022"
-  ],
+
   "Andorra": [
     90.64,
     "2022"
@@ -87,10 +81,7 @@ var water = {
     6.126445,
     "2022"
   ],
-  "Central and Southern Asia (SDG)": [
-    67.517525,
-    "2022"
-  ],
+ 
   "Chad": [
     6.2470484,
     "2022"
@@ -143,14 +134,7 @@ var water = {
     44.941177,
     "2022"
   ],
-  "Eastern Mediterranean (WHO)": [
-    66.86215,
-    "2022"
-  ],
-  "Eastern and South-Eastern Asia (SDG)": [
-    78.50708,
-    "2022"
-  ],
+ 
   "Ecuador": [
     67.08951,
     "2022"
@@ -161,14 +145,6 @@ var water = {
   ],
   "Ethiopia": [
     13.237898,
-    "2022"
-  ],
-  "Europe (WHO)": [
-    91.947914,
-    "2022"
-  ],
-  "Europe and Northern America (SDG)": [
-    94.33307,
     "2022"
   ],
   "Fiji": [
@@ -233,10 +209,6 @@ var water = {
   ],
   "Guinea-Bissau": [
     23.871601,
-    "2022"
-  ],
-  "High-income countries": [
-    94.30306,
     "2022"
   ],
   "Honduras": [
@@ -307,24 +279,12 @@ var water = {
     76.48715,
     "2022"
   ],
-  "Land Locked Developing Countries": [
-    36.936485,
-    "2022"
-  ],
   "Laos": [
     17.872076,
     "2022"
   ],
-  "Latin America and the Caribbean (SDG)": [
-    75.23179,
-    "2022"
-  ],
   "Latvia": [
     97.111275,
-    "2022"
-  ],
-  "Least Developed Countries": [
-    37.47478,
     "2022"
   ],
   "Lebanon": [
@@ -341,14 +301,6 @@ var water = {
   ],
   "Lithuania": [
     94.9815,
-    "2022"
-  ],
-  "Low-income countries": [
-    28.60295,
-    "2022"
-  ],
-  "Lower-middle-income countries": [
-    63.799328,
     "2022"
   ],
   "Luxembourg": [
@@ -447,10 +399,6 @@ var water = {
     80.44703,
     "2022"
   ],
-  "Northern Africa and Western Asia (SDG)": [
-    76.90275,
-    "2022"
-  ],
   "Northern Mariana Islands": [
     90.639175,
     "2022"
@@ -523,10 +471,6 @@ var water = {
     89.22964,
     "2022"
   ],
-  "Saint Martin (French part)": [
-    96.62876,
-    "2022"
-  ],
   "Saint Pierre and Miquelon": [
     83.1283,
     "2020"
@@ -567,10 +511,6 @@ var water = {
     98.27432,
     "2022"
   ],
-  "Small Island Developing States": [
-    55.993107,
-    "2022"
-  ],
   "South Korea": [
     99.28012,
     "2022"
@@ -581,10 +521,6 @@ var water = {
   ],
   "Sri Lanka": [
     47.127533,
-    "2022"
-  ],
-  "Sub-Saharan Africa (SDG)": [
-    31.34643,
     "2022"
   ],
   "Suriname": [
@@ -650,10 +586,6 @@ var water = {
   "United States Virgin Islands": [
     97.936,
     "2020"
-  ],
-  "Upper-middle-income countries": [
-    80.620705,
-    "2022"
   ],
   "Uzbekistan": [
     79.8453,
