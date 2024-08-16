@@ -1,7 +1,6 @@
 var  bool = true;//to check if quiz requires getting the year
 				  //see quiz.js
 var rateObject = ectotal;//sends rateObject value to quiz.js
-var dollarCon = rateObject[txt][3]
 
 function shuffle(array) {
 	  let currentIndex = array.length;
@@ -46,8 +45,8 @@ function lowestAns(num){
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text(Math.round(2.1*ans)+" "+ansCurrency+"  ( "+Math.round(2*dollarCon)+" USD )") 
-	$("label[for*="+ansArray[1]+"]").text(Math.round(1.6*ans)+" "+ansCurrency+"  ( "+Math.round(1.6*dollarCon)+" USD )") 
+	$("label[for*="+ansArray[0]+"]").text(Math.round(3.1*ans)+" "+ansCurrency+"  ( "+Math.round(3.1*dollarCon)+" USD )") 
+	$("label[for*="+ansArray[1]+"]").text(Math.round(2.6*ans)+" "+ansCurrency+"  ( "+Math.round(2.6*dollarCon)+" USD )") 
 	$("label[for*="+ansArray[2]+"]").text(Math.round(1.23*ans)+" "+ansCurrency+"  ( "+Math.round(1.23*dollarCon)+" USD )") 
 	$("label[for*="+ansArray[3]+"]").text(Math.round(ans)+" "+ansCurrency+"  ( "+Math.round(dollarCon)+" USD )")
 	
@@ -65,7 +64,7 @@ function secondHighestAns(num){
 	$("label[for*="+ansArray[0]+"]").text(Math.round(1.6*ans)+" "+ansCurrency+"  ( "+Math.round(1.6*dollarCon)+" USD )") 
 	$("label[for*="+ansArray[1]+"]").text(Math.round(ans)+" "+ansCurrency+"  ( "+Math.round(dollarCon)+" USD )")
 	$("label[for*="+ansArray[2]+"]").text(Math.round(0.73*ans)+" "+ansCurrency+"  ( "+Math.round(0.73*dollarCon)+" USD )") 
-	$("label[for*="+ansArray[3]+"]").text(Math.round(0.45*ans)+" "+ansCurrency+"  ( "+Math.round(0.45*dollarCon)+" USD )")
+	$("label[for*="+ansArray[3]+"]").text(Math.round(0.21*ans)+" "+ansCurrency+"  ( "+Math.round(0.21*dollarCon)+" USD )")
 		
 	return ansArray[1]
 }
@@ -78,7 +77,7 @@ function secondLowestAns(num){
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text(Math.round(1.55*ans)+" "+ansCurrency+"  ( "+Math.round(1.55*dollarCon)+" USD )") 
+	$("label[for*="+ansArray[0]+"]").text(Math.round(2.5*ans)+" "+ansCurrency+"  ( "+Math.round(2.5*dollarCon)+" USD )") 
 	$("label[for*="+ansArray[1]+"]").text(Math.round(1.22*ans)+" "+ansCurrency+"  ( "+Math.round(1.22*dollarCon)+" USD )")
 	$("label[for*="+ansArray[2]+"]").text(Math.round(ans)+" "+ansCurrency+"  ( "+Math.round(dollarCon)+" USD )")	
 	$("label[for*="+ansArray[3]+"]").text(Math.round(0.74*ans)+" "+ansCurrency+"  ( "+Math.round(0.75*dollarCon)+" USD )") 

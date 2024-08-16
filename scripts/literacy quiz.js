@@ -29,8 +29,8 @@ function highestAns(num){
 	shuffle(ansArray)
 	
 	$("label[for*="+ansArray[0]+"]").text(ans.toFixed(2)+" %")
-	$("label[for*="+ansArray[1]+"]").text((0.7*ans).toFixed(2)+" %") 
-	$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+" %") 
+	$("label[for*="+ansArray[1]+"]").text((0.81*ans).toFixed(2)+" %") 
+	$("label[for*="+ansArray[2]+"]").text((0.48*ans).toFixed(2)+" %") 
 	$("label[for*="+ansArray[3]+"]").text((0.2*ans).toFixed(2)+" %") 
 	
 	return ansArray[0]
@@ -47,14 +47,14 @@ function lowestAns(num){
 	if(ans >= 90){ // if the answer is over 90, ideal to make it the largest ans
 				   //therefor this if statement makes the answers that are over 90 the highest answer
 		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" %")
-		$("label[for*="+ansArray[1]+"]").text((0.7*ans).toFixed(2)+" %") 
-		$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((0.81*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((0.48*ans).toFixed(2)+" %") 
 		$("label[for*="+ansArray[0]+"]").text((0.2*ans).toFixed(2)+" %")
 	}		
 	else{ // if it isnt over 90 same as original function
-		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.7).toFixed(2)+" %") 
-		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.4).toFixed(2)+" %") 
-		$("label[for*="+ansArray[2]+"]").text((ans+(100-ans)*0.2).toFixed(2)+" %") 
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.63).toFixed(2)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((ans+(100-ans)*0.31).toFixed(2)+" %") 
 		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" %")
 	}
 	
@@ -70,15 +70,15 @@ function secondHighestAns(num){
 	console.log(ans)
 	if(ans >= 90){ 
 		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+" %")
-		$("label[for*="+ansArray[0]+"]").text((0.7*ans).toFixed(2)+" %") 
-		$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[0]+"]").text((0.81*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((0.48*ans).toFixed(2)+" %") 
 		$("label[for*="+ansArray[3]+"]").text((0.2*ans).toFixed(2)+" %")
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.7).toFixed(2)+" %") 
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
 		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+" %")
-		$("label[for*="+ansArray[2]+"]").text((ans-(100-ans)*0.2).toFixed(2)+" %") 
-		$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.4).toFixed(2)+" %")
+		$("label[for*="+ansArray[2]+"]").text((ans-(100-ans)*0.25).toFixed(2)+" %") 
+		$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.68).toFixed(2)+" %")
 	}
 		
 	return ansArray[1]
@@ -94,15 +94,15 @@ function secondLowestAns(num){
 	
 	if(ans >= 90){ 
 		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+" %")
-		$("label[for*="+ansArray[1]+"]").text((0.7*ans).toFixed(2)+" %") 
-		$("label[for*="+ansArray[0]+"]").text((0.5*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((0.81*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[0]+"]").text((0.48*ans).toFixed(2)+" %") 
 		$("label[for*="+ansArray[3]+"]").text((0.2*ans).toFixed(2)+" %")
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.7).toFixed(2)+" %") 
-		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.4).toFixed(2)+" %")
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.59).toFixed(2)+" %")
 		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+" %")	
-		$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.3).toFixed(2)+" %") 
+		$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.68).toFixed(2)+" %") 
 	}
 	
 	return ansArray[2]

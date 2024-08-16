@@ -30,14 +30,14 @@ function highestAns(num){
 	if(ans<1){
 		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " %")
 		$("label[for*="+ansArray[1]+"]").text((10*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[2]+"]").text((66*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((40*ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[2]+"]").text((88*ans).toFixed(2)+ " %") 
+		$("label[for*="+ansArray[3]+"]").text((55*ans).toFixed(2)+ " %")
 	}		
 	else{
 		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " %")
-		$("label[for*="+ansArray[1]+"]").text((0.8*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ " %") 
+		$("label[for*="+ansArray[1]+"]").text((0.81*ans).toFixed(2)+ " %") 
+		$("label[for*="+ansArray[2]+"]").text((0.42*ans).toFixed(2)+ " %") 
+		$("label[for*="+ansArray[3]+"]").text((0.21*ans).toFixed(2)+ " %") 
 	}
 	return ansArray[0]
 }
@@ -57,10 +57,10 @@ function lowestAns(num){
 		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ " %")
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((2.1*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[1]+"]").text((1.5*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[2]+"]").text((1.3*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.63).toFixed(2)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((ans+(100-ans)*0.31).toFixed(2)+" %") 
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" %")
 	}
 	return ansArray[3]
 }
@@ -79,7 +79,7 @@ function secondHighestAns(num){
 		$("label[for*="+ansArray[3]+"]").text((37*ans).toFixed(2)+ " %")
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((1.6*ans).toFixed(2)+ " %") 
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
 		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ " %")
 		$("label[for*="+ansArray[2]+"]").text((0.8*ans).toFixed(2)+ " %") 
 		$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ " %")
@@ -101,8 +101,8 @@ function secondLowestAns(num){
 		$("label[for*="+ansArray[3]+"]").text((72*ans).toFixed(2)+ " %") 
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((1.7*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[1]+"]").text((1.3*ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.59).toFixed(2)+" %")
 		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ " %")	
 		$("label[for*="+ansArray[3]+"]").text((0.6*ans).toFixed(2)+ " %") 
 	}
@@ -113,11 +113,4 @@ function secondLowestAns(num){
 function ansRandom(){
 	var random = Math.floor(Math.random()*4)
 	return random
-}
-
-
-
-
-function restart(){
-	location.reload();
 }

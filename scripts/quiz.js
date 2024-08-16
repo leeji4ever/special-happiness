@@ -12,6 +12,9 @@ for (let i=1;i<=10;i++){
 	if(bool){ //if the year will be necessary will be dependent on the boolean variable at the beginning of each quiz javascript file
 		$('#year'+i).text(Year)
 	}
+	if(bool){  //if the quiz is the income quiz, it needs dollar
+		var dollarCon = rateObject[txt][3]
+	}
 		
 		
 	var random = ansRandom(); // random variable to choose one of the four function below

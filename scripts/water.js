@@ -30,11 +30,18 @@ function highestAns(num){
 	if(ans ==100){
 		return ansHundred(num)
 	}
+	else if(99>= ans && ans >= 90){ // if the answer is over 90, ideal to make it the largest ans
+				   //therefor this if statement makes the answers that are over 90 the highest answer
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" %")
+		$("label[for*="+ansArray[1]+"]").text((0.81*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((0.48*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[0]+"]").text((0.2*ans).toFixed(2)+" %")
+	}	
 	else{
 		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ "%")
-		$("label[for*="+ansArray[1]+"]").text((0.8*ans).toFixed(2)+ "%") 
-		$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+ "%") 
-		$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ "%") 
+		$("label[for*="+ansArray[1]+"]").text((0.69*ans).toFixed(2)+ "%") 
+		$("label[for*="+ansArray[2]+"]").text((0.451*ans).toFixed(2)+ "%") 
+		$("label[for*="+ansArray[3]+"]").text((0.29*ans).toFixed(2)+ "%") 
 		return ansArray[0]
 	}
 	
@@ -51,12 +58,18 @@ function lowestAns(num){
 	if(ans ==100){
 		return ansHundred(num)
 	}
-	
+	else if(99>= ans && ans >= 90){ // if the answer is over 90, ideal to make it the largest ans
+				   //therefor this if statement makes the answers that are over 90 the highest answer
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" %")
+		$("label[for*="+ansArray[1]+"]").text((0.81*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((0.48*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[0]+"]").text((0.2*ans).toFixed(2)+" %")
+	}	
 	else{
-		$("label[for*="+ansArray[0]+"]").text((2.1*ans).toFixed(2)+ "%") 
-		$("label[for*="+ansArray[1]+"]").text((1.5*ans).toFixed(2)+ "%") 
-		$("label[for*="+ansArray[2]+"]").text((1.3*ans).toFixed(2)+ "%") 
-		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ "%")
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.63).toFixed(2)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((ans+(100-ans)*0.31).toFixed(2)+" %") 
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" %")
 		return ansArray[3]
 	}
 	
@@ -73,13 +86,19 @@ function secondHighestAns(num){
 	if(ans ==100){
 		return ansHundred(num)
 	}
+	else if(99>= ans && ans >= 90){ // if the answer is over 90, ideal to make it the largest ans
+				   //therefor this if statement makes the answers that are over 90 the highest answer
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" %")
+		$("label[for*="+ansArray[1]+"]").text((0.81*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((0.48*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[0]+"]").text((0.2*ans).toFixed(2)+" %")
+	}	
 	else{
-	$("label[for*="+ansArray[0]+"]").text((1.6*ans).toFixed(2)+ "%") 
-	$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ "%")
-	$("label[for*="+ansArray[2]+"]").text((0.8*ans).toFixed(2)+ "%") 
-	$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ "%")
-		
-	return ansArray[1]
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[2]+"]").text((0.8*ans).toFixed(2)+ " %") 
+		$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ " %")
+		return ansArray[1]
 	}
 }
 
@@ -94,31 +113,40 @@ function secondLowestAns(num){
 	if(ans ==100){
 		return ansHundred(num)
 	}
+	else if(99>= ans && ans >= 90){ // if the answer is over 90, ideal to make it the largest ans
+				   //therefor this if statement makes the answers that are over 90 the highest answer
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" %")
+		$("label[for*="+ansArray[1]+"]").text((0.81*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[2]+"]").text((0.48*ans).toFixed(2)+" %") 
+		$("label[for*="+ansArray[0]+"]").text((0.2*ans).toFixed(2)+" %")
+	}
 	else{
-	$("label[for*="+ansArray[0]+"]").text((1.7*ans).toFixed(2)+ "%") 
-	$("label[for*="+ansArray[1]+"]").text((1.3*ans).toFixed(2)+ "%")
-	$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ "%")	
-	$("label[for*="+ansArray[3]+"]").text((0.6*ans).toFixed(2)+ "%") 
-	
-	return ansArray[2]
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.59).toFixed(2)+" %")
+		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ " %")	
+		$("label[for*="+ansArray[3]+"]").text((0.6*ans).toFixed(2)+ " %") 
+		return ansArray[2]
 	}
 }
 
 
 function ansHundred(num){
-	var random1 = Math.random()*(0.92-0.52)+0.1
-	var random2 = Math.random()*(0.5-0.1)+0.1
-	var ans = parseFloat(water[txt][0])
-	var ansArray = [num+'A',num+'B',num+'C',num+'D']
-	
-	
-	shuffle(ansArray)
-	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text(((random1-random2)*ans).toFixed(2)+ "%") 
-	$("label[for*="+ansArray[1]+"]").text(((random1-random2)*ans).toFixed(2)+ "%")
-	$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ "%")	
-	$("label[for*="+ansArray[3]+"]").text(((random1-random2)*ans).toFixed(2)+ "%") 
-	return ansArray[2]
+    var ans = parseFloat(water[txt][0]); // 100%
+    var ansArray = [num+'A', num+'B', num+'C', num+'D'];
+
+    shuffle(ansArray);
+
+    // Generate random percentages close to 100% for the incorrect answers
+    let incorrect1 = (Math.random() * (0.98 - 0.75) + 0.75).toFixed(2);
+    let incorrect2 = (Math.random() * (0.74 - 0.60) + 0.60).toFixed(2);
+    let incorrect3 = (Math.random() * (0.59 - 0.35) + 0.35).toFixed(2);
+
+    $("label[for*="+ansArray[0]+"]").text((incorrect1 * ans).toFixed(2) + "%");
+    $("label[for*="+ansArray[1]+"]").text((incorrect2 * ans).toFixed(2) + "%");
+    $("label[for*="+ansArray[2]+"]").text((incorrect3 * ans).toFixed(2) + "%");
+    $("label[for*="+ansArray[3]+"]").text((ans).toFixed(2) + "%"); // 100%
+
+    return ansArray[3]; // The correct answer is always placed at the 4th position
 }
 
 function ansRandom(){
