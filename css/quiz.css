@@ -19,19 +19,15 @@ body {
     white-space: nowrap;
 }
 
-.question,
-.options {
-    width: 100%;
-    margin: 20px 0px;
-    text-align: center;  
-}
-
 .options {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
+    width: 860px;
     justify-content: center;
+	margin: 20px 0px;
+    text-align: center;
+	justify-content: center;
 }
 
 .option {
@@ -52,11 +48,6 @@ body {
     flex-basis: calc(50%);  
     justify-content: center;
     flex-direction: column;
-}
-
-.option label {
-    margin: 5px;
-    width: 100%;
 }
 
 .option-container {
@@ -281,4 +272,16 @@ input[type="radio"]:checked + label.radio {
 
 .content {
     padding-top: 60px
+}
+
+.correct-answer {
+    background-color: #4CAF50;
+    border: 2.5px solid #000000;
+    color: white;
+}
+
+.incorrect-answer {
+    background-color: #e44f4f;
+    border: 2.5px solid #8b0000;
+    color: white;
 }
