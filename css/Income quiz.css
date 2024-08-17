@@ -1,0 +1,58 @@
+body {
+
+    margin: 0px;
+}
+
+.container {
+    background-image: url("/images/greengradient.jpg");
+}
+
+.options {
+    flex-direction: row;
+}
+
+.navigation label {
+    font-family: "Serif";
+    font-size: 17px;
+    /*background: rgb(222, 224, 196);
+    background: rgb(232, 240, 220);
+    background: rgb(183, 204, 176);
+    background:rgb(223, 236, 189);*/
+    background: rgba(234, 255, 219, 0.91);
+}
+
+.navigation label:hover {
+    background: rgba(234, 255, 219, 0.822);
+}
+
+h1{
+    font-size: 180px;
+    color: rgb(252, 255, 219);
+    }
+
+h2{
+	font-size: 23px;
+}
+
+label.radio {
+    width: auto;
+}
+
+input[type="radio"]:checked + label.radio {
+/*background-color: #8da98b;
+background-color: #86b183;
+background-color: rgb(154, 178, 133);*/
+background-color: #8bb792;
+}
+
+h5{
+	color: rgba(214, 239, 203, 0.934);
+	text-align: center;
+	vertical-align: middle;
+	padding: 0.1%;
+	border: 0.5px solid rgba(214, 239, 203, 0.934);
+	width: 300px;
+	height: 20px;
+	margin: 20px auto;
+    font-family: "Archivo Black";
+}

@@ -1,0 +1,56 @@
+body {
+
+    margin: 0px;
+}
+
+.container {
+    background-image: url("/images/litgradient.jpg");
+}
+
+.options {
+    flex-direction: column;
+}
+
+.navigation label {
+    background: rgb(231, 229, 192);
+}
+
+.navigation label:hover {
+    background: rgba(231, 229, 192, 0.861);
+}
+
+h1{
+    font-size: 170px;
+    color:rgb(255, 255, 195);
+    }
+
+h2{
+	font-size: 23px;
+}
+
+h3{
+	color:rgba(255, 255, 195, 0.935);
+	text-align: center;
+    font-family: "Archivo Black";
+    font-size: 21px;
+}
+
+label.radio {
+    width: auto;
+}
+
+input[type="radio"]:checked + label.radio {
+background-color: rgb(216, 210, 99);
+}
+
+h5{
+	color: rgb(231, 229, 192);
+	text-align: center;
+	vertical-align: middle;
+	padding: 0.1%;
+	border: 0.5px solid rgb(231, 229, 192);
+	width: 300px;
+	height: 20px;
+	margin: 20px auto;
+    font-family: "Archivo Black";
+}

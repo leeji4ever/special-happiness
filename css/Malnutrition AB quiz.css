@@ -1,0 +1,37 @@
+body {
+
+    margin: 0px;
+}
+
+.container {
+    background-image: url("/images/malnutritiongradient.jpg");
+}
+
+.options {
+    flex-direction: column;
+}
+
+.navigation label {
+    background: rgba(234, 212, 193, 0.936);
+}
+
+.navigation label:hover {
+    background: rgba(234, 212, 193, 0.794);
+}
+
+h1{
+    font-size: 170px;
+    color: rgb(255, 245, 223);
+    }
+
+h2{
+	font-size: 25px;
+}
+
+label.radio {
+    width: 200px;
+}
+
+input[type="radio"]:checked + label.radio {
+background-color: #d9a377;
+}

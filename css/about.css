@@ -1,17 +1,15 @@
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background-color: #f0f0f0; /* Light grey background color for the body */
+body{
+	margin:0px;
 }
 
-
 .navbar {
-  background-color: #e3b3ff;
-  position: relative;
+  background-color: #000000;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   float: left;
+  font-family: "Archivo Black";
 }
 
 .navbar a,
@@ -21,14 +19,16 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
+  font-family: "Archivo Black";
+  color:rgb(95, 189, 90)
 }
 
 .navbar a:hover,
 .navbar .dropdown:hover .dropbtn {
-  background-color: #ddd;
-  color: black;
+  background-color: #474747;
+  color: rgb(255, 255, 255);
 }
 
 .navbar a.active {
@@ -55,16 +55,16 @@ body {
   top: 100%;
   display: none;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #202020;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(188, 86, 86, 0.2);
   z-index: 1;
 }
 
 .navbar .dropdown-content a {
   top: 100%;
   float: none;
-  color: black;
+  color: rgb(240, 240, 240);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -77,7 +77,7 @@ body {
 }
 
 .navbar .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #54718f;
 }
 
 .navbar .dropdown:hover .dropdown-content {
@@ -85,119 +85,59 @@ body {
 }
 
 .content {
-  padding-top: 60px;
+  padding-top: 60px
 }
 
-/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
-
 .about-us {
-  font-family: "Poppins", sans-serif;
+font-family: "Poppins", sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  height: 100vh;
   width: 100%;
-  padding: 40px 0;
-  background: linear-gradient(135deg, #4CAF50, #81C784); 
+  padding: 90px 0;
+  background: #000000;
 }
-
 .pic {
   height: auto;
-  width: 100%;
-  max-width: 400px;
+  width: 400px;
   border-radius: 12px;
-  margin-bottom: 20px; 
 }
-
 .about {
-  width: 100%;
-  max-width: 1130px;
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  background-color: #ffffff; 
-  padding: 5px 50px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  justify-content: space-around;
 }
-
+.text {
+  width: 540px;
+}
 .text h2 {
-	padding: 10px;
-  color: #333;
-  font-size: 50px;
+  color: #ffffff;
+  font-size: 90px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-
 .text h5 {
-  color: #333;
+  color: #ffffff;
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-
 span {
-  color: #4070f4;
+  color: #9fe789;
 }
-
 .text p {
-  color: #666; 
+  color: #ffffff;
   font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 25px;
+  letter-spacing: 1px;
 }
-
-.sources-section {
-  width: 100%;
-  background-color: #eef3ff; 
-  padding: 50px 0;
-  display: flex;
-  justify-content: center;
-}
-
-.sources {
-  width: 100%;
-  max-width: 1130px;
-  background-color: #ffffff; 
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
-}
-
-.sources h3 {
-  color: #333;
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.sources ul {
-  list-style-type: disc;
-  padding-left: 40px;
-}
-
-.sources li {
-  color: #666; 
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.sources a {
-  color: #4070f4; 
-  text-decoration: none; 
-  transition: color 0.3s ease;
-}
-
-.sources a:hover {
-  color: #333; 
-  text-decoration: underline; 
-}
-

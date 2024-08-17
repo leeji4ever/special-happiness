@@ -1,0 +1,37 @@
+body {
+
+    margin: 0px;
+}
+
+.container {
+    background-image: url("/images/watergradient.jpg");
+}
+
+.options {
+    flex-direction: column;
+}
+
+.navigation label {
+    background: rgb(213, 228, 234);
+}
+
+.navigation label:hover {
+    background: rgba(202, 219, 225, 0.885);
+}
+
+h1{
+    font-size: 180px;
+    color: rgb(223, 248, 255);
+    }
+
+h2{
+	font-size: 25px;
+}
+
+label.radio {
+    width: 200px;
+}
+
+input[type="radio"]:checked + label.radio {
+background-color: #81add4;
+}

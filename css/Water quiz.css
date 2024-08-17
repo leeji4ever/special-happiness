@@ -1,0 +1,49 @@
+body {
+
+    margin: 0px;
+}
+
+.container {
+    background-image: url("/images/watergradient.jpg");
+}
+
+.options {
+    flex-direction: column;
+}
+
+.navigation label {
+    background: rgb(213, 228, 234);
+}
+
+.navigation label:hover {
+    background: rgba(202, 219, 225, 0.885);
+}
+
+h1{
+    font-size: 180px;
+    color: rgb(223, 248, 255);
+    }
+
+h2{
+	font-size: 23px;
+}
+
+label.radio {
+    width: auto;
+}
+
+input[type="radio"]:checked + label.radio {
+background-color: #81add4;
+}
+
+h5{
+	color: rgb(223, 248, 255);
+	text-align: center;
+	vertical-align: middle;
+	padding: 0.1%;
+	border: 0.5px solid rgb(223, 248, 255);
+	width: 300px;
+	height: 20px;
+	margin: 20px auto;
+    font-family: "Archivo Black";
+}

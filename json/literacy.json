@@ -174,12 +174,12 @@ var literacy = {
     "male": " 67%",
     "female": " 56.9%"
   },
-  "Congo, Democratic Republic of the": {
+  "Democratic Republic of the Congo": {
     "total population": " 80%",
     "male": " 89.5%",
     "female": " 70.8%"
   },
-  "Congo, Republic of the": {
+  "Republic of the Congo": {
     "total population": " 80.6%",
     "male": " 85.9%",
     "female": " 75.4%"
@@ -269,7 +269,7 @@ var literacy = {
     "male": " 86.2%",
     "female": " 84.7%"
   },
-  "Gambia, The": {
+  "The Gambia": {
     "total population": " 58.1%",
     "male": " 65.2%",
     "female": " 51.2%"
@@ -389,12 +389,12 @@ var literacy = {
     "male": " 85.5%",
     "female": " 79.8%"
   },
-  "Korea, North": {
+  "North Korea": {
     "total population": " 100%",
     "male": " 100%",
     "female": " 100%"
   },
-  "Korea, South": {
+  "South Korea": {
     "total population": " 98.8%",
     "male": " 99.2%",
     "female": " 98.4%"
@@ -813,16 +813,6 @@ var literacy = {
     "total population": " 95.8%",
     "male": " 97%",
     "female": " 94.6%"
-  },
-  "West Bank": {
-    "total population": " 97.5%",
-    "male": " 98.8%",
-    "female": " 96.2%"
-  },
-  "World": {
-    "total population": " 86.7%",
-    "male": " 90.1%",
-    "female": " 83.3%"
   },
   "Yemen": {
     "total population": " 70.1%",

@@ -1,6 +1,6 @@
 body {
+
     margin: 0px;
-	margin-bottom:30px;
 }
 
 .container {
@@ -14,8 +14,9 @@ body {
     background-color: #e3ceb878;
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 100% auto;
-	padding-bottom: 50 px;
+    background-size: cover;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .question,
@@ -28,7 +29,6 @@ body {
 .options {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
     width: 100%;
     justify-content: center;
@@ -42,8 +42,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
-    background: beige;
-    border: 1px sold #ddd;
+    /*background: beige;*/
     border-radius: 8px;
     text-align: center;
 }
@@ -53,7 +52,7 @@ body {
     flex-basis: calc(50%);  
     justify-content: center;
     flex-direction: column;
-  }
+}
 
 .option label {
     margin: 5px;
@@ -89,37 +88,38 @@ text-align: center;
     display: flex;
     padding: 1em;
     color: rgb(0, 0, 0);
-    background: rgb(234, 212, 193);
     cursor: pointer;
     margin: 5px;
 }
 
-.navigation label:hover {
-    background: rgb(230, 226, 160);
-}
-
-
 h1{
-	font-style: normal;
-    font-size: 50px;
-    font-weight: 400;
-    color: rgb(105, 78, 61);
-    font-family: "Dela Gothic One", sans-serif;
+    font-weight: bold;
+    font-family: 'Archivo Black';
     text-align: center;
 	justify-content: center;
+    font-style: normal;
+    line-height: 0.5;
+    animation: slide-right 10s linear infinite;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 70px
+    }
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 h2{
-	font-size: 30px;
     font-weight: bold;
-    color: rgb(154, 109, 57);
+    color: white;
     text-align: center;
-    display: inline
-}
-
-h3{
-	color:rgb(40, 129, 83);
-	text-align: center;
+    font-family: "Archivo Black";
 }
 
 #submit, #restart {
@@ -135,17 +135,18 @@ h3{
     letter-spacing: 1px;
     font-family: serif;
 	text-align: center;
-	 z-index: 10; 
 }
 
 #submit {
     background-color: rgb(95, 189, 90);
     color: white;
+    font-family: "Archivo Black";
 }
 
 #restart {
     background-color: rgb(222, 80, 80);
     color: white;
+    font-family: "Archivo Black";
 }
 
 #submit:hover {
@@ -155,7 +156,6 @@ h3{
 #restart:hover {
     background-color: #c33131;
 }
-
 
 #submit:focus, #restart:focus {
     outline: none;
@@ -184,44 +184,27 @@ input[type="radio"]{
 }
 
 label.radio {
-    display: block;
-    width: auto;
-    height: 20px;
-    border: 1.5px solid #1d3056;
-    border-radius: 5%;
+    display: inline-block;
+    height: 25px;
+    border-radius: 15px;
     text-align: center;
-    line-height: 20px;
+    line-height: 25px;
     cursor: pointer;
+    margin: 5px;
 }
 
 input[type="radio"]:checked + label.radio {
-background-color: #8da98b;
-border: 2.5px solid #033708;
-color: white;
-
-}
-
-.correct-answer {
-    background-color: #4CAF50;
-    border: 2.5px solid #000000;
-    color: white;
-}
-
-.incorrect-answer {
-    background-color: #e44f4f;
-    border: 2.5px solid #8b0000;
-    color: white;
-}
+    color: black;
+    }
 
 .navbar {
-	font-family: "Poppins", sans-serif;
-    background-color: #e3ceb8;
+    background-color: #000000;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-	float: left;
-	
+    float: left;
+    font-family: "Archivo Black";
 }
 
 .navbar a,
@@ -231,14 +214,16 @@ color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
+    font-family: "Archivo Black";
+    color:rgb(95, 189, 90)
 }
 
 .navbar a:hover,
 .navbar .dropdown:hover .dropbtn {
-    background-color: #ddd;
-    color: black;
+    background-color: #474747;
+    color: rgb(255, 255, 255);
 }
 
 .navbar a.active {
@@ -262,19 +247,19 @@ color: white;
 }
 
 .navbar .dropdown-content {
-	top: 100%;
+    top: 100%;
     display: none;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #202020;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(188, 86, 86, 0.2);
     z-index: 1;
 }
 
 .navbar .dropdown-content a {
-	top: 100%;
+    top: 100%;
     float: none;
-    color: black;
+    color: rgb(240, 240, 240);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -287,7 +272,7 @@ color: white;
 }
 
 .navbar .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #54718f;
 }
 
 .navbar .dropdown:hover .dropdown-content {
@@ -296,18 +281,4 @@ color: white;
 
 .content {
     padding-top: 60px
-}
-
-h5 {
-    color: black;
-    text-align: center;
-    vertical-align: middle;
-    width: 100%; 
-    height: 30px; 
-    margin: 0; 
-    position: fixed; 
-    bottom: 0; 
-    left: 0; 
-    background-color: #f1f1f1; 
-    z-index: 1000; 
 }

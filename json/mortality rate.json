@@ -69,7 +69,7 @@ var mortalityRate = {
     "male": 12.6,
     "female": 9.0
   },
-  "Bahamas, The": {
+  "The Bahamas": {
     "total": 9.4,
     "male": 10.5,
     "female": 8.2
@@ -138,11 +138,6 @@ var mortalityRate = {
     "total": 12.9,
     "male": 14.6,
     "female": 11.1
-  },
-  "British Virgin Islands": {
-    "total": 13.4,
-    "male": 16.0,
-    "female": 10.7
   },
   "Brunei": {
     "total": 10.0,
@@ -224,12 +219,12 @@ var mortalityRate = {
     "male": 64.9,
     "female": 44.7
   },
-  "Congo, Democratic Republic of the": {
+  "Democratic Republic of the Congo": {
     "total": 57.4,
     "male": 62.9,
     "female": 51.9
   },
-  "Congo, Republic of the": {
+  "Republic of the Congo": {
     "total": 30.6,
     "male": 33.5,
     "female": 27.7
@@ -367,7 +362,7 @@ var mortalityRate = {
     "male": 29.7,
     "female": 24.0
   },
-  "Gambia, The": {
+  "The Gambia": {
     "total": 35.7,
     "male": 39.1,
     "female": 32.2
@@ -542,12 +537,12 @@ var mortalityRate = {
     "male": 33.5,
     "female": 29.4
   },
-  "Korea, North": {
+  "North Korea": {
     "total": 15.4,
     "male": 16.9,
     "female": 13.8
   },
-  "Korea, South": {
+  "South Korea": {
     "total": 2.8,
     "male": 3.0,
     "female": 2.6
@@ -667,7 +662,7 @@ var mortalityRate = {
     "male": 13.4,
     "female": 10.9
   },
-  "Micronesia, Federated States of": {
+  "The Federated States of Micronesia": {
     "total": 20.9,
     "male": 23.8,
     "female": 17.8
@@ -1107,23 +1102,10 @@ var mortalityRate = {
     "male": 14.4,
     "female": 13.7
   },
-  "Virgin Islands": {
-    "total": 7.3,
-    "male": 8.3,
-    "female": 6.3
-  },
   "Wallis and Futuna": {
     "total": 3.9,
     "male": 3.8,
     "female": 3.9
-  },
-  "West Bank": {
-    "total": 15.1,
-    "male": 17.5,
-    "female": 12.6
-  },
-  "World": {
-    "total": 28.3
   },
   "Yemen": {
     "total": 44.6,

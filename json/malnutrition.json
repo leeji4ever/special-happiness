@@ -435,7 +435,7 @@ var malnutrition = {
     5.9,
     "2019"
   ],
-  "Micronesia (country)": [
+  "Micronesia": [
     2.34,
     "2019"
   ],
@@ -737,10 +737,6 @@ var malnutrition = {
   ],
   "Vietnam": [
     0.12,
-    "2019"
-  ],
-  "World": [
-    2.5964642,
     "2019"
   ],
   "Yemen": [
