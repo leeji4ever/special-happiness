@@ -19,19 +19,14 @@ body {
     white-space: nowrap;
 }
 
-.question,
-.options {
-    width: 100%;
-    margin: 20px 0px;
-    text-align: center;  
-}
-
 .options {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
     justify-content: center;
+    margin: 20px 0px;
+    text-align: center;  
 }
 
 .option {
@@ -39,12 +34,13 @@ body {
     min-height: 100%;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100%;
+    width: 860px;
     box-sizing: border-box;
     padding: 5px;
     /*background: beige;*/
     border-radius: 8px;
     text-align: center;
+    justify-content: center;
 }
 
 .option > div {
@@ -52,11 +48,6 @@ body {
     flex-basis: calc(50%);  
     justify-content: center;
     flex-direction: column;
-}
-
-.option label {
-    margin: 5px;
-    width: 100%;
 }
 
 .option-container {
