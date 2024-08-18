@@ -15,8 +15,14 @@ app.use(cookieParser());
 // incoming JSON and URL-encoded data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+let data = [];
+try{
+	data = JSON.parse(fs.readFileSync("./data.json"));
+	console.log(data)
+}catch(e){
+	console.log("some problem parsing the JSON");
+}
 
-const data = [];
 
 // Create a new endpoint for the POST method that
 // accepts data to be added to the data array
@@ -44,7 +50,7 @@ app.post('/add', (req, res) => {
     });
 });
 
-app.post('/addQuizCount', (req, res) => {
+app.post("/addQuizCount", (req, res) => {
     const record = req.body;
 	
     const user = record.user;
@@ -101,7 +107,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/bkReq', (req, res) => {
-    res.send('data.json');
+    res.sendFile(__dirname +'/data.json');
 });
 
 app.get('/views/:name', (req, res) => {

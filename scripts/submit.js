@@ -42,7 +42,7 @@ function submitClick(){
     }
 	console.log(score)
 	let user = getCookie("username");
-    fetch('/addQuizCount', {
+    fetch("/addQuizCount", {
         method: "POST",
         body: JSON.stringify({
             user: user,
