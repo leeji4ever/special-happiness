@@ -3,7 +3,7 @@ function setCookie(cname, cvalue, exdays) {
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
   let expires = "expires="+d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  
+  console.log(document.cookie)
   fetch("/add", {
   method: "POST",
   body: JSON.stringify({
@@ -25,6 +25,7 @@ function getCookie(cname) {
       c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
+		console.log(c.substring(name.length, c.length))
       return c.substring(name.length, c.length);
     }
   }
@@ -34,7 +35,7 @@ function getCookie(cname) {
 function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
-    //alert("Welcome again " + user);
+    alert("Welcome again " + user);
   } else {
     user = prompt("Please enter your name:", "");
     if (user != "" && user != null) {

@@ -40,7 +40,18 @@ function submitClick(){
             correctAnswer.nextElementSibling.style.border = "2.5px solid #000000";
         }  
     }
-	alert("Quiz submitted! "+ score+"/10 was correct")
+	console.log(score)
+	let user = getCookie("username");
+    fetch('/addQuizCount', {
+        method: "POST",
+        body: JSON.stringify({
+            user: user,
+            count: score
+        }),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    });	alert("Quiz submitted! "+ score+"/10 was correct")
 	alert("Restart the test.")
 }
 

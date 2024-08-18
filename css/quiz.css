@@ -41,6 +41,7 @@ body {
     /*background: beige;*/
     border-radius: 8px;
     text-align: center;
+	justify-content: center;
 }
 
 .option > div {

@@ -24,8 +24,10 @@ app.post('/add', (req, res) => {
     const record = req.body;
     const obj = {
         user: record.user,
-        expires: record.expires
+        expires: record.expires,
+		count: 0
     }
+	console.log(obj);
     data.push(obj);
 
     // Write the data array to a file called data.json
@@ -41,6 +43,34 @@ app.post('/add', (req, res) => {
     });
 });
 
+app.post('/addQuizCount', (req, res) => {
+    const record = req.body;
+	
+    const user = record.user;
+    const newCount = record.count;
+
+	const userRecord = data.find(r => r.user === user);
+	if (userRecord) {
+        // Update the user's quiz count
+		console.log(userRecord.count);
+        userRecord.count = userRecord.count + newCount;
+
+		
+        console.log(`Quiz count updated for ${user}: ${userRecord.count}`);
+        // Write the updated data array to data.json
+        fs.writeFile('./data.json', JSON.stringify(data), (err) => {
+            if (err) {
+                console.error(err);
+                return res.status(500).send('Error saving quiz count');
+            }
+            res.status(200).send('Quiz count updated successfully.');
+        });
+    } else {
+        res.status(404).send(`User "${user}" not found.`);
+    }
+
+
+});
 
 app.use(function (req, res, next) {
   // check if client sent cookie
