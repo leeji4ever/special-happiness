@@ -25,7 +25,8 @@ app.post('/add', (req, res) => {
     const obj = {
         user: record.user,
         expires: record.expires,
-		count: 0
+		count: 0,
+		numQuizzes:0 //number of quizzes taken
     }
 	console.log(obj);
     data.push(obj);
@@ -54,6 +55,7 @@ app.post('/addQuizCount', (req, res) => {
         // Update the user's quiz count
 		console.log(userRecord.count);
         userRecord.count = userRecord.count + newCount;
+		userRecord.numQuizzes++;
 
 		
         console.log(`Quiz count updated for ${user}: ${userRecord.count}`);
@@ -96,6 +98,10 @@ app.set('trust proxy', true);
 app.get('/', (req, res) => {
     res.render('homepage');
 	console.log(req.ip);
+});
+
+app.get('/bkReq', (req, res) => {
+    res.send('data.json');
 });
 
 app.get('/views/:name', (req, res) => {

@@ -1,10 +1,10 @@
-var quintiles ={
+var quintiles = {
   "Q1": [
     "Albania",
     "Armenia",
-    "Azerbaijan",
     "Bosnia and Herzegovina",
     "Bulgaria",
+    "Croatia",
     "Cyprus",
     "Estonia",
     "Finland",
@@ -43,6 +43,7 @@ var quintiles ={
     "Algeria",
     "Australia",
     "Austria",
+    "Azerbaijan",
     "Bahrain",
     "Barbados",
     "Belarus",
@@ -91,7 +92,6 @@ var quintiles ={
     "Cape Verde",
     "Chile",
     "China",
-    "Czechia",
     "Europe",
     "Fiji",
     "Honduras",
@@ -99,7 +99,7 @@ var quintiles ={
     "Jamaica",
     "Japan",
     "Laos",
-    "Micronesia",
+    "Micronesia (country)",
     "Myanmar",
     "Nicaragua",
     "North Korea",
@@ -116,7 +116,8 @@ var quintiles ={
     "Trinidad and Tobago",
     "United States",
     "Uruguay",
-    "Venezuela"
+    "Venezuela",
+    "World"
   ],
   "Q4": [
     "Brazil",
@@ -124,6 +125,7 @@ var quintiles ={
     "Colombia",
     "Congo",
     "Cote d'Ivoire",
+    "Czechia",
     "Dominican Republic",
     "East Timor",
     "Ecuador",
