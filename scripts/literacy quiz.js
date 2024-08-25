@@ -77,8 +77,8 @@ function secondHighestAns(num){
 	else{
 		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
 		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+" %")
-		$("label[for*="+ansArray[2]+"]").text((ans-(100-ans)*0.25).toFixed(2)+" %") 
-		$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.68).toFixed(2)+" %")
+		$("label[for*="+ansArray[2]+"]").text((ans*0.25).toFixed(2)+" %") 
+		$("label[for*="+ansArray[3]+"]").text((ans*0.68).toFixed(2)+" %")
 	}
 		
 	return ansArray[1]
@@ -102,7 +102,7 @@ function secondLowestAns(num){
 		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
 		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.59).toFixed(2)+" %")
 		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+" %")	
-		$("label[for*="+ansArray[3]+"]").text((ans-(100-ans)*0.68).toFixed(2)+" %") 
+		$("label[for*="+ansArray[3]+"]").text((ans*0.35).toFixed(2)+" %") 
 	}
 	
 	return ansArray[2]
