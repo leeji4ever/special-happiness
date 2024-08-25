@@ -28,16 +28,16 @@ function highestAns(num){
 	shuffle(ansArray)
 	
 	if(ans<1){
-		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " %")
-		$("label[for*="+ansArray[1]+"]").text((10*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[2]+"]").text((88*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((55*ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")
+		$("label[for*="+ansArray[1]+"]").text((10*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[2]+"]").text((88*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[3]+"]").text((55*ans).toFixed(2)+ " deaths per 100,000  people")
 	}		
 	else{
-		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " %")
-		$("label[for*="+ansArray[1]+"]").text((0.81*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[2]+"]").text((0.42*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((0.21*ans).toFixed(2)+ " %") 
+		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")
+		$("label[for*="+ansArray[1]+"]").text((0.81*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[2]+"]").text((0.42*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[3]+"]").text((0.21*ans).toFixed(2)+ " deaths per 100,000  people") 
 	}
 	return ansArray[0]
 }
@@ -51,16 +51,16 @@ function lowestAns(num){
 	console.log(ans)
 	
 	if(ans<1){
-		$("label[for*="+ansArray[0]+"]").text((13*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[1]+"]").text((33*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[2]+"]").text((59*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[0]+"]").text((13*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[1]+"]").text((33*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[2]+"]").text((59*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
-		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.63).toFixed(2)+" %") 
-		$("label[for*="+ansArray[2]+"]").text((ans+(100-ans)*0.31).toFixed(2)+" %") 
-		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" %")
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" deaths per 100,000  people") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.63).toFixed(2)+" deaths per 100,000  people") 
+		$("label[for*="+ansArray[2]+"]").text((ans+(100-ans)*0.31).toFixed(2)+" deaths per 100,000  people") 
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" deaths per 100,000  people")
 	}
 	return ansArray[3]
 }
@@ -73,16 +73,16 @@ function secondHighestAns(num){
 	shuffle(ansArray)
 	console.log(ans)
 	if(ans<1){
-		$("label[for*="+ansArray[0]+"]").text((19*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ " %")
-		$("label[for*="+ansArray[2]+"]").text((80*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((37*ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[0]+"]").text((19*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")
+		$("label[for*="+ansArray[2]+"]").text((80*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[3]+"]").text((37*ans).toFixed(2)+ " deaths per 100,000  people")
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
-		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ " %")
-		$("label[for*="+ansArray[2]+"]").text((0.8*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" deaths per 100,000  people") 
+		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")
+		$("label[for*="+ansArray[2]+"]").text((0.8*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ " deaths per 100,000  people")
 	}
 	return ansArray[1]
 }
@@ -95,16 +95,16 @@ function secondLowestAns(num){
 	shuffle(ansArray)
 	console.log(ans)
 	if(ans<1){
-		$("label[for*="+ansArray[0]+"]").text((59*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[1]+"]").text((21*ans).toFixed(2)+ " %")
-		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ " %")	
-		$("label[for*="+ansArray[3]+"]").text((72*ans).toFixed(2)+ " %") 
+		$("label[for*="+ansArray[0]+"]").text((59*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[1]+"]").text((21*ans).toFixed(2)+ " deaths per 100,000  people")
+		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")	
+		$("label[for*="+ansArray[3]+"]").text((72*ans).toFixed(2)+ " deaths per 100,000  people") 
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" %") 
-		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.59).toFixed(2)+" %")
-		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ " %")	
-		$("label[for*="+ansArray[3]+"]").text((0.6*ans).toFixed(2)+ " %") 
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" deaths per 100,000  people") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.59).toFixed(2)+" deaths per 100,000  people")
+		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")	
+		$("label[for*="+ansArray[3]+"]").text((0.6*ans).toFixed(2)+ " deaths per 100,000  people") 
 	}
 	
 	return ansArray[2]

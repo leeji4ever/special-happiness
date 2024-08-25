@@ -52,7 +52,6 @@ function submitClick(){
             "Content-type": "application/json; charset=UTF-8"
         }
     });	alert("Quiz submitted! "+ score+"/10 was correct")
-	alert("Restart the test.")
 }
 
 function restart(){

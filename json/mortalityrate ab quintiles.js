@@ -12,7 +12,6 @@ var quintiles ={
     "Czechia",
     "Denmark",
     "Estonia",
-    "European Union",
     "Finland",
     "France",
     "French Polynesia",

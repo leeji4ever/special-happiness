@@ -7,7 +7,7 @@ var random = Math.floor(Math.random()*keyArray.length) //for the first option
 //if (random2>=random) {random2++;}
 var txt = keyArray[random] //this is a country name
 //var txt2 = keyLiteracy[random2]
-console.log(txt)
+
 
 
 let allowedquintiles = ["Q1","Q2","Q3","Q4","Q5"]
@@ -58,3 +58,4 @@ $("label[for*="+i+"A]").text(txt)
 $("label[for*="+i+"B]").text(othercountry)
 
 ansArray.push(i+correctAnswer)}
+console.log(ansArray)
