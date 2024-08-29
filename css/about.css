@@ -141,3 +141,52 @@ span {
   line-height: 25px;
   letter-spacing: 1px;
 }
+
+.sources-section {
+  width: 100%;
+  background-color: #eef3ff; 
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.sources {
+  width: 100%;
+  max-width: 1130px;
+  background-color: #ffffff; 
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.sources h3 {
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sources ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+.sources li {
+  color: #666; 
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.sources a {
+  color: #4070f4; 
+  text-decoration: none; 
+  transition: color 0.3s ease;
+}
+
+.sources a:hover {
+  color: #333; 
+  text-decoration: underline; 
+}
+

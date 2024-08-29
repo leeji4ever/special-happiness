@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Literacy Rate Quiz</title>
+		<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
     </head>
     <body onload="checkCookie()">
         <%- include ('navbar.ejs') %>
@@ -10,24 +11,29 @@
         <div class="container" style="margin-top: 60px;">
             <h1 style="margin-top: 60px;">Literacy Rate Quiz</h1>
 
-            <%- include ('ab question template.ejs') %>
-            <br>
+            <%- include ('ab question template.ejs',{data: 1}) %>
 
+            <br>
+<h5>Source: The World Factbook by the CIA <br>The data is from 2014&ndash;2022</h5>
             <div class="button-container">
                 <input style="margin-right: 16px" type = "submit" value = "Submit" id = "submit">
                 <input type = "submit" value = "Restart" id = "restart">
             </div>
-    
-            <script src = "../scripts/jquery-3.7.1.min.js"></script>
-            <script src="../json/literacy.json"></script> <!-- Contains countries with total population -->
-            <script src="../json/literacyrate_AB_quiz.js"></script> <!-- Contains countries separated by quintile -->
-        <script src="../scripts/literacyrate_AB_quiz.js"></script> <!-- Gets two countries from non-adjacent quintiles -->
+		
+		<script src = "../scripts/jquery-3.7.1.min.js"></script>
+		<script src="../json/literacy.json"></script> <!-- Contains countries with total population -->
+		<script src="../json/literacy ab quintiles.js"></script> <!-- Contains countries separated by quintile -->
+		<script>
+			var rateObject = literacy; <!--Sends rateObject value to AB_quiz.js-->
+		</script>
+        <script src="../scripts/AB_quiz.js"></script> <!-- Gets two countries from non-adjacent quintiles -->
 		<script src="../scripts/submit.js"></script>
 		<script src="../scripts/cookie.js"></script>
 
-        <link rel = "stylesheet" href = "../css/Literacy AB quiz.css">
+		<link rel = "stylesheet" href = "../css/Literacy AB quiz.css">
         <link rel = "stylesheet" href = "../css/quiz.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dela+Gothic+One&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">

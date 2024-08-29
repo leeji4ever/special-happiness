@@ -1,60 +1,6 @@
-console.log(mortalityRate)
-
-
-//console.log(ectotal)
-
-ansArray = [];
-const keyMortality = Object.keys(mortalityRate) //makes a list consisted of the keys(countries) in mortalityRate
-for (let i=1;i<=10;i++){
-
-
-var random = Math.floor(Math.random()*keyMortality.length)
-console.log(random)
-
-//console.log(keyEctotal)
-var txt = keyMortality[random] //assigns a random country to ranCountry
-//var ranYear = ectotal[txt][0]
-//console.log(txt)
-$('#country'+i).text(txt) //use jquery to show random country in html
-//$('#year'+i).text(ranYear)
-	
-	
-var random = ansRandom();
-console.log(random)
-var correctAns;
-
-
-
-if (random == 0){
-	console.log("asdf")
-	
-	var correctAns = highestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-else if(random == 1){
-	console.log("fdsa")
-	
-	var correctAns = secondHighestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-else if(random ==2){
-	
-	var correctAns = secondLowestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-else if(random==3){
-	
-	var correctAns = lowestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-}
-
-
-
+var  bool = false;//to check if quiz requires getting the year
+				  //see quiz.js
+var rateObject = mortalityRate;//sends rateObject value to quiz.js
 
 function shuffle(array) {
 	  let currentIndex = array.length;
@@ -74,67 +20,62 @@ function shuffle(array) {
 
 
 function highestAns(num){
-	var ans = parseFloat(mortalityRate[txt]["total"]) //gets the ectotal value
-	//var ansCurrency = ectotal[txt][2] //gets the currency
+	var ans = parseFloat(rateObject[txt]["total"]) //gets the mortality rate value
 	console.log(ans)
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
-	console.log(ansArray[0])
 	
-	$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " deaths/1,000 live births")
-	$("label[for*="+ansArray[1]+"]").text((0.8*ans).toFixed(2)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[0]+"]").text((ans).toFixed(1)+ " deaths/1,000 live births")
+	$("label[for*="+ansArray[1]+"]").text((0.77*ans).toFixed(1)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[2]+"]").text((0.41*ans).toFixed(1)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[3]+"]").text((0.12*ans).toFixed(1)+ " deaths/1,000 live births") 
 	
 	return ansArray[0]
 }
 
 function lowestAns(num){
-	var ans = parseFloat(mortalityRate[txt]["total"])
-	//var ansCurrency = ectotal[txt][2]
+	var ans = parseFloat(rateObject[txt]["total"])
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((2.1*ans).toFixed(2)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[1]+"]").text((1.5*ans).toFixed(2)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[2]+"]").text((1.3*ans).toFixed(2)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ " deaths/1,000 live births")
+	$("label[for*="+ansArray[0]+"]").text((3.1*ans).toFixed(1)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[1]+"]").text((2.5*ans).toFixed(1)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[2]+"]").text((1.3*ans).toFixed(1)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[3]+"]").text((ans).toFixed(1)+ " deaths/1,000 live births")
 	
 	return ansArray[3]
 }
 
 function secondHighestAns(num){
-	var ans = parseFloat(mortalityRate[txt]["total"])
-	//var ansCurrency = ectotal[txt][2]
+	var ans = parseFloat(rateObject[txt]["total"])
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((1.6*ans).toFixed(2)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ " deaths/1,000 live births")
-	$("label[for*="+ansArray[2]+"]").text((0.8*ans).toFixed(2)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ " deaths/1,000 live births")
+	$("label[for*="+ansArray[0]+"]").text((3.6*ans).toFixed(1)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[1]+"]").text((ans).toFixed(1)+ " deaths/1,000 live births")
+	$("label[for*="+ansArray[2]+"]").text((0.74*ans).toFixed(1)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[3]+"]").text((0.23*ans).toFixed(1)+ " deaths/1,000 live births")
 		
 	return ansArray[1]
 }
 
 function secondLowestAns(num){
-	var ans = parseFloat(mortalityRate[txt]["total"])
-	//var ansCurrency = ectotal[txt][2]
+	var ans = parseFloat(rateObject[txt]["total"])
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
-	$("label[for*="+ansArray[0]+"]").text((1.7*ans).toFixed(2)+ " deaths/1,000 live births") 
-	$("label[for*="+ansArray[1]+"]").text((1.3*ans).toFixed(2)+ " deaths/1,000 live births")
-	$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ " deaths/1,000 live births")	
-	$("label[for*="+ansArray[3]+"]").text((0.6*ans).toFixed(2)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[0]+"]").text((3.1*ans).toFixed(1)+ " deaths/1,000 live births") 
+	$("label[for*="+ansArray[1]+"]").text((1.9*ans).toFixed(1)+ " deaths/1,000 live births")
+	$("label[for*="+ansArray[2]+"]").text((ans).toFixed(1)+ " deaths/1,000 live births")	
+	$("label[for*="+ansArray[3]+"]").text((0.61*ans).toFixed(1)+ " deaths/1,000 live births") 
 	
 	return ansArray[2]
 }
@@ -142,10 +83,4 @@ function secondLowestAns(num){
 function ansRandom(){
 	var random = Math.floor(Math.random()*4)
 	return random
-}
-
-
-
-function restart(){
-	location.reload();
 }

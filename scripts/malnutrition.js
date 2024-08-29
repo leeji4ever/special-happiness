@@ -1,60 +1,6 @@
-//console.log(mortalityRate)
-
-
-//console.log(ectotal)
-
-ansArray = [];
-const keyMalnutrition = Object.keys(malnutrition) //makes a list consisted of the keys(countries) in mortalityRate
-for (let i=1;i<=10;i++){
-
-
-var random = Math.floor(Math.random()*keyMalnutrition.length)
-console.log(random)
-
-//console.log(keyEctotal)
-var txt = keyMalnutrition[random] //assigns a random country to ranCountry
-var ranYear = malnutrition[txt][1]
-//console.log(txt)
-$('#country'+i).text(txt) //use jquery to show random country in html
-$('#year'+i).text(ranYear)
-	
-	
-var random = ansRandom();
-console.log(random)
-var correctAns;
-
-
-
-if (random == 0){
-	console.log("asdf")
-	
-	var correctAns = highestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-else if(random == 1){
-	console.log("fdsa")
-	
-	var correctAns = secondHighestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-else if(random ==2){
-	
-	var correctAns = secondLowestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-else if(random==3){
-	
-	var correctAns = lowestAns(i);
-	ansArray.push(correctAns);
-	console.log(ansArray)
-}
-}
-
-
-
+var  bool = true;//to check if quiz requires getting the year
+				  //see quiz.js
+var rateObject = malnutrition; //sends rateObject value to quiz.js
 
 function shuffle(array) {
 	  let currentIndex = array.length;
@@ -75,32 +21,29 @@ function shuffle(array) {
 
 function highestAns(num){
 	var ans = parseFloat(malnutrition[txt][0]) //gets the malnutrition rate
-	//var ansCurrency = ectotal[txt][2] //gets the currency
 	console.log(ans)
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
-	console.log(ansArray[0])
 	
 	if(ans<1){
-		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " %")
-		$("label[for*="+ansArray[1]+"]").text((10*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[2]+"]").text((66*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((40*ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")
+		$("label[for*="+ansArray[1]+"]").text((10*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[2]+"]").text((88*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[3]+"]").text((55*ans).toFixed(2)+ " deaths per 100,000  people")
 	}		
 	else{
-		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " %")
-		$("label[for*="+ansArray[1]+"]").text((0.8*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[2]+"]").text((0.5*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ " %") 
+		$("label[for*="+ansArray[0]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")
+		$("label[for*="+ansArray[1]+"]").text((0.81*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[2]+"]").text((0.42*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[3]+"]").text((0.21*ans).toFixed(2)+ " deaths per 100,000  people") 
 	}
 	return ansArray[0]
 }
 
 function lowestAns(num){
 	var ans = parseFloat(malnutrition[txt][0])
-	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
@@ -108,62 +51,60 @@ function lowestAns(num){
 	console.log(ans)
 	
 	if(ans<1){
-		$("label[for*="+ansArray[0]+"]").text((13*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[1]+"]").text((33*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[2]+"]").text((59*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[0]+"]").text((13*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[1]+"]").text((33*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[2]+"]").text((59*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((2.1*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[1]+"]").text((1.5*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[2]+"]").text((1.3*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" deaths per 100,000  people") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.63).toFixed(2)+" deaths per 100,000  people") 
+		$("label[for*="+ansArray[2]+"]").text((ans+(100-ans)*0.31).toFixed(2)+" deaths per 100,000  people") 
+		$("label[for*="+ansArray[3]+"]").text((ans).toFixed(2)+" deaths per 100,000  people")
 	}
 	return ansArray[3]
 }
 
 function secondHighestAns(num){
 	var ans = parseFloat(malnutrition[txt][0])
-	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
 	if(ans<1){
-		$("label[for*="+ansArray[0]+"]").text((19*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ " %")
-		$("label[for*="+ansArray[2]+"]").text((80*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((37*ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[0]+"]").text((19*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")
+		$("label[for*="+ansArray[2]+"]").text((80*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[3]+"]").text((37*ans).toFixed(2)+ " deaths per 100,000  people")
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((1.6*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ " %")
-		$("label[for*="+ansArray[2]+"]").text((0.8*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ " %")
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" deaths per 100,000  people") 
+		$("label[for*="+ansArray[1]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")
+		$("label[for*="+ansArray[2]+"]").text((0.8*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[3]+"]").text((0.3*ans).toFixed(2)+ " deaths per 100,000  people")
 	}
 	return ansArray[1]
 }
 
 function secondLowestAns(num){
 	var ans = parseFloat(malnutrition[txt][0])
-	//var ansCurrency = ectotal[txt][2]
 	var ansArray = [num+'A',num+'B',num+'C',num+'D']
 	
 	
 	shuffle(ansArray)
 	console.log(ans)
 	if(ans<1){
-		$("label[for*="+ansArray[0]+"]").text((59*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[1]+"]").text((21*ans).toFixed(2)+ " %")
-		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ " %")	
-		$("label[for*="+ansArray[3]+"]").text((72*ans).toFixed(2)+ " %") 
+		$("label[for*="+ansArray[0]+"]").text((59*ans).toFixed(2)+ " deaths per 100,000  people") 
+		$("label[for*="+ansArray[1]+"]").text((21*ans).toFixed(2)+ " deaths per 100,000  people")
+		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")	
+		$("label[for*="+ansArray[3]+"]").text((72*ans).toFixed(2)+ " deaths per 100,000  people") 
 	}
 	else{
-		$("label[for*="+ansArray[0]+"]").text((1.7*ans).toFixed(2)+ " %") 
-		$("label[for*="+ansArray[1]+"]").text((1.3*ans).toFixed(2)+ " %")
-		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ " %")	
-		$("label[for*="+ansArray[3]+"]").text((0.6*ans).toFixed(2)+ " %") 
+		$("label[for*="+ansArray[0]+"]").text((ans+(100-ans)*0.95).toFixed(2)+" deaths per 100,000  people") 
+		$("label[for*="+ansArray[1]+"]").text((ans+(100-ans)*0.59).toFixed(2)+" deaths per 100,000  people")
+		$("label[for*="+ansArray[2]+"]").text((ans).toFixed(2)+ " deaths per 100,000  people")	
+		$("label[for*="+ansArray[3]+"]").text((0.6*ans).toFixed(2)+ " deaths per 100,000  people") 
 	}
 	
 	return ansArray[2]
@@ -172,11 +113,4 @@ function secondLowestAns(num){
 function ansRandom(){
 	var random = Math.floor(Math.random()*4)
 	return random
-}
-
-
-
-
-function restart(){
-	location.reload();
 }

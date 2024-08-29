@@ -1,6 +1,6 @@
 <% let questionPrompt = ["What is the average total earnings for each household in ",
 					  "What is the literacy rate of ",
-					  "What is the mortality rate of ",
+					  "What is the infant mortality rate of ",
 					  "What percent of the people had access to clean drinking water in ",
 					  "What is the malnutrition rate for "] %>
 
@@ -11,18 +11,23 @@
 		<div class="navigation">
 			<div class="options">
 				<div class="option">
-					<div>
+				<div>
 					<input type = "radio" id = "<%= i %>A" name = "Q<%= i %>" value = "A">
-					<label class="radio" for ="<%= i %>A"></label></div>
+					<label class="radio" for ="<%= i %>A"></label><br></div>
+					
 					<div>
 					<input type = "radio" id = "<%= i %>B" name = "Q<%= i %>" value = "B">
-					<label class = "radio" for = "<%= i %>B"></label></div>
+					<label class = "radio" for = "<%= i %>B"></label><br></div>
+
 					<div>
 					<input type = "radio" id = "<%= i %>C" name = "Q<%= i %>" value = "C">
-					<label class = "radio" for = "<%= i %>C"></label></div>
+					<label class = "radio" for = "<%= i %>C"></label><br></div>
+						
+						
+						
 					<div>
 					<input type = "radio" id = "<%= i %>D" name = "Q<%= i %>" value = "D">
-					<label class = "radio" for = "<%= i %>D"></label></div>
+					<label class = "radio" for = "<%= i %>D"></label><br></div>
 				</div>
 			</div>
 		</div>

@@ -23,10 +23,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
+    width: 860px;
     justify-content: center;
-    margin: 20px 0px;
-    text-align: center;  
+	margin: 20px 0px;
+    text-align: center;
+	justify-content: center;
 }
 
 .option {
@@ -34,13 +35,13 @@ body {
     min-height: 100%;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 860px;
+    width: 100%;
     box-sizing: border-box;
     padding: 5px;
     /*background: beige;*/
     border-radius: 8px;
     text-align: center;
-    justify-content: center;
+	justify-content: center;
 }
 
 .option > div {
@@ -272,4 +273,16 @@ input[type="radio"]:checked + label.radio {
 
 .content {
     padding-top: 60px
+}
+
+.correct-answer {
+    background-color: #4CAF50;
+    border: 2.5px solid #000000;
+    color: white;
+}
+
+.incorrect-answer {
+    background-color: #e44f4f;
+    border: 2.5px solid #8b0000;
+    color: white;
 }

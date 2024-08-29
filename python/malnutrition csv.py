@@ -2,7 +2,7 @@ import csv
 import random
 import json
 
-with open("../death-rate-from-malnutrition-ghe.csv") as f:
+with open("../our world in data malnutrition.csv") as f:
     reader = csv.reader(f)
     header = next(reader)
     print(header)

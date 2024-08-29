@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Malnutrition Rate Quiz</title>
+		<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
     </head>
     <body onload="checkCookie()">
         <%- include ('navbar.ejs') %>
@@ -10,27 +11,31 @@
         <div class="container" style="margin-top: 60px;">
             <h1 style="margin-top: 60px;">Malnutrition Rate Quiz</h1>
 
-            <%- include ('ab question template.ejs') %>
+            <%- include ('ab question template.ejs',{data: 4}) %>
             <br>
-
+<h5>Source: Our World in Data<br>The data is from 2019</h5>
             <div class="button-container">
                 <input style="margin-right: 16px" type = "submit" value = "Submit" id = "submit">
                 <input type = "submit" value = "Restart" id = "restart">
             </div>
-    
-            <script src = "../scripts/jquery-3.7.1.min.js"></script>
-            <script src="../json/malnutrition.json"></script> <!-- Contains countries with total population -->
-            <script src="../json/malnutrition.js"></script> <!-- Contains countries separated by quintile -->
-        <script src="../scripts/malnutrition_AB_quiz.js"></script> <!-- Gets two countries from non-adjacent quintiles -->
+			
+		<script src = "../scripts/jquery-3.7.1.min.js"></script>
+		<script src="../json/malnutrition.json"></script> <!-- Contains countries with total population -->
+		<script src="../json/malnutrition ab quintiles.js"></script> <!-- Contains countries separated by quintile -->
+		<script>
+			var rateObject = malnutrition; <!--Sends rateObject value to AB_quiz.js-->
+		</script>
+        <script src="../scripts/AB_quiz.js" ></script> <!-- Gets two countries from non-adjacent quintiles -->
 		<script src="../scripts/submit.js"></script>
 		<script src="../scripts/cookie.js"></script>
 
-        <link rel = "stylesheet" href = "../css/Malnutrition AB quiz.css">
         <link rel = "stylesheet" href = "../css/quiz.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel = "stylesheet" href = "../css/Malnutrition AB quiz.css">
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dela+Gothic+One&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dela+Gothic+One&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">                
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dela+Gothic+One&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet">   
     </body>
 </html>

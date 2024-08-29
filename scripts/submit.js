@@ -17,19 +17,41 @@ function submitDefault(){
 }
 
 function submitClick(){
-	console.log($('#1B'))
-	console.log($('#1B')[0])
-	/*checClick = true;*/
+
 	s.style.display = 'none';
 	
-	for (let i=0;i<=9;i++){
-        if(document.getElementById(ansArray[i]).checked) {
-            score++;
-        }    
+	for (let i=1;i<=10;i++){
+		let correctAnswer = document.getElementById(ansArray[i-1]);
+		let selectedAnswer = document.querySelector(`input[name="Q${i}"]:checked`);
+
+         if (selectedAnswer) {
+            if (selectedAnswer.id === correctAnswer.id) {
+                score++;
+                correctAnswer.nextElementSibling.style.backgroundColor = "#4CAF50"; // Csorrect Answer color
+                correctAnswer.nextElementSibling.style.border = "2.5px solid #033708";
+            } else {
+                selectedAnswer.nextElementSibling.style.backgroundColor = "#e44f4f"; // Incorrect selected color
+                selectedAnswer.nextElementSibling.style.border = "2.5px solid #8b0000";
+                correctAnswer.nextElementSibling.style.backgroundColor = "#8da98b"; // Show correct answer color
+                correctAnswer.nextElementSibling.style.border = "2.5px solid #000000";
+            }
+        } else {
+            correctAnswer.nextElementSibling.style.backgroundColor = "#4CAF50"; // Show correct answer color if none selected
+            correctAnswer.nextElementSibling.style.border = "2.5px solid #000000";
+        }  
     }
-	
-	alert("Quiz submitted! "+ score+"/10 was correct")
-	alert("Restart the test.")
+	console.log(score)
+	let user = getCookie("username");
+    fetch("/addQuizCount", {
+        method: "POST",
+        body: JSON.stringify({
+            user: user,
+            count: score
+        }),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    });	alert("Quiz submitted! "+ score+"/10 was correct")
 }
 
 function restart(){

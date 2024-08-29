@@ -329,9 +329,6 @@ var mortalityRate = {
     "male": 37.4,
     "female": 27.6
   },
-  "European Union": {
-    "total": 3.4
-  },
   "Faroe Islands": {
     "total": 5.7,
     "male": 6.3,
