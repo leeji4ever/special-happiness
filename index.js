@@ -7,6 +7,8 @@ const path = require('path');
 const session = require('express-session')
 const bodyParser = require('body-parser');
 const fs = require('fs');
+const mysql = require('mysql2');
+
 app.use(cookieParser());
 // need cookieParser middleware before we can do anything with cookies
 
@@ -110,8 +112,20 @@ app.get('/bkReq', (req, res) => {
     res.sendFile(__dirname +'/data.json');
 });
 
+const config = JSON.parse(fs.readFileSync(__dirname + '/config.json'));
+
 app.get('/views/:name', (req, res) => {
     res.render(req.params.name);
+});
+
+app.use('/test', (req, res) => {
+    const connection = mysql.createConnection(config);
+    connection.execute('SELECT name FROM sampletable', [], function (err, result) {
+      if (err) throw err;
+      console.log(result[0]);
+      res.send(result);
+    });
+    connection.end();
 });
 
 app.use('/images',express.static(__dirname +'/images'));
