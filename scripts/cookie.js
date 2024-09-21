@@ -8,8 +8,8 @@ function setCookie(cname, cvalue, exdays) {
   method: "POST",
   body: JSON.stringify({
     user: cvalue,
-	expires: d.toUTCString()
-  }),
+	expires: d.toISOString().replace('T', ' ').replace('Z','')
+  }), //for SQL format
   headers: {
     "Content-type": "application/json; charset=UTF-8"
   }
@@ -33,10 +33,13 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
+  console.log("In checkCookie");
   let user = getCookie("username");
   if (user != "") {
+    console.log("Not equal to empty string");
     //alert("Welcome again " + user);
   } else {
+    console.log("Is equal to empty string");
     user = prompt("Please enter your name:", "");
     if (user != "" && user != null) {
       setCookie("username", user, 365);

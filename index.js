@@ -27,7 +27,7 @@ try{
 
 const config = JSON.parse(fs.readFileSync(__dirname + '/config.json'));
 const connection = mysql.createConnection(config);
-const insertQuery = "INSERT INTO sampletable (name, expt, quizzes, correct) VALUES"; //append the specific values
+const insertQuery = "INSERT INTO sampletable (name, expt, quizzes, correct) VALUES (?,?,?,?);"; //append the specific values
 const updateQuery = "UPDATE sampletable SET expt='2024-09-17 11:12:13' WHERE name='Ada';";
 const selectAllQuery = "SELECT * FROM sampletable";
 var allData = null;
