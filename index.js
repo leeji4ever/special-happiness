@@ -17,30 +17,45 @@ app.use(cookieParser());
 // incoming JSON and URL-encoded data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-let data = [];
+/*let data = [];
 try{
 	data = JSON.parse(fs.readFileSync("./data.json"));
 	console.log(data)
 }catch(e){
 	console.log("some problem parsing the JSON");
-}
+}*/
 
+const config = JSON.parse(fs.readFileSync(__dirname + '/config.json'));
+const connection = mysql.createConnection(config);
+const insertQuery = "INSERT INTO sampletable (name, expt, quizzes, correct) VALUES"; //append the specific values
+const updateQuery = "UPDATE sampletable SET expt='2024-09-17 11:12:13' WHERE name='Ada';";
+const selectAllQuery = "SELECT * FROM sampletable";
+var allData = null;
 
 // Create a new endpoint for the POST method that
-// accepts data to be added to the data array
+// accepts data to be added to the database
 app.post('/add', (req, res) => {
     const record = req.body;
-    const obj = {
+    /*const obj = {
         user: record.user,
         expires: record.expires,
 		count: 0,
 		numQuizzes:0 //number of quizzes taken
     }
 	console.log(obj);
-    data.push(obj);
+    data.push(obj);*/
+
+    //var insertQuery = insertQueryStub + "('" + record.user + "', '" + record.expires + "', 0, 0);";
+
+    const connection = mysql.createConnection(config);
+    connection.execute(insertQuery, [record.user,record.expires,0,0], function (err, result) {
+        if (err) throw err;
+        console.log(result);
+    })
+    connection.end();
 
     // Write the data array to a file called data.json
-    fs.writeFile('./data.json', JSON.stringify(data), 
+    /*fs.writeFile('./data.json', JSON.stringify(data), 
     (err) => {
         if (err) {
             console.error(err);
@@ -49,7 +64,7 @@ app.post('/add', (req, res) => {
         }
         res.status(200)
             .send(`<h2>Data saved successfully :)</h2>`);
-    });
+    });*/
 });
 
 app.post("/addQuizCount", (req, res) => {
@@ -112,27 +127,40 @@ app.get('/bkReq', (req, res) => {
     res.sendFile(__dirname +'/data.json');
 });
 
-const config = JSON.parse(fs.readFileSync(__dirname + '/config.json'));
-
 app.get('/views/:name', (req, res) => {
-    res.render(req.params.name);
-});
+    res.render(req.params.name)
+})
 
-app.use('/test', (req, res) => {
+connection.execute(selectAllQuery, [], function (err, result) {
+    if (err) throw err;
+    console.log(result);
+    allData = result;
+  });
+  connection.end();
+
+app.get('/test', (req, res) => {
     const connection = mysql.createConnection(config);
-    connection.execute('SELECT name FROM sampletable', [], function (err, result) {
+    connection.execute('SELECT * FROM sampletable', [], function (err, result) {
       if (err) throw err;
-      console.log(result[0]);
+      console.log(result);
       res.send(result);
     });
     connection.end();
 });
 
+app.get('/test2', (req, res) => {
+    console.log(allData[0]);
+    console.log(allData[0]["name"]);
+    console.log(allData[0].name);
+    console.log(allData[0]["expt"]);
+    res.send([allData[0],allData[0]["name"],allData[0].name,allData[0]["expt"]]);
+});    
+
 app.use('/images',express.static(__dirname +'/images'));
 app.use('/css',express.static(__dirname +'/css'));
 app.use('/scripts',express.static(__dirname +'/scripts'));
 app.use('/json',express.static(__dirname +'/json'));
-app.use('/views',express.static(__dirname +'/views'));
+//app.use('/views',express.static(__dirname +'/views'));
 
 
 
