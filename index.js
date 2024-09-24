@@ -1,3 +1,5 @@
+//TODO: Eliminate all throw(err) lines before shipping! Replace them with proper error handling.
+
 // Import essential libraries 
 const cookieParser = require('cookie-parser');
 
@@ -29,6 +31,7 @@ const config = JSON.parse(fs.readFileSync(__dirname + '/config.json'));
 const connection = mysql.createConnection(config);
 const insertQuery = "INSERT INTO sampletable (name, expt, quizzes, correct) VALUES (?,?,?,?);"; //append the specific values
 const updateQuery = "UPDATE sampletable SET expt='2024-09-17 11:12:13' WHERE name='Ada';";
+const incrementQuery = "UPDATE sampletable SET quizzes = quizzes + 1 WHERE name=?;";//TODO: change to a more unique identifier later, such as (name, expt) pair or random string etc.
 const selectAllQuery = "SELECT * FROM sampletable";
 var allData = null;
 
@@ -54,6 +57,7 @@ app.post('/add', (req, res) => {
     })
     connection.end();
 
+
     // Write the data array to a file called data.json
     /*fs.writeFile('./data.json', JSON.stringify(data), 
     (err) => {
@@ -67,35 +71,41 @@ app.post('/add', (req, res) => {
     });*/
 });
 
+//Send the database a SQL query that adds one to the given user's quiz count.
 app.post("/addQuizCount", (req, res) => {
     const record = req.body;
 	
-    const user = record.user;
-    const newCount = record.count;
+    //const user = record.user;
+    //const newCount = record.count;
 
-	const userRecord = data.find(r => r.user === user);
-	if (userRecord) {
-        // Update the user's quiz count
-		console.log(userRecord.count);
-        userRecord.count = userRecord.count + newCount;
-		userRecord.numQuizzes++;
+	//const userRecord = data.find(r => r.user === user);
+	//if (userRecord) {
+    // Update the user's quiz count
+    //console.log(userRecord.count);
+    //userRecord.count = userRecord.count + newCount;
+    //userRecord.numQuizzes++;
 
-		
-        console.log(`Quiz count updated for ${user}: ${userRecord.count}`);
-        // Write the updated data array to data.json
-        fs.writeFile('./data.json', JSON.stringify(data), (err) => {
-            if (err) {
-                console.error(err);
-                return res.status(500).send('Error saving quiz count');
-            }
-            res.status(200).send('Quiz count updated successfully.');
-        });
-    } else {
-        res.status(404).send(`User "${user}" not found.`);
-    }
+    const connection = mysql.createConnection(config);
+    connection.execute(incrementQuery, [record.user], function (err, result) {
+        if (err) console.log("User not found? Or another error? " + record.user + " " + err); //TODO: Handler user not found case.
+        console.log(result);
+    });
+    connection.end();
+    
+    console.log(`Quiz count updated for ${record.user}`);
+    // Write the updated data array to data.json
+    /*fs.writeFile('./data.json', JSON.stringify(data), (err) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).send('Error saving quiz count');
+        }
+        res.status(200).send('Quiz count updated successfully.');
+    });*/
+    //} else {
+    //    res.status(404).send(`User "${user}" not found.`);
+    //}
 
-
-});
+    });
 
 app.use(function (req, res, next) {
   // check if client sent cookie
