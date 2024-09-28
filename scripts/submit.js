@@ -42,11 +42,13 @@ function submitClick(){
     }
 	console.log(score)
 	let user = getCookie("username");
+    let randstring = getCookie("randstring")
     fetch("/addQuizCount", {
         method: "POST",
         body: JSON.stringify({
             user: user,
-            count: score
+            count: score,
+            randstring: randstring
         }),
         headers: {
             "Content-type": "application/json; charset=UTF-8"
