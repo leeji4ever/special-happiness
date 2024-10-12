@@ -27,15 +27,15 @@ const incrementQuery = "UPDATE sampletable SET quizzes = quizzes + 1 WHERE name=
 const incrementQuery2 = "UPDATE sampletable SET correct = correct + ? WHERE name=? AND randstring=?;";
 //later, such as (name, expt) pair or random string etc.
 const selectAllQuery = "SELECT * FROM sampletable";
-const alterQuery = "ALTER TABLE sampletable ADD COLUMN randstring VARCHAR(20)";
+//const alterQuery = "ALTER TABLE sampletable ADD COLUMN randstring VARCHAR(20)";
 var allData = null;
 
-const connection2 = mysql.createConnection(config);
+/*const connection2 = mysql.createConnection(config);
 connection2.execute(alterQuery, [], function (err, result) {
     if (err) console.log("Error was" + err);
     console.log(result);
 })
-connection2.end();
+connection2.end();*/
 
 // Create a new endpoint for the POST method that
 // accepts data to be added to the database
