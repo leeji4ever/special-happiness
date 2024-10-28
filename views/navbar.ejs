@@ -46,56 +46,17 @@
                     <a href="/views/malnutrition_AB_quiz">Malnutrition Quiz</a>
                 </div>
             </div>
-			
-            <div class="dropdown" id="user-section" style="display: none;">
-                <button class="dropbtn" id="user-link" style="color: rgb(255,255,255);" onclick="toggleUserDashboard()">User
-                    <i class="fa fa-caret-down"></i>
-                </button>
-            </div>
-      
+
+            <div class="dropdown">
+                <div class="dropdown">
+                    <button onclick="location.href='/views/mydata'" class="dropbtn" style="color: rgb(255,255,255);">My Data
+                        <i class="fa fa-caret-down"></i>
+                    </button>     
+    
+                </div>
+            </div>	          
         </div>
-      
+
     </div>
-
-    <div id="user-dashboard" style="display: none;">
-        <h2>User Dashboard</h2>
-        <p>Username: <span id="username"></span></p>
-        <p>Quizzes Taken: <span id="quizzes-taken"></span></p>
-        <p>Questions Correct: <span id="questions-correct"></span></p>
-    </div>
-
-    <script>
-        window.onload = function() {
-        const username = getCookie('username');
-        const randstring = getCookie('randstring');
-
-        if (username && randstring) {
-            document.getElementById('user-section').style.display = 'block';
-        }
-        };
-
-        function getCookie(cookieName) {
-          const value = `; ${document.cookie}`;
-          const parts = value.split(`; ${cookieName}=`);
-          if (parts.length === 2) return parts.pop().split(';').shift();
-      }
-
-        function toggleUserDashboard() {
-        const dashboard = document.getElementById('user-dashboard');
-        dashboard.style.display = dashboard.style.display === 'none' ? 'block' : 'none';
-
-        const username = getCookie('username');
-        const randstring = getCookie('randstring');
-
-        if (username && randstring) {
-            fetch(`/user-data?username=${username}&randstring=${randstring}`)
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('username').textContent = data.username;
-                    document.getElementById('quizzes-taken').textContent = data.quizzesTaken;
-                    document.getElementById('questions-correct').textContent = data.questionsCorrect;
-                });
-        }
-      }
     </script>
 </body>

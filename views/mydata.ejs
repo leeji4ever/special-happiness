@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed The Need</title>
+	<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+</head>
+<body>
+    <%- include ('navbar.ejs') %>
+
+    <section id="userdata">
+        <h2>My Data</h2>
+        <div id="userquizzes">Number of quizzes: </div>
+        <div id="userquestions">Number of correct questions: </div>
+    </section>
+
+        <script src="../scripts/cookie.js"></script>
+       
+       <script>
+        async function getUserData() {
+            let user = getCookie("username");
+            let randstring = getCookie("randstring")
+            const response = await fetch("/getUserData", {
+                method: "POST",
+                body: JSON.stringify({
+                    user: user,
+                    randstring: randstring
+                }),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+            });
+            if (!response.ok) {throw new Error(`Response status: not ok`);}
+            const json = await response.json();
+            console.log(json);
+        }
+    window.onload=getUserData;
+        </script>
+
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dela+Gothic+One&family=Wix+Madefor+Display:wght@400..800&display=swap" rel="stylesheet"> 
+</body>
+</html>
