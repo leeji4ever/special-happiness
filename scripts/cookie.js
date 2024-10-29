@@ -9,7 +9,6 @@ function randString(length) {
   }
   return result;
 }
-
 console.log(randString(8));
 
 function setCookie(cname, cvalue, exdays) {
